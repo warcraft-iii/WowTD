@@ -1,0 +1,3823 @@
+﻿STRING 1
+{
+Green Circle TD All Stars V 1.0
+}
+
+STRING 2
+{
+Green TD Fans
+}
+
+STRING 3
+{
+Welcome to Green Circle All Stars V. 1.0
+
+When you host this map, please let the other download it. Maybe it need some time, but i think thats ok!
+
+                                             Have fun
+}
+
+STRING 5
+{
+Player 1
+}
+
+STRING 9
+{
+Player 2
+}
+
+STRING 10
+{
+Player 3
+}
+
+STRING 11
+{
+Player 4
+}
+
+STRING 12
+{
+Player 5
+}
+
+STRING 13
+{
+Player 6
+}
+
+STRING 14
+{
+Player 7
+}
+
+STRING 15
+{
+Player 8
+}
+
+STRING 95
+// 单位: uaco (Summoner), Name (名字)
+{
+Summoner
+}
+
+STRING 96
+// 单位: uaco (Summoner), Ubertip (提示工具 - 扩展的)
+{
+Summoner
+}
+
+STRING 99
+// 单位: h01R (Hard Aura), Ubertip (提示工具 - 扩展的)
+{
+|c00FF0000Can be upgraded to Speed, or Damage Aura Towers.|r
+}
+
+STRING 106
+// 技能: AOae (Speed Aura), Name (名字)
+{
+Speed Aura
+}
+
+STRING 107
+// 技能: AOae (Speed Aura), Tip (提示工具 - 普通)
+{
+Speed Aura
+}
+
+STRING 109
+// 技能: AEar (Damage Aura), Name (名字)
+{
+Damage Aura
+}
+
+STRING 110
+// 技能: AEar (Damage Aura), Researchubertip (提示工具 - 学习 - 扩展的)
+{
+An aura that gives friendly nearby units bonus damage to their ranged attacks. 
+}
+
+STRING 111
+// 技能: AEar (Damage Aura), Tip (提示工具 - 普通)
+{
+Damage Aura
+}
+
+STRING 112
+// 技能: A002 (Damage Aura 2), Researchubertip (提示工具 - 学习 - 扩展的)
+{
+An aura that gives friendly nearby units bonus damage to their ranged attacks. 
+}
+
+STRING 116
+// 单位: ncp2 (Fire Trap), Name (名字)
+{
+Fire Trap
+}
+
+STRING 134
+// 技能: A001 (Fire Trap), Tip (提示工具 - 普通)
+{
+|c00FF0000Fire Trap|r
+}
+
+STRING 135
+// 单位: hmpr (牧师), EditorSuffix (名字 - 编辑器后缀)
+{
+5
+}
+
+STRING 141
+// 单位: hrif (矮人火枪手), EditorSuffix (名字 - 编辑器后缀)
+{
+2
+}
+
+STRING 144
+// 单位: hsor (女巫), EditorSuffix (名字 - 编辑器后缀)
+{
+3
+}
+
+STRING 148
+// 单位: hspt (魔法破坏者), EditorSuffix (名字 - 编辑器后缀)
+{
+4
+}
+
+STRING 170
+// 单位: hfoo (步兵), Ubertip (提示工具 - 扩展的)
+{
+|c00008000+1 Lumber|r
+}
+
+STRING 171
+// 单位: hfoo (步兵), EditorSuffix (名字 - 编辑器后缀)
+{
+1
+}
+
+STRING 172
+// 单位: hkni (骑士), EditorSuffix (名字 - 编辑器后缀)
+{
+6
+}
+
+STRING 173
+// 单位: orai (掠夺者), EditorSuffix (名字 - 编辑器后缀)
+{
+5
+}
+
+STRING 174
+// 单位: ohun (巨魔猎头者), EditorSuffix (名字 - 编辑器后缀)
+{
+2
+}
+
+STRING 175
+// 单位: odoc (巨魔巫医), EditorSuffix (名字 - 编辑器后缀)
+{
+3
+}
+
+STRING 176
+// 单位: oshm (萨满祭司), EditorSuffix (名字 - 编辑器后缀)
+{
+4
+}
+
+STRING 177
+// 单位: hgyr (飞行机器), EditorSuffix (名字 - 编辑器后缀)
+{
+7
+}
+
+STRING 178
+// 单位: hmtm (迫击炮小队), EditorSuffix (名字 - 编辑器后缀)
+{
+8
+}
+
+STRING 179
+// 单位: hmtt (蒸汽机车), EditorSuffix (名字 - 编辑器后缀)
+{
+9
+}
+
+STRING 180
+// 单位: ogru (兽族步兵), EditorSuffix (名字 - 编辑器后缀)
+{
+1
+}
+
+STRING 181
+// 单位: otau (牛头人), EditorSuffix (名字 - 编辑器后缀)
+{
+6
+}
+
+STRING 182
+// 单位: okod (科多兽), EditorSuffix (名字 - 编辑器后缀)
+{
+7
+}
+
+STRING 183
+// 单位: otbr (巨魔蝙蝠骑士), EditorSuffix (名字 - 编辑器后缀)
+{
+8
+}
+
+STRING 184
+// 单位: ospw (灵魂行者), EditorSuffix (名字 - 编辑器后缀)
+{
+9
+}
+
+STRING 185
+// 单位: ugar (石像鬼), EditorSuffix (名字 - 编辑器后缀)
+{
+5
+}
+
+STRING 186
+// 单位: ucry (穴居恶魔), EditorSuffix (名字 - 编辑器后缀)
+{
+2
+}
+
+STRING 187
+// 单位: uban (女妖), EditorSuffix (名字 - 编辑器后缀)
+{
+3
+}
+
+STRING 188
+// 单位: unec (不死族巫师), EditorSuffix (名字 - 编辑器后缀)
+{
+4
+}
+
+STRING 189
+// 单位: hrif (矮人火枪手), Ubertip (提示工具 - 扩展的)
+{
+|c00008000+2 Lumber|r
+}
+
+STRING 190
+// 单位: hsor (女巫), Ubertip (提示工具 - 扩展的)
+{
+|c00008000+5 Lumber|r
+}
+
+STRING 191
+// 单位: hspt (魔法破坏者), Ubertip (提示工具 - 扩展的)
+{
+|c00008000+10 Lumber|r
+}
+
+STRING 192
+// 单位: ugho (食尸鬼), EditorSuffix (名字 - 编辑器后缀)
+{
+1
+}
+
+STRING 193
+// 单位: uabo (憎恶), EditorSuffix (名字 - 编辑器后缀)
+{
+6
+}
+
+STRING 194
+// 单位: umtw (绞肉车), EditorSuffix (名字 - 编辑器后缀)
+{
+7
+}
+
+STRING 195
+// 单位: uobs (十胜石雕像), EditorSuffix (名字 - 编辑器后缀)
+{
+8
+}
+
+STRING 196
+// 单位: ufro (冰霜巨龙), EditorSuffix (名字 - 编辑器后缀)
+{
+9
+}
+
+STRING 201
+// 单位: hmpr (牧师), Ubertip (提示工具 - 扩展的)
+{
+|c00008000+15 Lumber|r
+}
+
+STRING 202
+// 单位: hkni (骑士), Ubertip (提示工具 - 扩展的)
+{
+|c00008000+20 Lumber|r
+}
+
+STRING 203
+// 单位: hgyr (飞行机器), Ubertip (提示工具 - 扩展的)
+{
+|c00008000+25 Lumber|r
+}
+
+STRING 204
+// 单位: hmtm (迫击炮小队), Ubertip (提示工具 - 扩展的)
+{
+|c00008000+35 Lumber|r
+}
+
+STRING 205
+// 单位: hmtt (蒸汽机车), Ubertip (提示工具 - 扩展的)
+{
+|c00008000+50 Lumber|r
+}
+
+STRING 206
+// 单位: ogru (兽族步兵), Ubertip (提示工具 - 扩展的)
+{
+|c00008000+1 Lumber|r
+}
+
+STRING 207
+// 单位: ohun (巨魔猎头者), Ubertip (提示工具 - 扩展的)
+{
+|c00008000+2 Lumber|r
+}
+
+STRING 208
+// 单位: odoc (巨魔巫医), Ubertip (提示工具 - 扩展的)
+{
+|c00008000+5 Lumber|r
+}
+
+STRING 209
+// 单位: oshm (萨满祭司), Ubertip (提示工具 - 扩展的)
+{
+|c00008000+10 Lumber|r
+}
+
+STRING 211
+// 单位: orai (掠夺者), Ubertip (提示工具 - 扩展的)
+{
+|c00008000+15 Lumber|r
+}
+
+STRING 212
+// 单位: otau (牛头人), Ubertip (提示工具 - 扩展的)
+{
+|c00008000+20 Lumber|r
+}
+
+STRING 213
+// 单位: okod (科多兽), Ubertip (提示工具 - 扩展的)
+{
+|c00008000+25 Lumber|r
+}
+
+STRING 214
+// 单位: otbr (巨魔蝙蝠骑士), Ubertip (提示工具 - 扩展的)
+{
+|c00008000+35 Lumber|r
+}
+
+STRING 215
+// 单位: ospw (灵魂行者), Ubertip (提示工具 - 扩展的)
+{
+|c00008000+50 Lumber|r
+}
+
+STRING 216
+// 单位: ugho (食尸鬼), Ubertip (提示工具 - 扩展的)
+{
+|c00008000+1 Lumber|r
+}
+
+STRING 217
+// 单位: ucry (穴居恶魔), Ubertip (提示工具 - 扩展的)
+{
+|c00008000+2 Lumber|r
+}
+
+STRING 218
+// 单位: uban (女妖), Ubertip (提示工具 - 扩展的)
+{
+|c00008000+5 Lumber|r
+}
+
+STRING 219
+// 单位: uabo (憎恶), Ubertip (提示工具 - 扩展的)
+{
+|c00008000+20 Lumber|r
+}
+
+STRING 220
+// 单位: umtw (绞肉车), Ubertip (提示工具 - 扩展的)
+{
+|c00008000+25 Lumber|r
+}
+
+STRING 221
+// 单位: uobs (十胜石雕像), Ubertip (提示工具 - 扩展的)
+{
+|c00008000+35 Lumber|r
+}
+
+STRING 222
+// 单位: ufro (冰霜巨龙), Ubertip (提示工具 - 扩展的)
+{
+|c00008000+50 Lumber|r
+}
+
+STRING 223
+// 单位: hcas (城堡), Ubertip (提示工具 - 扩展的)
+{
+Upgrade to Castle 
+}
+
+STRING 224
+// 单位: ofrt (堡垒), Ubertip (提示工具 - 扩展的)
+{
+Upgrade to Fortress  
+}
+
+STRING 225
+// 单位: unp2 (黑色城堡), Ubertip (提示工具 - 扩展的)
+{
+Upgrade to Black Citadel  
+}
+
+STRING 226
+{
+|c0000FF00 Circle Green TD All Stars|r
+}
+
+STRING 228
+// 单位: unec (不死族巫师), Ubertip (提示工具 - 扩展的)
+{
+|c00008000+10 Lumber|r
+}
+
+STRING 229
+// 单位: ugar (石像鬼), Ubertip (提示工具 - 扩展的)
+{
+|c00008000+15 Lumber|r
+}
+
+STRING 242
+{
+<Left Game>
+}
+
+STRING 260
+// 单位: ncop (|c00FFFF00SELL|r), Name (名字)
+{
+|c00FFFF00SELL|r
+}
+
+STRING 370
+{
+|c00FF0000Immune creeps coming every 5 rounds!|r
+}
+
+STRING 371
+{
+|c00FF0000Aircreeps coming every 7 waves.|r
+}
+
+STRING 372
+{
+Current Level
+}
+
+STRING 375
+// 单位: h00G (Speed Tower), Hotkey (热键)
+{
+S
+}
+
+STRING 376
+// 单位: h00Q (Speed Tower 2), Hotkey (热键)
+{
+S
+}
+
+STRING 377
+// 单位: h010 (Speed Tower 3), Hotkey (热键)
+{
+S
+}
+
+STRING 383
+// 单位: h008 (Poison Tower 1: Kel'Thuzad), Hotkey (热键)
+{
+P
+}
+
+STRING 384
+// 单位: h00E (Poison Tower 7: Elder VoidWalker), Hotkey (热键)
+{
+P
+}
+
+STRING 385
+// 单位: h009 (Poison Tower 6: Avatar of Vengeance), Hotkey (热键)
+{
+P
+}
+
+STRING 386
+// 单位: h00A (Poison Tower 5: Death Revenant), Hotkey (热键)
+{
+P
+}
+
+STRING 387
+// 单位: h00B (Poison Tower 4: Ghost), Hotkey (热键)
+{
+P
+}
+
+STRING 388
+// 单位: h00C (Poison Tower 3: Antonidas), Hotkey (热键)
+{
+P
+}
+
+STRING 389
+// 单位: h00D (Poison Tower 2: Kel'Thuzad Ghost), Hotkey (热键)
+{
+P
+}
+
+STRING 390
+// 单位: h00F (Poison Tower 10: Skeletal Shooter), Hotkey (热键)
+{
+P
+}
+
+STRING 393
+// 单位: h00T (Chaos Tower 8), Hotkey (热键)
+{
+C
+}
+
+STRING 394
+// 单位: n009 (Air Tower 1: Chicken), Hotkey (热键)
+{
+A
+}
+
+STRING 395
+// 单位: n00B (Air Tower 2: Faerie Dragon), Hotkey (热键)
+{
+A
+}
+
+STRING 396
+// 单位: n00D (Air Tower 3: Dragon Hawk Rider), Hotkey (热键)
+{
+A
+}
+
+STRING 397
+// 单位: n000 (Air Tower 4: Blue Drake), Hotkey (热键)
+{
+A
+}
+
+STRING 398
+// 单位: n001 (Air Tower 6: Couatl), Hotkey (热键)
+{
+A
+}
+
+STRING 431
+// 单位: n003 (Air Tower 5: Phoenix), Hotkey (热键)
+{
+A
+}
+
+STRING 435
+// 单位: n004 (Air Tower 8: Penguin), Hotkey (热键)
+{
+A
+}
+
+STRING 452
+// 单位: h00H (Aura Tower), Name (名字)
+{
+Aura Tower
+}
+
+STRING 478
+// 单位: uaco (Summoner), Tip (提示工具 - 基础)
+{
+Train Summoner
+}
+
+STRING 495
+// 单位: h00J (Poison Tower 8: Revenant of the Depths), Hotkey (热键)
+{
+P
+}
+
+STRING 602
+// 单位: h00H (Aura Tower), Tip (提示工具 - 基础)
+{
+|c55555555Build Aura Tower.|r
+}
+
+STRING 604
+// 单位: h00I (Damage Tower), Tip (提示工具 - 基础)
+{
+|c55555555Upgrade to Damage Aura Tower.|r
+}
+
+STRING 606
+// 单位: h00G (Speed Tower), Tip (提示工具 - 基础)
+{
+|c55555555Upgrade to Speed Aura Tower.|r
+}
+
+STRING 617
+// 单位: h000 (Siege Tower 1: DreadLord), Name (名字)
+{
+Siege Tower 1: DreadLord
+}
+
+STRING 618
+// 单位: h000 (Siege Tower 1: DreadLord), Tip (提示工具 - 基础)
+{
+|cCCFFCCCCBuild DreadLord.|r |c00FF0000S|r|c77FF7777iege Tower 1.|r
+}
+
+STRING 631
+// 单位: h007 (Siege Tower 8: Doom Guard), Name (名字)
+{
+Siege Tower 8: Doom Guard
+}
+
+STRING 632
+// 单位: h007 (Siege Tower 8: Doom Guard), Tip (提示工具 - 基础)
+{
+|cCCFFCCCCBuild Doom Guard.|r |c00FF0000S|r|c77FF7777iege Tower 8.|r
+}
+
+STRING 651
+// 单位: h00K (Siege Tower 9: Infernal), Name (名字)
+{
+Siege Tower 9: Infernal
+}
+
+STRING 652
+// 单位: h00K (Siege Tower 9: Infernal), Tip (提示工具 - 基础)
+{
+|cCCFFCCCCBuild Infernal.|r |c00FF0000S|r|c77FF7777iege Tower 9.|r
+}
+
+STRING 662
+// 单位: n006 (Frost Tower: Icy Treasure Box), Tip (提示工具 - 基础)
+{
+|c55555555Build Icy Treasure Box.|r
+}
+
+STRING 680
+// 单位: n00B (Air Tower 2: Faerie Dragon), Name (名字)
+{
+Air Tower 2: Faerie Dragon
+}
+
+STRING 681
+// 单位: n00B (Air Tower 2: Faerie Dragon), Tip (提示工具 - 基础)
+{
+|cDDDDFFFFBuild Faerie Dragon.|r |c000066FFA|r|cAAAAFFFFir Tower 2.|r
+}
+
+STRING 682
+// 单位: n005 (Air Tower 7: Nether Drake), Name (名字)
+{
+Air Tower 7: Nether Drake
+}
+
+STRING 683
+// 单位: n005 (Air Tower 7: Nether Drake), Tip (提示工具 - 基础)
+{
+|cDDDDFFFFBuild Nether Drake.|r |c000066FFA|r|cAAAAFFFFir Tower 7.|r
+}
+
+STRING 688
+// 单位: h003 (Siege Tower 3: Fel Orc Grunt), Name (名字)
+{
+Siege Tower 3: Fel Orc Grunt
+}
+
+STRING 689
+// 单位: h003 (Siege Tower 3: Fel Orc Grunt), Tip (提示工具 - 基础)
+{
+|cCCFFCCCCBuild Fel Orc Grunt.|r |c00FF0000S|r|c77FF7777iege Tower 3.|r
+}
+
+STRING 690
+// 单位: h005 (Siege Tower 5: Fel Orc Warlock), Name (名字)
+{
+Siege Tower 5: Fel Orc Warlock
+}
+
+STRING 691
+// 单位: h005 (Siege Tower 5: Fel Orc Warlock), Tip (提示工具 - 基础)
+{
+|cCCFFCCCCBuild Fel Orc Warlock.|r |c00FF0000S|r|c77FF7777iege Tower 5.|r
+}
+
+STRING 693
+// 单位: h006 (Siege Tower 6: BladeMaster of Blackrock), Tip (提示工具 - 基础)
+{
+|cCCFFCCCCBuild Orc Warlock.|r |c00FF0000S|r|c77FF7777iege Tower 6.|r
+}
+
+STRING 694
+// 单位: h001 (Siege Tower 7: BladeMaster), Name (名字)
+{
+Siege Tower 7: BladeMaster
+}
+
+STRING 695
+// 单位: h001 (Siege Tower 7: BladeMaster), Tip (提示工具 - 基础)
+{
+|cCCFFCCCCBuild BladeMaster.|r |c00FF0000S|r|c77FF7777iege Tower 7.|r
+}
+
+STRING 698
+// 单位: h006 (Siege Tower 6: BladeMaster of Blackrock), Name (名字)
+{
+Siege Tower 6: BladeMaster of Blackrock
+}
+
+STRING 699
+// 单位: h008 (Poison Tower 1: Kel'Thuzad), Name (名字)
+{
+Poison Tower 1: Kel'Thuzad
+}
+
+STRING 700
+// 单位: h008 (Poison Tower 1: Kel'Thuzad), Tip (提示工具 - 基础)
+{
+|cDDDDFFDDBuild Kel'Thuzad.|r |c0000FF00P|r|cAAAAFFAAoison Tower 1.|r
+}
+
+STRING 701
+// 单位: h00E (Poison Tower 7: Elder VoidWalker), Name (名字)
+{
+Poison Tower 7: Elder VoidWalker
+}
+
+STRING 702
+// 单位: h00E (Poison Tower 7: Elder VoidWalker), Tip (提示工具 - 基础)
+{
+|cDDDDFFDDBuild Elder VoidWalker.|r |c0000FF00P|r|cAAAAFFAAoison Tower 7.|r
+}
+
+STRING 703
+// 单位: h009 (Poison Tower 6: Avatar of Vengeance), Name (名字)
+{
+Poison Tower 6: Avatar of Vengeance
+}
+
+STRING 704
+// 单位: h009 (Poison Tower 6: Avatar of Vengeance), Tip (提示工具 - 基础)
+{
+|cDDDDFFDDBuild Avatar of Vengeance.|r |c0000FF00P|r|cAAAAFFAAoison Tower 6.|r
+}
+
+STRING 705
+// 单位: h00A (Poison Tower 5: Death Revenant), Name (名字)
+{
+Poison Tower 5: Death Revenant
+}
+
+STRING 706
+// 单位: h00A (Poison Tower 5: Death Revenant), Tip (提示工具 - 基础)
+{
+|cDDDDFFDDBuild Death Revenant.|r |c0000FF00P|r|cAAAAFFAAoison Tower 5.|r
+}
+
+STRING 707
+// 单位: h00B (Poison Tower 4: Ghost), Name (名字)
+{
+Poison Tower 4: Ghost
+}
+
+STRING 708
+// 单位: h00B (Poison Tower 4: Ghost), Tip (提示工具 - 基础)
+{
+|cDDDDFFDDBuild Ghost.|r |c0000FF00P|r|cAAAAFFAAoison Tower 4.|r
+}
+
+STRING 709
+// 单位: h00C (Poison Tower 3: Antonidas), Name (名字)
+{
+Poison Tower 3: Antonidas
+}
+
+STRING 710
+// 单位: h00C (Poison Tower 3: Antonidas), Tip (提示工具 - 基础)
+{
+|cDDDDFFDDBuild Antonidas.|r |c0000FF00P|r|cAAAAFFAAoison Tower 3.|r
+}
+
+STRING 711
+// 单位: h00D (Poison Tower 2: Kel'Thuzad Ghost), Name (名字)
+{
+Poison Tower 2: Kel'Thuzad Ghost
+}
+
+STRING 712
+// 单位: h00D (Poison Tower 2: Kel'Thuzad Ghost), Tip (提示工具 - 基础)
+{
+|cDDDDFFDDBuild Kel'Thuzad Ghost.|r |c0000FF00P|r|cAAAAFFAAoison Tower 2.|r
+}
+
+STRING 713
+// 单位: h00N (Poison Tower 9: Skeletal Mage), Name (名字)
+{
+Poison Tower 9: Skeletal Mage
+}
+
+STRING 714
+// 单位: h00N (Poison Tower 9: Skeletal Mage), Tip (提示工具 - 基础)
+{
+|cDDDDFFDDBuild Skeletal Mage.|r |c0000FF00P|r|cAAAAFFAAoison Tower 9.|r
+}
+
+STRING 715
+// 单位: n009 (Air Tower 1: Chicken), Name (名字)
+{
+Air Tower 1: Chicken
+}
+
+STRING 716
+// 单位: n009 (Air Tower 1: Chicken), Tip (提示工具 - 基础)
+{
+|cDDDDFFFFBuild Chicken.|r |c000066FFA|r|cAAAAFFFFir Tower 1.|r
+}
+
+STRING 717
+// 单位: n00D (Air Tower 3: Dragon Hawk Rider), Name (名字)
+{
+Air Tower 3: Dragon Hawk Rider
+}
+
+STRING 718
+// 单位: n00D (Air Tower 3: Dragon Hawk Rider), Tip (提示工具 - 基础)
+{
+|cDDDDFFFFBuild Dragon Hawk Rider.|r |c000066FFA|r|cAAAAFFFFir Tower 3.|r
+}
+
+STRING 719
+// 单位: n000 (Air Tower 4: Blue Drake), Name (名字)
+{
+Air Tower 4: Blue Drake
+}
+
+STRING 720
+// 单位: n000 (Air Tower 4: Blue Drake), Tip (提示工具 - 基础)
+{
+|cDDDDFFFFBuild Blue Drake.|r |c000066FFA|r|cAAAAFFFFir Tower 4.|r
+}
+
+STRING 721
+// 单位: n001 (Air Tower 6: Couatl), Name (名字)
+{
+Air Tower 6: Couatl
+}
+
+STRING 722
+// 单位: n001 (Air Tower 6: Couatl), Tip (提示工具 - 基础)
+{
+|cDDDDFFFFBuild Couatl.|r |c000066FFA|r|cAAAAFFFFir Tower 6.|r
+}
+
+STRING 723
+// 单位: n003 (Air Tower 5: Phoenix), Name (名字)
+{
+Air Tower 5: Phoenix
+}
+
+STRING 724
+// 单位: n003 (Air Tower 5: Phoenix), Tip (提示工具 - 基础)
+{
+|cDDDDFFFFBuild Phoenix.|r |c000066FFA|r|cAAAAFFFFir Tower 5.|r
+}
+
+STRING 725
+// 单位: h00J (Poison Tower 8: Revenant of the Depths), Name (名字)
+{
+Poison Tower 8: Revenant of the Depths
+}
+
+STRING 726
+// 单位: h00J (Poison Tower 8: Revenant of the Depths), Tip (提示工具 - 基础)
+{
+|cDDDDFFDDBuild Revenant of the Depths.|r |c0000FF00P|r|cAAAAFFAAoison Tower 8.|r
+}
+
+STRING 729
+// 单位: h002 (Siege Tower 2: Demon Hunter), Name (名字)
+{
+Siege Tower 2: Demon Hunter
+}
+
+STRING 730
+// 单位: h002 (Siege Tower 2: Demon Hunter), Tip (提示工具 - 基础)
+{
+|cCCFFCCCCBuild Demon Hunter.|r |c00FF0000S|r|c77FF7777iege Tower 2.|r
+}
+
+STRING 731
+// 单位: h00L (Siege Tower 10: lllidan Evil), Name (名字)
+{
+Siege Tower 10: lllidan Evil
+}
+
+STRING 732
+// 单位: h00L (Siege Tower 10: lllidan Evil), Tip (提示工具 - 基础)
+{
+|cCCFFCCCCBuild lllidan Evil.|r |c00FF0000S|r|c77FF7777iege Tower 10.|r
+}
+
+STRING 743
+// 单位: n002 (Fire Trap), Description (描述)
+{
+|c00FF0000Burns the units that walk or fly by it.|r
+}
+
+STRING 747
+// 单位: n006 (Frost Tower: Icy Treasure Box), Hotkey (热键)
+{
+F
+}
+
+STRING 758
+{
+|c0000FF00Welcome to Green Circle TD All Stars V 1.0|r
+}
+
+STRING 763
+// 单位: n004 (Air Tower 8: Penguin), Name (名字)
+{
+Air Tower 8: Penguin
+}
+
+STRING 764
+// 单位: n004 (Air Tower 8: Penguin), Tip (提示工具 - 基础)
+{
+|cDDDDFFFFBuild Penguin.|r |c000066FFA|r|cAAAAFFFFir Tower 8.|r
+}
+
+STRING 766
+// 单位: n005 (Air Tower 7: Nether Drake), Hotkey (热键)
+{
+A
+}
+
+STRING 767
+// 单位: h00F (Poison Tower 10: Skeletal Shooter), Name (名字)
+{
+Poison Tower 10: Skeletal Shooter
+}
+
+STRING 768
+// 单位: h00F (Poison Tower 10: Skeletal Shooter), Tip (提示工具 - 基础)
+{
+|cDDDDFFDDBuild Skeletal Shooter.|r |c0000FF00P|r|cAAAAFFAAoison Tower 9.|r
+}
+
+STRING 770
+// 单位: h00N (Poison Tower 9: Skeletal Mage), Hotkey (热键)
+{
+P
+}
+
+STRING 771
+// 单位: h00O (Aura Tower 2), Name (名字)
+{
+Aura Tower 2
+}
+
+STRING 776
+// 单位: h012 (Damage Tower 2), Tip (提示工具 - 基础)
+{
+|c55555555Upgrade to Damage Aura Tower 2.|r
+}
+
+STRING 780
+// 单位: h00Q (Speed Tower 2), Tip (提示工具 - 基础)
+{
+|c55555555Upgrade to Speed Aura Tower 2.|r
+}
+
+STRING 783
+// 技能: A000 (Speed Aura 2), Name (名字)
+{
+Speed Aura 2
+}
+
+STRING 784
+// 技能: A000 (Speed Aura 2), Tip (提示工具 - 普通)
+{
+Speed Aura
+}
+
+STRING 786
+// 技能: A002 (Damage Aura 2), Name (名字)
+{
+Damage Aura 2
+}
+
+STRING 787
+// 技能: A007 (Damage Aura 3), Researchubertip (提示工具 - 学习 - 扩展的)
+{
+An aura that gives friendly nearby units bonus damage to their ranged attacks. 
+}
+
+STRING 788
+// 技能: A002 (Damage Aura 2), Tip (提示工具 - 普通)
+{
+Damage Aura
+}
+
+STRING 790
+// 单位: h00O (Aura Tower 2), Tip (提示工具 - 基础)
+{
+|c55555555Build Aura Tower 2.|r
+}
+
+STRING 795
+// 单位: h00X (Chaos Tower 9), Hotkey (热键)
+{
+C
+}
+
+STRING 796
+// 技能: A003 (Zamrzávání 2), Name (名字)
+{
+Zamrzávání 2
+}
+
+STRING 797
+// 单位: h00M (Siege Tower 11: Spawn), Name (名字)
+{
+Siege Tower 11: Spawn
+}
+
+STRING 798
+// 单位: h00M (Siege Tower 11: Spawn), Tip (提示工具 - 基础)
+{
+|cCCFFCCCCBuild Spawn.|r |c00FF0000S|r|c77FF7777iege Tower 11.|r
+}
+
+STRING 807
+// 单位: h00I (Damage Tower), Name (名字)
+{
+Damage Tower
+}
+
+STRING 808
+// 单位: h00G (Speed Tower), Name (名字)
+{
+Speed Tower
+}
+
+STRING 809
+// 单位: h012 (Damage Tower 2), Name (名字)
+{
+Damage Tower 2
+}
+
+STRING 810
+// 单位: h00Q (Speed Tower 2), Name (名字)
+{
+Speed Tower 2
+}
+
+STRING 814
+// 单位: h00S (Siege Tower 12: NAGA), Name (名字)
+{
+Siege Tower 12: NAGA
+}
+
+STRING 818
+// 单位: h00R (Siege Tower 13: Tauren), Name (名字)
+{
+Siege Tower 13: Tauren
+}
+
+STRING 822
+// 单位: h00S (Siege Tower 12: NAGA), Tip (提示工具 - 基础)
+{
+|cCCFFCCCCBuild NAGA.|r |c00FF0000S|r|c77FF7777iege Tower 12.|r
+}
+
+STRING 823
+// 单位: h00R (Siege Tower 13: Tauren), Tip (提示工具 - 基础)
+{
+|cCCFFCCCCBuild Tauren.|r |c00FF0000S|r|c77FF7777iege Tower 13.|r
+}
+
+STRING 828
+// 单位: h00U (Poison Tower 11: Schamane), Name (名字)
+{
+Poison Tower 11: Schamane
+}
+
+STRING 829
+// 单位: h00U (Poison Tower 11: Schamane), Tip (提示工具 - 基础)
+{
+|cDDDDFFDDBuild Shamane.|r |c0000FF00P|r|cAAAAFFAAoison Tower 11.|r
+}
+
+STRING 831
+// 单位: h00U (Poison Tower 11: Schamane), Hotkey (热键)
+{
+P
+}
+
+STRING 835
+// 单位: h00V (Poison Tower 12: Sylvanas Windrunner), Hotkey (热键)
+{
+P
+}
+
+STRING 887
+// 单位: n00C (Air Tower 9: Flying sheep), Hotkey (热键)
+{
+A
+}
+
+STRING 908
+// 技能: A001 (Fire Trap), Ubertip (提示工具 - 普通 - 扩展的)
+{
+Burns nearby enemy units for 100 points of damage per second.
+}
+
+STRING 985
+{
+|c007FFFD4% Overrun|r
+}
+
+STRING 993
+{
+|CFFBBFF00F|CFFBEF200i|CFFC2E500r|CFFC5D700s|CFFC9CA00t |CFFD0AF00w|CFFD3A200a|CFFD79400v|CFFDB8700e |CFFE26C00i|CFFE55E00n |CFFEC44001|CFFF036005 |CFFF71B00s|CFFFB0E00e|CFFFE0100c
+}
+
+STRING 999
+{
+Wawe :
+}
+
+STRING 1000
+{
+|N%d-%d Wawe : %s|R (%d%% revenus)
+}
+
+STRING 1001
+{
+|N%d-%d Wawe : %s|R (%d%% O, %d%% B)
+}
+
+STRING 1002
+{
+The wawe where you are on 36.
+}
+
+STRING 1014
+{
+ |c00FF0000Circle Green TD|r
+}
+
+STRING 1037
+// 单位: ncop (|c00FFFF00SELL|r), Description (描述)
+{
+|c00FF0000Sell this unit|r 100% Gold Return
+}
+
+STRING 1038
+// 单位: ncop (|c00FFFF00SELL|r), Tip (提示工具 - 基础)
+{
+|c00FF0000Sell this unit|r
+}
+
+STRING 1039
+// 单位: ncop (|c00FFFF00SELL|r), Ubertip (提示工具 - 扩展的)
+{
+100% Return
+}
+
+STRING 1040
+// 单位: nsgh (Death Revenant), Name (名字)
+{
+Death Revenant
+}
+
+STRING 1041
+// 单位: n006 (Frost Tower: Icy Treasure Box), Name (名字)
+{
+Frost Tower: Icy Treasure Box
+}
+
+STRING 1042
+// 单位: n002 (Fire Trap), Name (名字)
+{
+Fire Trap
+}
+
+STRING 1043
+// 单位: n002 (Fire Trap), Tip (提示工具 - 基础)
+{
+|c00FFFF00Build Fire Trap|r
+}
+
+STRING 1044
+// 单位: n002 (Fire Trap), Ubertip (提示工具 - 扩展的)
+{
+|c00FFFF00This is an ok Fire Trap. Takes Away part of Armor
+}
+
+STRING 1045
+// 单位: h00P (Damage Tower 3), Name (名字)
+{
+Damage Tower 3
+}
+
+STRING 1046
+// 单位: h00P (Damage Tower 3), Tip (提示工具 - 基础)
+{
+|c55555555Upgrade to Damage Aura Tower 3.|r
+}
+
+STRING 1050
+// 单位: h00V (Poison Tower 12: Sylvanas Windrunner), Name (名字)
+{
+Poison Tower 12: Sylvanas Windrunner
+}
+
+STRING 1051
+// 单位: h00V (Poison Tower 12: Sylvanas Windrunner), Tip (提示工具 - 基础)
+{
+|cDDDDFFDDBuild Sylvanas Windrunner.|r |c0000FF00P|r|cAAAAFFAAoison Tower 12.|r
+}
+
+STRING 1052
+// 单位: h00W (Siege Tower 14: Kil'jaeden), Name (名字)
+{
+Siege Tower 14: Kil'jaeden
+}
+
+STRING 1053
+// 单位: h00W (Siege Tower 14: Kil'jaeden), Tip (提示工具 - 基础)
+{
+|cCCFFCCCCBuild Kil'jaeden.|r |c00FF0000S|r|c77FF7777iege Tower 14.|r
+}
+
+STRING 1058
+// 单位: n008 (Frost Tower 4: Ultimate icy tower), Name (名字)
+{
+Frost Tower 4: Ultimate icy tower
+}
+
+STRING 1059
+// 单位: n008 (Frost Tower 4: Ultimate icy tower), Tip (提示工具 - 基础)
+{
+|c55555555Build Ultimate icy tower 4.|r
+}
+
+STRING 1061
+// 单位: h00Y (Chaos Tower 10), Hotkey (热键)
+{
+C
+}
+
+STRING 1066
+// 单位: h00Z (Siege Tower 15: Golem of blood), Name (名字)
+{
+Siege Tower 15: Golem of blood
+}
+
+STRING 1068
+// 单位: h00Z (Siege Tower 15: Golem of blood), Tip (提示工具 - 基础)
+{
+|cCCFFCCCCBuild Golem of blood.|r |c00FF0000S|r|c77FF7777iege Tower 15.|r
+}
+
+STRING 1070
+// 单位: h010 (Speed Tower 3), Name (名字)
+{
+Speed Tower 3
+}
+
+STRING 1071
+// 单位: h010 (Speed Tower 3), Tip (提示工具 - 基础)
+{
+|c55555555Upgrade to Speed Aura Tower 3.|r
+}
+
+STRING 1074
+// 单位: h011 (Aura Tower 3), Name (名字)
+{
+Aura Tower 3
+}
+
+STRING 1075
+// 单位: h011 (Aura Tower 3), Tip (提示工具 - 基础)
+{
+|c55555555Build Aura Tower 3.|r
+}
+
+STRING 1080
+// 单位: h013 (Siege Tower 16: Baron of death), Name (名字)
+{
+Siege Tower 16: Baron of death
+}
+
+STRING 1082
+// 单位: h013 (Siege Tower 16: Baron of death), Tip (提示工具 - 基础)
+{
+|cCCFFCCCCBuild Baron of death.|r |c00FF0000S|r|c77FF7777iege Tower 16.|r
+}
+
+STRING 1084
+// 单位: h014 (Poison Tower 13: Guard), Name (名字)
+{
+Poison Tower 13: Guard
+}
+
+STRING 1085
+// 单位: h014 (Poison Tower 13: Guard), Tip (提示工具 - 基础)
+{
+|cDDDDFFDDBuild Guard.|r |c0000FF00P|r|cAAAAFFAAoison Tower 13.|r
+}
+
+STRING 1087
+// 单位: h014 (Poison Tower 13: Guard), Hotkey (热键)
+{
+P
+}
+
+STRING 1088
+// 单位: h015 (Poison Tower 14: Pain Queen), Name (名字)
+{
+Poison Tower 14: Pain Queen
+}
+
+STRING 1089
+// 单位: h015 (Poison Tower 14: Pain Queen), Tip (提示工具 - 基础)
+{
+|cDDDDFFDDBuild Pain Queen.|r |c0000FF00P|r|cAAAAFFAAoison Tower 14.|r
+}
+
+STRING 1091
+// 单位: h015 (Poison Tower 14: Pain Queen), Hotkey (热键)
+{
+P
+}
+
+STRING 1092
+// 单位: h016 (Poison Tower 15: Terror monster), Name (名字)
+{
+Poison Tower 15: Terror monster
+}
+
+STRING 1093
+// 单位: h016 (Poison Tower 15: Terror monster), Tip (提示工具 - 基础)
+{
+|cDDDDFFDDBuild Terror monster.|r |c0000FF00P|r|cAAAAFFAAoison Tower 15.|r
+}
+
+STRING 1095
+// 单位: h016 (Poison Tower 15: Terror monster), Hotkey (热键)
+{
+P
+}
+
+STRING 1108
+// 单位: h01A (Siege Tower 17: Warlock Stormreaver), Name (名字)
+{
+Siege Tower 17: Warlock Stormreaver
+}
+
+STRING 1110
+// 单位: h01A (Siege Tower 17: Warlock Stormreaver), Tip (提示工具 - 基础)
+{
+|cCCFFCCCCBuild Warlock Stormreaver.|r |c00FF0000S|r|c77FF7777iege Tower 17.|r
+}
+
+STRING 1112
+// 单位: n00A (Frost Tower 3: Icy Troll ), Name (名字)
+{
+Frost Tower 3: Icy Troll 
+}
+
+STRING 1113
+// 单位: n00A (Frost Tower 3: Icy Troll ), Tip (提示工具 - 基础)
+{
+|c55555555Build Icy Troll 3.|r
+}
+
+STRING 1115
+// 单位: h017 (Chaos Tower 3), Hotkey (热键)
+{
+C
+}
+
+STRING 1116
+// 单位: n00C (Air Tower 9: Flying sheep), Name (名字)
+{
+Air Tower 9: Flying sheep
+}
+
+STRING 1117
+// 单位: n00C (Air Tower 9: Flying sheep), Tip (提示工具 - 基础)
+{
+|cDDDDFFFFBuild Flying sheep.|r |c000066FFA|r|cAAAAFFFFir Tower 9.|r
+}
+
+STRING 1119
+// 单位: n00E (Air Tower 10: Owl), Name (名字)
+{
+Air Tower 10: Owl
+}
+
+STRING 1120
+// 单位: n00E (Air Tower 10: Owl), Tip (提示工具 - 基础)
+{
+|cDDDDFFFFBuild Owl.|r |c000066FFA|r|cAAAAFFFFir Tower 10.|r
+}
+
+STRING 1122
+// 单位: n00E (Air Tower 10: Owl), Hotkey (热键)
+{
+A
+}
+
+STRING 1123
+// 单位: n00G (Chicken,), Name (名字)
+{
+Chicken,
+}
+
+STRING 1124
+// 单位: n00H (Frog,), Name (名字)
+{
+Frog,
+}
+
+STRING 1125
+// 单位: n00I (Frog.), Name (名字)
+{
+Frog.
+}
+
+STRING 1126
+// 单位: n00J (Chicken.), Name (名字)
+{
+Chicken.
+}
+
+STRING 1127
+// 单位: h01B (Siege Tower 18: Abomination), Name (名字)
+{
+Siege Tower 18: Abomination
+}
+
+STRING 1128
+// 单位: h01B (Siege Tower 18: Abomination), Tip (提示工具 - 基础)
+{
+Summon Abomination
+}
+
+STRING 1129
+// 单位: h01C (Siege Tower 19: Frost Wyrm), Name (名字)
+{
+Siege Tower 19: Frost Wyrm
+}
+
+STRING 1130
+// 单位: h01C (Siege Tower 19: Frost Wyrm), Tip (提示工具 - 基础)
+{
+Summon Frost Wyrm
+}
+
+STRING 1131
+// 单位: h01D (Siege Tower 20: Tauren Chieftain), Name (名字)
+{
+Siege Tower 20: Tauren Chieftain
+}
+
+STRING 1132
+// 单位: h01D (Siege Tower 20: Tauren Chieftain), Tip (提示工具 - 基础)
+{
+Call the Chieftain
+}
+
+STRING 1133
+// 单位: h01E (Siege Tower 666), Name (名字)
+{
+Siege Tower 666
+}
+
+STRING 1134
+// 单位: h01E (Siege Tower 666), Tip (提示工具 - 基础)
+{
+Death to All who Oppose Me
+}
+
+STRING 1140
+// 单位: h01G (Frost Tower 5: Wendigo), Name (名字)
+{
+Frost Tower 5: Wendigo
+}
+
+STRING 1141
+// 单位: h01G (Frost Tower 5: Wendigo), Tip (提示工具 - 基础)
+{
+Wendigo
+}
+
+STRING 1142
+// 单位: h01H (Frost Tower 6: Titanic), Name (名字)
+{
+Frost Tower 6: Titanic
+}
+
+STRING 1143
+// 单位: h01H (Frost Tower 6: Titanic), Tip (提示工具 - 基础)
+{
+Titanic
+}
+
+STRING 1146
+// 单位: h01J (Poison Tower 16: Far Seer), Name (名字)
+{
+Poison Tower 16: Far Seer
+}
+
+STRING 1147
+// 单位: h01J (Poison Tower 16: Far Seer), Tip (提示工具 - 基础)
+{
+Summon Far Seer
+}
+
+STRING 1149
+// 单位: h01K (Blood Spewer), Name (名字)
+{
+Blood Spewer
+}
+
+STRING 1150
+// 单位: h01L (Blood Squirter), Name (名字)
+{
+Blood Squirter
+}
+
+STRING 1151
+// 单位: h01M (Siege Tower 777), Name (名字)
+{
+Siege Tower 777
+}
+
+STRING 1152
+// 单位: h01M (Siege Tower 777), Tip (提示工具 - 基础)
+{
+What Food I Also Like
+}
+
+STRING 1154
+// 技能: Aasl (Icy Sting), Name (名字)
+{
+Icy Sting
+}
+
+STRING 1155
+// 技能: Aasl (Icy Sting), EditorSuffix (编辑器后缀)
+{
+Icy Sting
+}
+
+STRING 1156
+// 技能: Amgl (Chain Lightning Attack), Tip (提示工具 - 普通)
+{
+Chain Lightning
+}
+
+STRING 1157
+// 技能: Amgl (Chain Lightning Attack), Name (名字)
+{
+Chain Lightning Attack
+}
+
+STRING 1158
+// 技能: A001 (Fire Trap), Name (名字)
+{
+Fire Trap
+}
+
+STRING 1159
+// 技能: A005 (ice), Name (名字)
+{
+ice
+}
+
+STRING 1160
+// 技能: A006 (Speed Aura 3), Name (名字)
+{
+Speed Aura 3
+}
+
+STRING 1161
+// 技能: A006 (Speed Aura 3), Tip (提示工具 - 普通)
+{
+Speed Aura 
+}
+
+STRING 1163
+// 技能: A007 (Damage Aura 3), Name (名字)
+{
+Damage Aura 3
+}
+
+STRING 1165
+// 技能: A007 (Damage Aura 3), Tip (提示工具 - 普通)
+{
+Damage Aura
+}
+
+STRING 1168
+// 技能: A004 (致命一击), Tip (提示工具 - 普通)
+{
+Crit
+}
+
+STRING 1169
+// 技能: A00A (Mutant Snowmen), Name (名字)
+{
+Mutant Snowmen
+}
+
+STRING 1170
+// 技能: A00A (Mutant Snowmen), Tip (提示工具 - 普通)
+{
+Mutant Snowmen
+}
+
+STRING 1171
+// 技能: A00A (Mutant Snowmen), Ubertip (提示工具 - 普通 - 扩展的)
+{
+Mutant Snowmen
+}
+
+STRING 1172
+// 技能: A00B (Ultimate slowly ice2), Name (名字)
+{
+Ultimate slowly ice2
+}
+
+STRING 1173
+// 技能: A00C (Ultimate slowly ice3), Name (名字)
+{
+Ultimate slowly ice3
+}
+
+STRING 1174
+// 单位: h018 (Chaos Tower 4), Hotkey (热键)
+{
+C
+}
+
+STRING 1175
+// 单位: h019 (Chaos Tower 5), Hotkey (热键)
+{
+C
+}
+
+STRING 1176
+// 技能: A00D (Blink), Researchtip (提示工具 - 学习)
+{
+Learn Blink (|cffffcc00C|r)
+}
+
+STRING 1177
+// 技能: A00D (Blink), Researchubertip (提示工具 - 学习 - 扩展的)
+{
+Long Distance
+}
+
+STRING 1178
+// 魔法效果/特效: B000 (), Bufftip (工具提示)
+{
+Slowed2
+}
+
+STRING 1210
+{
+Sorry, you lost.  Try again!
+}
+
+STRING 1213
+{
+You win, nice going!
+}
+
+STRING 1223
+{
+|c0000FF00Gamemode is set to: Easy|r
+}
+
+STRING 1224
+{
+|c000080FFGamemode is set to: Normal|r
+}
+
+STRING 1225
+{
+|c00FF0000Gametyp is set to: Hard|r
+}
+
+STRING 1226
+// 单位: h01R (Hard Aura), Name (名字)
+{
+Hard Aura
+}
+
+STRING 1227
+// 单位: h01R (Hard Aura), Tip (提示工具 - 基础)
+{
+|c55555555Build Aura Tower.|r
+}
+
+STRING 1228
+// 单位: h01S (Insane Aura), Ubertip (提示工具 - 扩展的)
+{
+|c00FF0000Can be upgraded to Speed, or Damage Aura Towers.|r
+}
+
+STRING 1230
+// 单位: h01S (Insane Aura), Name (名字)
+{
+Insane Aura
+}
+
+STRING 1231
+// 单位: h01S (Insane Aura), Tip (提示工具 - 基础)
+{
+|c55555555Build Aura Tower.|r
+}
+
+STRING 1247
+{
+|c00FF0000Poison Towers|r |c00FFFF00Are good for waves with less than 70 enemies.|r
+|c00FF0000Chaos Towers|r |c00FFFF00Deal 5x damage to immune enemies.|r
+|c00FF0000Air Towers|r |c00FFFF00Are good for flying waves with more than 60 enemies.|r
+|c00FF0000Frost Towers|r |c00FFFF00Are good for normal and flying waves with more than 130 enemies and for clustering enemies.|r
+|c00FF0000Siege Towers|r |c00FFFF00Are good for normal waves with more than 90 enemies.|r
+|c00FF0000All towers|r |c00FFFF00Sell for 100% of what you have invested in them and can downgrade.|r
+}
+
+STRING 1248
+{
+Commands are -air, -next, -help, -immune.
+}
+
+STRING 1251
+// 单位: h004 (Siege Tower 4: Eredar Sorcerer), Name (名字)
+{
+Siege Tower 4: Eredar Sorcerer
+}
+
+STRING 1252
+// 单位: h004 (Siege Tower 4: Eredar Sorcerer), Tip (提示工具 - 基础)
+{
+|cCCFFCCCCBuild Eredar Sorcerer.|r |c00FF0000S|r|c77FF7777iege Tower 4.|r
+}
+
+STRING 1253
+// 单位: h00T (Chaos Tower 8), Name (名字)
+{
+Chaos Tower 8
+}
+
+STRING 1255
+// 单位: h00T (Chaos Tower 8), Tip (提示工具 - 基础)
+{
+|cCCFFCCCCBuild Chaos Tower 8.|r
+}
+
+STRING 1256
+// 单位: h00X (Chaos Tower 9), Name (名字)
+{
+Chaos Tower 9
+}
+
+STRING 1258
+// 单位: h00X (Chaos Tower 9), Tip (提示工具 - 基础)
+{
+|cCCFFCCCCBuild Chaos Tower 9.|r
+}
+
+STRING 1259
+// 单位: h00Y (Chaos Tower 10), Name (名字)
+{
+Chaos Tower 10
+}
+
+STRING 1261
+// 单位: h00Y (Chaos Tower 10), Tip (提示工具 - 基础)
+{
+|cCCFFCCCCBuild Chaos Tower 10.|r
+}
+
+STRING 1262
+// 单位: h017 (Chaos Tower 3), Name (名字)
+{
+Chaos Tower 3
+}
+
+STRING 1264
+// 单位: h017 (Chaos Tower 3), Tip (提示工具 - 基础)
+{
+|cCCFFCCCCBuild Chaos tower 3.|
+}
+
+STRING 1265
+// 单位: h018 (Chaos Tower 4), Name (名字)
+{
+Chaos Tower 4
+}
+
+STRING 1267
+// 单位: h018 (Chaos Tower 4), Tip (提示工具 - 基础)
+{
+|cCCFFCCCCBuild Chaos Tower 4.|
+}
+
+STRING 1268
+// 单位: h019 (Chaos Tower 5), Name (名字)
+{
+Chaos Tower 5
+}
+
+STRING 1270
+// 单位: h019 (Chaos Tower 5), Tip (提示工具 - 基础)
+{
+|cCCFFCCCCBuild Chaos Tower 5.|
+}
+
+STRING 1271
+// 单位: h01N (Chaos Tower 2), Name (名字)
+{
+Chaos Tower 2
+}
+
+STRING 1273
+// 单位: h01N (Chaos Tower 2), Tip (提示工具 - 基础)
+{
+|cCCFFCCCCBuild Chaos Tower 2.|
+}
+
+STRING 1274
+// 单位: h01O (Chaos Tower), Name (名字)
+{
+Chaos Tower
+}
+
+STRING 1276
+// 单位: h01O (Chaos Tower), Tip (提示工具 - 基础)
+{
+|cCCFFCCCCBuild Chaos Tower.|
+}
+
+STRING 1277
+// 单位: h01P (Chaos Tower 6), Name (名字)
+{
+Chaos Tower 6
+}
+
+STRING 1279
+// 单位: h01P (Chaos Tower 6), Tip (提示工具 - 基础)
+{
+|cCCFFCCCCBuild Chaos Tower 6.|r
+}
+
+STRING 1280
+// 单位: h01Q (Chaos Tower 7), Name (名字)
+{
+Chaos Tower 7
+}
+
+STRING 1282
+// 单位: h01Q (Chaos Tower 7), Tip (提示工具 - 基础)
+{
+|cCCFFCCCCBuild Chaos Tower 7.|r
+}
+
+STRING 1283
+// 单位: n00F (|c00FFFF00Downgrade|r), Description (描述)
+{
+|c00FF0000Downgrade this tower|r Returns last upgrade cost.
+}
+
+STRING 1284
+// 单位: n00F (|c00FFFF00Downgrade|r), Tip (提示工具 - 基础)
+{
+|c00FF0000Downgrade this tower|r
+}
+
+STRING 1285
+// 单位: n00F (|c00FFFF00Downgrade|r), Name (名字)
+{
+|c00FFFF00Downgrade|r
+}
+
+STRING 1286
+// 单位: n00F (|c00FFFF00Downgrade|r), Ubertip (提示工具 - 扩展的)
+{
+Refunds last upgrade cost.
+}
+
+STRING 1288
+{
+|c000080FFNormal (Handicap: 100%)|r
+}
+
+STRING 1289
+{
+|c00FF0000Hard (+125% Handicap)|r
+}
+
+STRING 1290
+// 魔法效果/特效: B001 (), Bufftip (工具提示)
+{
+Hard
+}
+
+STRING 1291
+{
+|c00008080What mode?|r
+}
+
+STRING 1293
+// 单位: h01T (Easy Aura), Name (名字)
+{
+Easy Aura
+}
+
+STRING 1295
+// 技能: S000 (Normal Aura), Tip (提示工具 - 普通)
+{
+Normal Aura
+}
+
+STRING 1296
+// 技能: S000 (Normal Aura), Name (名字)
+{
+Normal Aura
+}
+
+STRING 1297
+// 技能: S001 (Hard Aura), Tip (提示工具 - 普通)
+{
+Hard Aura
+}
+
+STRING 1298
+// 技能: S001 (Hard Aura), Name (名字)
+{
+Hard Aura
+}
+
+STRING 1299
+// 技能: S002 (Easy Aura), Tip (提示工具 - 普通)
+{
+Easy Aura
+}
+
+STRING 1300
+// 技能: S002 (Easy Aura), Name (名字)
+{
+Easy Aura
+}
+
+STRING 1301
+// 魔法效果/特效: B002 (), Bufftip (工具提示)
+{
+Normal
+}
+
+STRING 1304
+// 魔法效果/特效: B003 (), Bufftip (工具提示)
+{
+Easy
+}
+
+STRING 1306
+// 技能: A00E (Normal Aura-2), Tip (提示工具 - 普通)
+{
+Normal Aura-2
+}
+
+STRING 1307
+// 技能: A00E (Normal Aura-2), Name (名字)
+{
+Normal Aura-2
+}
+
+STRING 1308
+// 技能: A00F (Hard Aura-2), Tip (提示工具 - 普通)
+{
+Hard Aura-2
+}
+
+STRING 1309
+// 技能: A00F (Hard Aura-2), Name (名字)
+{
+Hard Aura-2
+}
+
+STRING 1313
+// 魔法效果/特效: B004 (), Bufftip (工具提示)
+{
+Hard
+}
+
+STRING 1315
+// 魔法效果/特效: B004 (), EditorSuffix (编辑器后缀)
+{
+(2)
+}
+
+STRING 1316
+// 魔法效果/特效: B005 (), Bufftip (工具提示)
+{
+Normal
+}
+
+STRING 1318
+// 魔法效果/特效: B005 (), EditorSuffix (编辑器后缀)
+{
+(2)
+}
+
+STRING 1322
+{
+|Cff00ff00Made by hit
+}
+
+STRING 1323
+// 魔法效果/特效: B003 (), Buffubertip (工具提示 - 扩展的)
+{
+-20% SpeedWalk
+}
+
+STRING 1326
+// 魔法效果/特效: B004 (), Buffubertip (工具提示 - 扩展的)
+{
++100% Armor
+}
+
+STRING 1327
+// 魔法效果/特效: B005 (), Buffubertip (工具提示 - 扩展的)
+{
++50% Armor
+}
+
+STRING 1328
+// 技能: A00G (Chaos Fire), Tip (提示工具 - 普通)
+{
+Chaos Fire
+}
+
+STRING 1329
+// 技能: A00G (Chaos Fire), Name (名字)
+{
+Chaos Fire
+}
+
+STRING 1330
+// 技能: A00G (Chaos Fire), Ubertip (提示工具 - 普通 - 扩展的)
+{
+Make the tower can hurt 8 units
+}
+
+STRING 1331
+// 单位: nalb (hit), Name (名字)
+{
+hit
+}
+
+STRING 1332
+{
+|c0000FF00Easy (Handicap: 75%)|r
+}
+
+STRING 1333
+// 技能: AOae (Speed Aura), Ubertip (提示工具 - 普通 - 扩展的)
+{
+Increases Tower Attack speed by 30%
+}
+
+STRING 1334
+// 技能: AEar (Damage Aura), Ubertip (提示工具 - 普通 - 扩展的)
+{
+Increase Tower Damage by 30%
+}
+
+STRING 1335
+// 技能: A000 (Speed Aura 2), Ubertip (提示工具 - 普通 - 扩展的)
+{
+Increases Tower Attackspeed by 60%
+}
+
+STRING 1336
+// 技能: A002 (Damage Aura 2), Ubertip (提示工具 - 普通 - 扩展的)
+{
+Increase Tower damage by 60%
+}
+
+STRING 1337
+// 技能: A004 (致命一击), Ubertip (提示工具 - 普通 - 扩展的)
+{
+40% chance / 4x damage
+}
+
+STRING 1338
+// 技能: A006 (Speed Aura 3), Ubertip (提示工具 - 普通 - 扩展的)
+{
+Increases Tower Attackspeed by 90%
+}
+
+STRING 1339
+// 技能: A007 (Damage Aura 3), Ubertip (提示工具 - 普通 - 扩展的)
+{
+Increase Tower Damage by 90%
+}
+
+STRING 1340
+// 技能: A009 (Crit), Name (名字)
+{
+Crit
+}
+
+STRING 1341
+// 技能: A009 (Crit), Tip (提示工具 - 普通)
+{
+Direct kill
+}
+
+STRING 1342
+// 技能: A009 (Crit), Ubertip (提示工具 - 普通 - 扩展的)
+{
+Kills the Target directly
+}
+
+STRING 1343
+// 技能: A00D (Blink), Tip (提示工具 - 普通)
+{
+Blink
+}
+
+STRING 1344
+// 单位: h00T (Chaos Tower 8), Ubertip (提示工具 - 扩展的)
+{
+|c00FF0000Deals 5x damage to divine/immune target but 1/4 damage to normal targets..|r
+}
+
+STRING 1345
+// 单位: h00X (Chaos Tower 9), Ubertip (提示工具 - 扩展的)
+{
+|c00FF0000Deals 5x damage to divine/immune target but 1/4 damage to normal targets..|r
+}
+
+STRING 1346
+// 单位: h00Y (Chaos Tower 10), Ubertip (提示工具 - 扩展的)
+{
+|c00FF0000Deals 5x damage to divine/immune target but 1/4 damage to normal targets..|r
+}
+
+STRING 1347
+// 单位: h017 (Chaos Tower 3), Ubertip (提示工具 - 扩展的)
+{
+|c00FF0000Deals 5x damage to divine/immune target but 1/4 damage to normal targets..|r
+}
+
+STRING 1348
+// 单位: h018 (Chaos Tower 4), Ubertip (提示工具 - 扩展的)
+{
+|c00FF0000Deals 5x damage to divine/immune target but 1/4 damage to normal targets..|r
+}
+
+STRING 1349
+// 单位: h019 (Chaos Tower 5), Ubertip (提示工具 - 扩展的)
+{
+|c00FF0000Deals 5x damage to divine/immune target but 1/4 damage to normal targets..|r
+}
+
+STRING 1350
+// 单位: h01N (Chaos Tower 2), Ubertip (提示工具 - 扩展的)
+{
+|c00FF0000Deals 5x damage to divine/immune target but 1/4 damage to normal targets..|r
+}
+
+STRING 1351
+// 单位: h01O (Chaos Tower), Ubertip (提示工具 - 扩展的)
+{
+|c00FF0000Deals 5x damage to divine/immune target but 1/4 damage to normal targets..|r
+}
+
+STRING 1352
+// 单位: h01P (Chaos Tower 6), Ubertip (提示工具 - 扩展的)
+{
+|c00FF0000Deals 5x damage to divine/immune target but 1/4 damage to normal targets..|r
+}
+
+STRING 1353
+// 单位: h01Q (Chaos Tower 7), Ubertip (提示工具 - 扩展的)
+{
+|c00FF0000Deals 5x damage to divine/immune target but 1/4 damage to normal targets..|r
+}
+
+STRING 1354
+{
+|c00FF0000Player Red leaves the game. His spawnunits will kill directly!|r
+}
+
+STRING 1355
+{
+|c00FF0000Player Blue leaves the game. His spawnunits will kill directly!|r
+}
+
+STRING 1356
+{
+|c00FF0000Player Teal leaves the game. His spawnunits will kill directly!|r
+}
+
+STRING 1357
+{
+|c00FF0000Player Purple leaves the game. His spawnunits will kill directly!|r
+}
+
+STRING 1358
+{
+|c00FF0000Player Yellow leaves the game. His spawnunits will kill directly!|r
+}
+
+STRING 1359
+{
+|c00FF0000Player Orange leaves the game. His spawnunits will kill directly!|r
+}
+
+STRING 1360
+{
+|c00FF0000Player Green leaves the game. His spawnunits will kill directly!|r
+}
+
+STRING 1361
+{
+|c00FF0000Player Pink leaves the game. His spawnunits will kill directly!|r
+}
+
+STRING 1362
+// 地形装饰物: D000 (Portal), Name (名字)
+{
+Portal
+}
+
+STRING 1367
+// 单位: n002 (Fire Trap), Hotkey (热键)
+{
+F
+}
+
+STRING 1368
+// 单位: n007 (Frost Tower 2: Icy Sorceress), Hotkey (热键)
+{
+F
+}
+
+STRING 1369
+// 单位: n008 (Frost Tower 4: Ultimate icy tower), Hotkey (热键)
+{
+F
+}
+
+STRING 1370
+// 单位: n00A (Frost Tower 3: Icy Troll ), Hotkey (热键)
+{
+F
+}
+
+STRING 1371
+// 单位: h01G (Frost Tower 5: Wendigo), Hotkey (热键)
+{
+F
+}
+
+STRING 1372
+// 单位: h01H (Frost Tower 6: Titanic), Hotkey (热键)
+{
+F
+}
+
+STRING 1373
+// 单位: h01N (Chaos Tower 2), Hotkey (热键)
+{
+C
+}
+
+STRING 1374
+// 单位: h01O (Chaos Tower), Hotkey (热键)
+{
+C
+}
+
+STRING 1375
+// 单位: h01P (Chaos Tower 6), Hotkey (热键)
+{
+C
+}
+
+STRING 1376
+// 单位: h01Q (Chaos Tower 7), Hotkey (热键)
+{
+C
+}
+
+STRING 1377
+// 技能: A00D (Blink), Researchhotkey (热键 - 学习)
+{
+C
+}
+
+STRING 1378
+// 技能: A00D (Blink), Hotkey (热键 - 普通)
+{
+C
+}
+
+STRING 1379
+// 单位: h000 (Siege Tower 1: DreadLord), Hotkey (热键)
+{
+I
+}
+
+STRING 1380
+// 单位: h001 (Siege Tower 7: BladeMaster), Hotkey (热键)
+{
+I
+}
+
+STRING 1381
+// 单位: h002 (Siege Tower 2: Demon Hunter), Hotkey (热键)
+{
+I
+}
+
+STRING 1382
+// 单位: h003 (Siege Tower 3: Fel Orc Grunt), Hotkey (热键)
+{
+I
+}
+
+STRING 1383
+// 单位: h004 (Siege Tower 4: Eredar Sorcerer), Hotkey (热键)
+{
+I
+}
+
+STRING 1384
+// 单位: h005 (Siege Tower 5: Fel Orc Warlock), Hotkey (热键)
+{
+I
+}
+
+STRING 1385
+// 单位: h006 (Siege Tower 6: BladeMaster of Blackrock), Hotkey (热键)
+{
+I
+}
+
+STRING 1386
+// 单位: h007 (Siege Tower 8: Doom Guard), Hotkey (热键)
+{
+I
+}
+
+STRING 1388
+// 单位: h00I (Damage Tower), Hotkey (热键)
+{
+D
+}
+
+STRING 1389
+// 单位: h00K (Siege Tower 9: Infernal), Hotkey (热键)
+{
+I
+}
+
+STRING 1390
+// 单位: h00L (Siege Tower 10: lllidan Evil), Hotkey (热键)
+{
+I
+}
+
+STRING 1391
+// 单位: h00M (Siege Tower 11: Spawn), Hotkey (热键)
+{
+I
+}
+
+STRING 1393
+// 单位: h00P (Damage Tower 3), Hotkey (热键)
+{
+D
+}
+
+STRING 1394
+// 单位: h00S (Siege Tower 12: NAGA), Hotkey (热键)
+{
+I
+}
+
+STRING 1395
+// 单位: h00R (Siege Tower 13: Tauren), Hotkey (热键)
+{
+I
+}
+
+STRING 1396
+// 单位: h00W (Siege Tower 14: Kil'jaeden), Hotkey (热键)
+{
+I
+}
+
+STRING 1397
+// 单位: h00Z (Siege Tower 15: Golem of blood), Hotkey (热键)
+{
+I
+}
+
+STRING 1399
+// 单位: h012 (Damage Tower 2), Hotkey (热键)
+{
+D
+}
+
+STRING 1400
+// 单位: h013 (Siege Tower 16: Baron of death), Hotkey (热键)
+{
+I
+}
+
+STRING 1401
+// 单位: h01A (Siege Tower 17: Warlock Stormreaver), Hotkey (热键)
+{
+I
+}
+
+STRING 1402
+// 单位: h01B (Siege Tower 18: Abomination), Hotkey (热键)
+{
+I
+}
+
+STRING 1403
+// 单位: h01C (Siege Tower 19: Frost Wyrm), Hotkey (热键)
+{
+I
+}
+
+STRING 1404
+// 单位: h01D (Siege Tower 20: Tauren Chieftain), Hotkey (热键)
+{
+I
+}
+
+STRING 1405
+// 单位: h01E (Siege Tower 666), Hotkey (热键)
+{
+I
+}
+
+STRING 1406
+// 单位: h01M (Siege Tower 777), Hotkey (热键)
+{
+I
+}
+
+STRING 1409
+// 单位: h00H (Aura Tower), Hotkey (热键)
+{
+X
+}
+
+STRING 1410
+// 单位: h00O (Aura Tower 2), Hotkey (热键)
+{
+X
+}
+
+STRING 1411
+// 单位: h011 (Aura Tower 3), Hotkey (热键)
+{
+X
+}
+
+STRING 1412
+// 单位: h01J (Poison Tower 16: Far Seer), Hotkey (热键)
+{
+P
+}
+
+STRING 1413
+// 魔法效果/特效: B002 (), Buffubertip (工具提示 - 扩展的)
+{
+-+0% SpeedWalk
+}
+
+STRING 1414
+// 魔法效果/特效: B001 (), Buffubertip (工具提示 - 扩展的)
+{
++20% SpeedWalk
+}
+
+STRING 1450
+// 单位: h000 (Siege Tower 1: DreadLord), Ubertip (提示工具 - 扩展的)
+{
+|c00FF0000Siege Tower
+> Have slash attack
+---> Increase with each level
+> Attack landunits only|r
+}
+
+STRING 1451
+// 单位: h001 (Siege Tower 7: BladeMaster), Ubertip (提示工具 - 扩展的)
+{
+|c00FF0000Siege Tower
+> Have slash attack
+---> Increase with each level
+> Attack landunits only|r
+}
+
+STRING 1452
+// 单位: h002 (Siege Tower 2: Demon Hunter), Ubertip (提示工具 - 扩展的)
+{
+|c00FF0000Siege Tower
+> Have slash attack
+---> Increase with each level
+> Attack landunits only|r
+}
+
+STRING 1453
+// 单位: h003 (Siege Tower 3: Fel Orc Grunt), Ubertip (提示工具 - 扩展的)
+{
+|c00FF0000Siege Tower
+> Have slash attack
+---> Increase with each level
+> Attack landunits only|r
+}
+
+STRING 1454
+// 单位: h004 (Siege Tower 4: Eredar Sorcerer), Ubertip (提示工具 - 扩展的)
+{
+|c00FF0000Siege Tower
+> Have slash attack
+---> Increase with each level
+> Attack landunits only|r
+}
+
+STRING 1455
+// 单位: h005 (Siege Tower 5: Fel Orc Warlock), Ubertip (提示工具 - 扩展的)
+{
+|c00FF0000Siege Tower
+> Have slash attack
+---> Increase with each level
+> Attack landunits only|r
+}
+
+STRING 1456
+// 单位: h006 (Siege Tower 6: BladeMaster of Blackrock), Ubertip (提示工具 - 扩展的)
+{
+|c00FF0000Siege Tower
+> Have slash attack
+---> Increase with each level
+> Attack landunits only|r
+}
+
+STRING 1457
+// 单位: h007 (Siege Tower 8: Doom Guard), Ubertip (提示工具 - 扩展的)
+{
+|c00FF0000Siege Tower
+> Have slash attack
+---> Increase with each level
+> Attack landunits only|r
+}
+
+STRING 1458
+// 单位: h00K (Siege Tower 9: Infernal), Ubertip (提示工具 - 扩展的)
+{
+|c00FF0000Siege Tower
+> Have slash attack
+---> Increase with each level
+> Attack landunits only|r
+}
+
+STRING 1459
+// 单位: h00L (Siege Tower 10: lllidan Evil), Ubertip (提示工具 - 扩展的)
+{
+|c00FF0000Siege Tower
+> Have slash attack
+---> Increase with each level
+> Attack landunits only|r
+}
+
+STRING 1460
+// 单位: h00M (Siege Tower 11: Spawn), Ubertip (提示工具 - 扩展的)
+{
+|c00FF0000Siege Tower
+> Have slash attack
+---> Increase with each level
+> Attack landunits only|r
+}
+
+STRING 1461
+// 单位: h00S (Siege Tower 12: NAGA), Ubertip (提示工具 - 扩展的)
+{
+|c00FF0000Siege Tower
+> Have slash attack
+---> Increase with each level
+> Attack landunits only|r
+}
+
+STRING 1462
+// 单位: h00R (Siege Tower 13: Tauren), Ubertip (提示工具 - 扩展的)
+{
+|c00FF0000Siege Tower
+> Have slash attack
+---> Increase with each level
+> Attack landunits only|r
+}
+
+STRING 1463
+// 单位: h00W (Siege Tower 14: Kil'jaeden), Ubertip (提示工具 - 扩展的)
+{
+|c00FF0000Siege Tower
+> Have slash attack
+---> Increase with each level
+> Attack landunits only|r
+}
+
+STRING 1464
+// 单位: h00Z (Siege Tower 15: Golem of blood), Ubertip (提示工具 - 扩展的)
+{
+|c00FF0000Siege Tower
+> Have slash attack
+---> Increase with each level
+> Attack landunits only|r
+}
+
+STRING 1465
+// 单位: h013 (Siege Tower 16: Baron of death), Ubertip (提示工具 - 扩展的)
+{
+|c00FF0000Siege Tower
+> Have slash attack
+---> Increase with each level
+> Attack landunits only|r
+}
+
+STRING 1466
+// 单位: h01A (Siege Tower 17: Warlock Stormreaver), Ubertip (提示工具 - 扩展的)
+{
+|c00FF0000Siege Tower
+> Have slash attack
+---> Increase with each level
+> Attack landunits only|r
+}
+
+STRING 1467
+// 单位: h01B (Siege Tower 18: Abomination), Ubertip (提示工具 - 扩展的)
+{
+|c00FF0000Siege Tower
+> Have slash attack
+---> Increase with each level
+> Attack landunits only|r
+}
+
+STRING 1468
+// 单位: h01C (Siege Tower 19: Frost Wyrm), Ubertip (提示工具 - 扩展的)
+{
+|c00FF0000Siege Tower
+> Have slash attack
+---> Increase with each level
+> Attack landunits only|r
+}
+
+STRING 1469
+// 单位: h01D (Siege Tower 20: Tauren Chieftain), Ubertip (提示工具 - 扩展的)
+{
+|c00FF0000Siege Tower
+> Have slash attack
+---> Increase with each level
+> Attack landunits only|r
+}
+
+STRING 1470
+// 单位: h01E (Siege Tower 666), Ubertip (提示工具 - 扩展的)
+{
+|c00FF0000Siege Tower
+> Have slash attack
+---> Increase with each level
+> Attack landunits only|r
+}
+
+STRING 1471
+// 单位: h01M (Siege Tower 777), Ubertip (提示工具 - 扩展的)
+{
+|c00FF0000Siege Tower
+> Have slash attack
+---> Increase with each level
+> Attack landunits only|r
+}
+
+STRING 1472
+// 单位: h00H (Aura Tower), Ubertip (提示工具 - 扩展的)
+{
+|c00FF9428Can be upgraded to:
+> Speedaura 30%
+> Damageaura 30%
+> Aura Tower level 2|r
+}
+
+STRING 1473
+// 单位: h00O (Aura Tower 2), Ubertip (提示工具 - 扩展的)
+{
+|c00FF9428Can be upgraded to:
+> Speedaura 60%
+> Damageaura 60%
+> Aura Tower level 3|r
+}
+
+STRING 1474
+// 单位: h011 (Aura Tower 3), Ubertip (提示工具 - 扩展的)
+{
+|c00FF9428Can be upgraded to:
+> Speedaura 90%
+> Damageaura 90%|r
+}
+
+STRING 1475
+// 单位: n006 (Frost Tower: Icy Treasure Box), Ubertip (提示工具 - 扩展的)
+{
+|c0080FFFFIcy Tower
+> Have splash
+---> Increase with each level
+> Slows enemies
+> Dnt hit immune targets|r
+}
+
+STRING 1476
+// 单位: n007 (Frost Tower 2: Icy Sorceress), Name (名字)
+{
+Frost Tower 2: Icy Sorceress
+}
+
+STRING 1477
+// 单位: n007 (Frost Tower 2: Icy Sorceress), Tip (提示工具 - 基础)
+{
+|c55555555Build Icy Sorceress.|r
+}
+
+STRING 1478
+// 单位: n007 (Frost Tower 2: Icy Sorceress), Ubertip (提示工具 - 扩展的)
+{
+|c0080FFFFIcy Tower
+> Have splash
+---> Increase with each level
+> Slows enemies
+> Dnt hit immune targets|r
+}
+
+STRING 1479
+// 单位: n008 (Frost Tower 4: Ultimate icy tower), Ubertip (提示工具 - 扩展的)
+{
+|c0080FFFFIcy Tower
+> Have splash
+---> Increase with each level
+> Slows enemies
+> Dnt hit immune targets|r
+}
+
+STRING 1480
+// 单位: n00A (Frost Tower 3: Icy Troll ), Ubertip (提示工具 - 扩展的)
+{
+|c0080FFFFIcy Tower
+> Have splash
+---> Increase with each level
+> Slows enemies
+> Dnt hit immune targets|r
+}
+
+STRING 1481
+// 单位: h01G (Frost Tower 5: Wendigo), Ubertip (提示工具 - 扩展的)
+{
+|c0080FFFFIcy Tower
+> Have splash
+---> Increase with each level
+> Slows enemies
+> Dnt hit immune targets|r
+}
+
+STRING 1482
+// 单位: h01H (Frost Tower 6: Titanic), Ubertip (提示工具 - 扩展的)
+{
+|c0080FFFFIcy Tower
+> Have splash
+---> Increase with each level
+> Slows enemies
+> Dnt hit immune targets|r
+}
+
+STRING 1483
+// 单位: n009 (Air Tower 1: Chicken), Ubertip (提示工具 - 扩展的)
+{
+|c00E8E8E8Air Tower
+> Have splash attack
+---> Increase with each level
+> Attacks air units only|r
+}
+
+STRING 1484
+// 单位: n00B (Air Tower 2: Faerie Dragon), Ubertip (提示工具 - 扩展的)
+{
+|c00E8E8E8Air Tower
+> Have splash attack
+---> Increase with each level
+> Attacks air units only|r
+}
+
+STRING 1485
+// 单位: n00D (Air Tower 3: Dragon Hawk Rider), Ubertip (提示工具 - 扩展的)
+{
+|c00E8E8E8Air Tower
+> Have splash attack
+---> Increase with each level
+> Attacks air units only|r
+}
+
+STRING 1486
+// 单位: n000 (Air Tower 4: Blue Drake), Ubertip (提示工具 - 扩展的)
+{
+|c00E8E8E8Air Tower
+> Have splash attack
+---> Increase with each level
+> Attacks air units only|r
+}
+
+STRING 1487
+// 单位: n001 (Air Tower 6: Couatl), Ubertip (提示工具 - 扩展的)
+{
+|c00E8E8E8Air Tower
+> Have splash attack
+---> Increase with each level
+> Attacks air units only|r
+}
+
+STRING 1488
+// 单位: n003 (Air Tower 5: Phoenix), Ubertip (提示工具 - 扩展的)
+{
+|c00E8E8E8Air Tower
+> Have splash attack
+---> Increase with each level
+> Attacks air units only|r
+}
+
+STRING 1489
+// 单位: n004 (Air Tower 8: Penguin), Ubertip (提示工具 - 扩展的)
+{
+|c00E8E8E8Air Tower
+> Have splash attack
+---> Increase with each level
+> Attacks air units only|r
+}
+
+STRING 1490
+// 单位: n005 (Air Tower 7: Nether Drake), Ubertip (提示工具 - 扩展的)
+{
+|c00E8E8E8Air Tower
+> Have splash attack
+---> Increase with each level
+> Attacks air units only|r
+}
+
+STRING 1491
+// 单位: n00C (Air Tower 9: Flying sheep), Ubertip (提示工具 - 扩展的)
+{
+|c00E8E8E8Air Tower
+> Have splash attack
+---> Increase with each level
+> Attacks air units only|r
+}
+
+STRING 1492
+// 单位: n00E (Air Tower 10: Owl), Ubertip (提示工具 - 扩展的)
+{
+|c00E8E8E8Air Tower
+> Have splash attack
+---> Increase with each level
+> Attacks air units only|r
+}
+
+STRING 1502
+{
+|c00C0C0C0Damagefactor:
+200% to small|r
+}
+
+STRING 1503
+{
+|c00C0C0C0Damagefactor:
+200% to small|r
+}
+
+STRING 1504
+{
+|c007EBFF1Damagefactor:
+150% to large
+50% to Hero
+100% to rest|r
+}
+
+STRING 1505
+{
+|c00494949Damagefactor:
+200% to Divine
+20% to rest|r
+}
+
+STRING 1506
+{
+|c00FF0000Damagefactor:
+150% to Unarmour
+20% to Divine
+100% to Rest|r
+}
+
+STRING 1507
+{
+|c007EBFF1Damagefactor:
+150% to large
+50% to Hero
+100% to rest|r
+}
+
+STRING 1508
+{
+|c00C0C0C0Damagefactor:
+200% to small|r
+}
+
+STRING 1509
+{
+|c00C0C0C0Damagefactor:
+200% to small|r
+}
+
+STRING 1510
+{
+|c007EBFF1Damagefactor:
+150% to large
+50% to Hero
+100% to rest|r
+}
+
+STRING 1511
+{
+|c00494949Damagefactor:
+200% to Divine
+20% to rest|r
+}
+
+STRING 1512
+{
+|c00FF0000Damagefactor:
+150% to Unarmour
+20% to Divine
+100% to Rest|r
+}
+
+STRING 1513
+{
+|c00C0C0C0Damagefactor:
+200% to small|r
+}
+
+STRING 1514
+{
+|c00C0C0C0Damagefactor:
+200% to small|r
+}
+
+STRING 1515
+{
+|c007EBFF1Damagefactor:
+150% to large
+50% to Hero
+100% to rest|r
+}
+
+STRING 1516
+{
+|c00494949Damagefactor:
+200% to Divine
+20% to rest|r
+}
+
+STRING 1517
+{
+|c00FF0000Damagefactor:
+150% to Unarmour
+20% to Divine
+100% to Rest|r
+}
+
+STRING 1519
+{
+|c006AFF6ADamagefactor:
+200% to Unarmour
+50% to Divine
+95% to Rest|r
+}
+
+STRING 1520
+{
+|c006AFF6ADamagefactor:
+200% to Unarmour
+50% to Divine
+95% to Rest|r
+}
+
+STRING 1521
+{
+|c006AFF6ADamagefactor:
+200% to Unarmour
+50% to Divine
+95% to Rest|r
+}
+
+STRING 1522
+{
+Dont take any damage
+}
+
+STRING 1523
+{
+Dont take any damage
+}
+
+STRING 1524
+{
+Dont take any damage
+}
+
+STRING 1525
+// 单位: h00I (Damage Tower), Ubertip (提示工具 - 扩展的)
+{
+|c00FF800030% more Damage|r
+}
+
+STRING 1526
+// 单位: h00G (Speed Tower), Ubertip (提示工具 - 扩展的)
+{
+|c00FF800030% more Attackspeed|r
+}
+
+STRING 1527
+// 单位: h00P (Damage Tower 3), Ubertip (提示工具 - 扩展的)
+{
+|c00FF800090% more Damage|r
+}
+
+STRING 1528
+// 单位: h00Q (Speed Tower 2), Ubertip (提示工具 - 扩展的)
+{
+|c00FF800060% more Attackspeed|r
+}
+
+STRING 1529
+// 单位: h010 (Speed Tower 3), Ubertip (提示工具 - 扩展的)
+{
+|c00FF800090% more Attackspeed|r
+}
+
+STRING 1530
+// 单位: h012 (Damage Tower 2), Ubertip (提示工具 - 扩展的)
+{
+|c00FF800060% more Damage|r
+}
+
+STRING 1531
+// 技能: Aspo (慢性毒药), Ubertip (提示工具 - 普通 - 扩展的)
+{
+Decrase movementspeed of the target by 35%
+}
+
+STRING 1532
+// 技能: Aspo (慢性毒药), Tip (提示工具 - 普通)
+{
+Poison
+}
+
+STRING 1533
+{
+TheBlackDivine
+}
+
+STRING 1534
+{
+|c0000FF00Summoner|r
+}
+
+STRING 1535
+{
+|c00FF0303The Towers|r
+}
+
+STRING 1536
+{
+|c00FF0303--> Siegetowers <--|r
+
+- Increase the attackspeed of some towers
+- Now ALL! siegetowers got new and better splash
+
+|c0000FF00--> Poisontowers <--|r
+
+- Remove Poisonattack
+- Addet 350 AOE Poisonaura
+- Reduced the damage of some towers
+- Fixed attackspeed of one tower
+- Now the towers realy have multi-attack
+
+|c007EBFF1--> Airtowers <--|r
+
+- Increased attackspeed of some towers
+- Increased damage of some towers
+- Now ALL air towers have splash
+- Fixed some tooltips
+
+|c00959697--> Auratowers <--|r
+- Increase Speedbonus of the speed-aura-tower
+- Increase Attackbonus of the damage-aura-tower
+- Change the tooltips
+
+|c000042FF--> Frosttowers <--|r
+
+- Increase the attackspeed of some towers
+- Increase the damage of all towers
+- Change some tooltips
+
+
+}
+
+STRING 1537
+{
+|c00FF0303The Gameplay|r
+}
+
+STRING 1538
+{
+- Change the mapdesign
+- Change the difficult-system
+  - Easy: 75% Handicap
+  - Normal: 100% Handicap
+  - Hard: 125% Handicap
+- Removes 3 cheats
+- Change the help-system
+- Change buildermodel
+- Change damagesystem
+- Change armorsystem
+- Change wavebugs
+- Change spawnbug
+- Now the spawn closed, when a player leave the game
+}
+
+STRING 1539
+{
+ 
+}
+
+STRING 1540
+{
+ 
+}
+
+STRING 1541
+{
+ 
+}
+
+STRING 1542
+{
+Game News
+}
+
+STRING 1543
+{
+Other News
+}
+
+STRING 1545
+// 技能: A00I (HELP Air), Name (名字)
+{
+HELP Air
+}
+
+STRING 1546
+// 技能: A00I (HELP Air), Tip (提示工具 - 普通)
+{
+|c007EBFF1The Air Waves|r
+}
+
+STRING 1547
+// 技能: A00I (HELP Air), Ubertip (提示工具 - 普通 - 扩展的)
+{
+Click the button to get help about the air waves.
+}
+
+STRING 1548
+// 技能: A00I (HELP Air), Hotkey (热键 - 普通)
+{
+A
+}
+
+STRING 1586
+{
+The Readme
+}
+
+STRING 1587
+{
+The Readme
+}
+
+STRING 1588
+{
+Contact me
+}
+
+STRING 1589
+{
+When you want contact me to post some bugs, ideas or just want say hello do this!
+
+Mail: TheBlackDivine@web.de
+}
+
+STRING 1590
+{
+I hope you ...
+}
+
+STRING 1591
+{
+.. mail me some feedback about the map because only so i can patch this map and bring your ideas on.
+
+.. you have fun to play this new Green Circle TD All Stars
+}
+
+STRING 1592
+// 技能: A00D (Blink), Ubertip (提示工具 - 普通 - 扩展的)
+{
+Use this ability, to port your builder to a target point in the map.
+}
+
+STRING 1593
+// 技能: A00D (Blink), Name (名字)
+{
+Blink
+}
+
+STRING 1594
+{
+The Creeps
+}
+
+STRING 1595
+{
+ +
+}
+
+STRING 1596
+{
+ 
+}
+
+STRING 1597
+{
+ 
+}
+
+STRING 1598
+{
+ 
+}
+
+STRING 1599
+{
+ 
+}
+
+STRING 1600
+{
+ 
+}
+
+STRING 1601
+{
+ 
+}
+
+STRING 1602
+{
+ 
+}
+
+STRING 1603
+{
+ 
+}
+
+STRING 1604
+{
+ 
+}
+
+STRING 1605
+{
+ 
+}
+
+STRING 1606
+{
+ 
+}
+
+STRING 1607
+{
+ 
+}
+
+STRING 1608
+{
+ 
+}
+
+STRING 1609
+{
+ 
+}
+
+STRING 1610
+{
+ 
+}
+
+STRING 1611
+{
+ 
+}
+
+STRING 1612
+{
+ 
+}
+
+STRING 1613
+{
+ 
+}
+
+STRING 1614
+{
+Movementspeed:
+}
+
+STRING 1615
+{
+ 
+}
+
+STRING 1616
+{
+ 
+}
+
+STRING 1617
+{
+ 
+}
+
+STRING 1618
+{
+NPC
+}
+
+STRING 1619
+{
+NPC (Very hard)
+}
+
+STRING 1620
+{
+NPC (Easy)
+}
+
+STRING 1621
+{
+NPC (normal)
+}
+
+STRING 1622
+{
+Easy
+}
+
+STRING 1623
+{
+Realy fast
+}
+
+STRING 1624
+{
+You lost the connection...
+}
+
+STRING 1625
+{
+The game is over
+}
+
+STRING 1626
+{
+Wood
+}
+
+STRING 1627
+{
+Your able to ping at the minimap
+}
+
+STRING 1628
+{
+Misshit
+}
+
+STRING 1629
+{
+Slow
+}
+
+STRING 1630
+{
+%s has stopped the game. <%u left Timeouts>
+}
+
+STRING 1631
+{
+%s has stopped the game
+}
+
+STRING 1632
+{
+%s is defeated
+}
+
+STRING 1633
+{
+%s has left the game
+}
+
+STRING 1634
+{
+%s has won
+}
+
+STRING 1635
+{
+Ready
+}
+
+STRING 1636
+{
+Quest muss entdeckt werden
+}
+
+STRING 1637
+{
+Need
+}
+
+STRING 1638
+{
+Ready
+}
+
+STRING 1639
+{
+%s run the game again
+}
+
+STRING 1640
+{
+Realy slow
+}
+
+STRING 1641
+{
+This is the time.
+}
+
+STRING 1642
+// 技能: A00H (Poisonaura), Name (名字)
+{
+Poisonaura
+}
+
+STRING 1643
+// 技能: A00H (Poisonaura), Tip (提示工具 - 普通)
+{
+Poisonaura
+}
+
+STRING 1645
+// 魔法效果/特效: B007 (Posionaura), EditorName (名字 (只有编辑器可以))
+{
+Posionaura
+}
+
+STRING 1646
+// 技能: S003 (Poisonaura-Tooltip), Tip (提示工具 - 普通)
+{
+Poisonaura
+}
+
+STRING 1648
+// 魔法效果/特效: B007 (Posionaura), Bufftip (工具提示)
+{
+Poisonaura
+}
+
+STRING 1651
+// 魔法效果/特效: B007 (Posionaura), Buffubertip (工具提示 - 扩展的)
+{
+Decrease Movementspeed by 20%
+}
+
+STRING 1652
+// 单位: h008 (Poison Tower 1: Kel'Thuzad), Ubertip (提示工具 - 扩展的)
+{
+|c0000FF00==Poisontower==
+> Poisonaura
+> Single target
+> Attack land and airunits|r
+}
+
+STRING 1653
+// 单位: h00B (Poison Tower 4: Ghost), Ubertip (提示工具 - 扩展的)
+{
+|c0000FF00==Poisontower==
+> Poisonaura
+> Single target
+> Attack land and airunits|r
+}
+
+STRING 1654
+// 单位: h00C (Poison Tower 3: Antonidas), Ubertip (提示工具 - 扩展的)
+{
+|c0000FF00==Poisontower==
+> Poisonaura
+> Single target
+> Attack land and airunits|r
+}
+
+STRING 1655
+// 单位: h00D (Poison Tower 2: Kel'Thuzad Ghost), Ubertip (提示工具 - 扩展的)
+{
+|c0000FF00==Poisontower==
+> Poisonaura
+> Single target
+> Attack land and airunits|r
+}
+
+STRING 1669
+// 技能: S003 (Poisonaura-Tooltip), Name (名字)
+{
+Poisonaura-Tooltip
+}
+
+STRING 1671
+{
+Try again =)
+}
+
+STRING 1672
+// 单位: u000 (Dark Summoner), Name (名字)
+{
+Dark Summoner
+}
+
+STRING 1673
+// 可破坏: B000 (Tree), Name (名字)
+{
+Tree
+}
+
+STRING 1675
+// 技能: A00H (Poisonaura), Ubertip (提示工具 - 普通 - 扩展的)
+{
+Decreas the movementspeed of enemies by 20% [ 400 AOE ]
+}
+
+STRING 1676
+// 技能: S003 (Poisonaura-Tooltip), Ubertip (提示工具 - 普通 - 扩展的)
+{
+Decrease the movementspeed of enemies by 20% [ AOE 400 ]
+}
+
+STRING 1677
+// 单位: h00E (Poison Tower 7: Elder VoidWalker), Ubertip (提示工具 - 扩展的)
+{
+|c0000FF00==Poisontower==
+> Poisonaura
+> Multi target
+> Attack land and airunits|r
+}
+
+STRING 1678
+// 单位: h009 (Poison Tower 6: Avatar of Vengeance), Ubertip (提示工具 - 扩展的)
+{
+|c0000FF00==Poisontower==
+> Poisonaura
+> Multi target
+> Attack land and airunits|r
+}
+
+STRING 1679
+// 单位: h00A (Poison Tower 5: Death Revenant), Ubertip (提示工具 - 扩展的)
+{
+|c0000FF00==Poisontower==
+> Poisonaura
+> Multi target
+> Attack land and airunits|r
+}
+
+STRING 1680
+// 单位: h00F (Poison Tower 10: Skeletal Shooter), Ubertip (提示工具 - 扩展的)
+{
+|c0000FF00==Poisontower==
+> Poisonaura
+> Multi target
+> Attack land and airunits|r
+}
+
+STRING 1681
+// 单位: h00J (Poison Tower 8: Revenant of the Depths), Ubertip (提示工具 - 扩展的)
+{
+|c0000FF00==Poisontower==
+> Poisonaura
+> Multi target
+> Attack land and airunits|r
+}
+
+STRING 1682
+// 单位: h00N (Poison Tower 9: Skeletal Mage), Ubertip (提示工具 - 扩展的)
+{
+|c0000FF00==Poisontower==
+> Poisonaura
+> Multi target
+> Attack land and airunits|r
+}
+
+STRING 1683
+// 单位: h00U (Poison Tower 11: Schamane), Ubertip (提示工具 - 扩展的)
+{
+|c0000FF00==Poisontower==
+> Poisonaura
+> Multi target
+> Attack land and airunits|r
+}
+
+STRING 1684
+// 单位: h00V (Poison Tower 12: Sylvanas Windrunner), Ubertip (提示工具 - 扩展的)
+{
+|c0000FF00==Poisontower==
+> Poisonaura
+> Multi target
+> Attack land and airunits|r
+}
+
+STRING 1685
+// 单位: h014 (Poison Tower 13: Guard), Ubertip (提示工具 - 扩展的)
+{
+|c0000FF00==Poisontower==
+> Poisonaura
+> Multi target
+> Attack land and airunits|r
+}
+
+STRING 1686
+// 单位: h015 (Poison Tower 14: Pain Queen), Ubertip (提示工具 - 扩展的)
+{
+|c0000FF00==Poisontower==
+> Poisonaura
+> Multi target
+> Attack land and airunits|r
+}
+
+STRING 1687
+// 单位: h016 (Poison Tower 15: Terror monster), Ubertip (提示工具 - 扩展的)
+{
+|c0000FF00==Poisontower==
+> Poisonaura
+> Multi target
+> Attack land and airunits|r
+}
+
+STRING 1688
+// 单位: h01J (Poison Tower 16: Far Seer), Ubertip (提示工具 - 扩展的)
+{
+|c0000FF00==Poisontower==
+> Poisonaura
+> Multi target
+> Attack land and airunits|r
+}
+
+STRING 1693
+{
+|c00EEEEEENeed help?
+Type |r|c007EBFF1-immun|r|c00EEEEEE, |r|c007EBFF1-air |r|c00EEEEEEor |r|c007EBFF1-hero|r
+}
+
+STRING 1694
+{
+|c007EBFF1== The Immun Wave ==|r
+
+|c00FFEAEA- The immun creeps spawns every 5 waves.
+- The effective tower is the |r |c00C7FFBBChaos tower|r
+|c00FFEAEA- The tower with NO effect is the |r|c00C7FFBBIce tower|r
+}
+
+STRING 1695
+{
+|c007EBFF1== The Air Wave ==|r
+
+|c00FFEAEA- The air creeps spawn every 7 waves
+- The most effective towers are the |r|c00C7FFBBAir tower|r |c00FFEAEAand the |r|c00C7FFBBPoison tower|r
+|c00FFEAEA- The tower with NO effect is the |r|c00C7FFBBSiege tower|r
+}
+
+STRING 1696
+{
+|c007EBFF1== The Hero Wave ==|r
+
+|c00FFEAEA- The most effective tower are the |r|c00C7FFBBSiege tower|r |c00FFEAEAand the |r|c00C7FFBBPoison tower|r
+|c00FFEAEA- The low effective towers is the |r|c00C7FFBBIce tower|r
+|c00FFEAEA- The tower with NO effect is the |r|c00C7FFBBAir tower|r
+}
+
+STRING 1698
+// 技能: A00J (Download), Name (名字)
+{
+Download
+}
+
+STRING 1699
+// 技能: A00J (Download), Tip (提示工具 - 普通)
+{
+|c007EBFF1The original version?|r
+}
+
+STRING 1700
+// 技能: A00J (Download), Ubertip (提示工具 - 普通 - 扩展的)
+{
+I dont have my own homepage for this map, so when you wanna see, that you play the original |c0020C000Green Circle TD All Stars|r look at:
+|c007EBFF1hiveworkshop.com > Maps|r
+
+|c00FF0303The original Map is ALWAYS! uploaded by: |r |c0000FF00Dr. Boom|r
+
+Stay by the Original!
+
+}
+
