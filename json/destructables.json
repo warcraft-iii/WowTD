@@ -1,0 +1,22 @@
+{
+    "original": {},
+    "custom": {
+        "B000:LTlt": [
+            {
+                "id": "bnam",
+                "type": "string",
+                "value": "TRIGSTR_1673"
+            },
+            {
+                "id": "bmas",
+                "type": "unreal",
+                "value": 1.5
+            },
+            {
+                "id": "bmis",
+                "type": "unreal",
+                "value": 1.4
+            }
+        ]
+    }
+}

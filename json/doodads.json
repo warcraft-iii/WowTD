@@ -1,0 +1,21 @@
+{
+    "original": {},
+    "custom": {
+        "D000:YOfb": [
+            {
+                "id": "dnam",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "TRIGSTR_1362"
+            },
+            {
+                "id": "dfil",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "Doodads\\Cinematic\\ShimmeringPortal\\ShimmeringPortal.mdl"
+            }
+        ]
+    }
+}

@@ -1,0 +1,2136 @@
+{
+    "original": {
+        "AOae": [
+            {
+                "id": "aart",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "ReplaceableTextures\\CommandButtons\\BTNInvisibility.blp"
+            },
+            {
+                "id": "arar",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": ""
+            },
+            {
+                "id": "atat",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": ""
+            },
+            {
+                "id": "alev",
+                "type": "int",
+                "level": 0,
+                "column": 0,
+                "value": 1
+            },
+            {
+                "id": "aher",
+                "type": "int",
+                "level": 0,
+                "column": 0,
+                "value": 0
+            },
+            {
+                "id": "atar",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "structure"
+            },
+            {
+                "id": "anam",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "TRIGSTR_106"
+            },
+            {
+                "id": "atp1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_107"
+            },
+            {
+                "id": "aub1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_1333"
+            },
+            {
+                "id": "Oae2",
+                "type": "unreal",
+                "level": 1,
+                "column": 2,
+                "value": 0.3
+            },
+            {
+                "id": "Oae1",
+                "type": "unreal",
+                "level": 1,
+                "column": 1,
+                "value": 0.3
+            },
+            {
+                "id": "aare",
+                "type": "unreal",
+                "level": 1,
+                "column": 0,
+                "value": 1500
+            }
+        ],
+        "AEar": [
+            {
+                "id": "aart",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "ReplaceableTextures\\CommandButtons\\BTNDeathPact.blp"
+            },
+            {
+                "id": "arar",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": ""
+            },
+            {
+                "id": "atat",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": ""
+            },
+            {
+                "id": "alev",
+                "type": "int",
+                "level": 0,
+                "column": 0,
+                "value": 1
+            },
+            {
+                "id": "atar",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "structure"
+            },
+            {
+                "id": "anam",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "TRIGSTR_109"
+            },
+            {
+                "id": "arut",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "TRIGSTR_110"
+            },
+            {
+                "id": "atp1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_111"
+            },
+            {
+                "id": "aub1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_1334"
+            },
+            {
+                "id": "Ear1",
+                "type": "unreal",
+                "level": 1,
+                "column": 1,
+                "value": 0.3
+            },
+            {
+                "id": "aher",
+                "type": "int",
+                "level": 0,
+                "column": 0,
+                "value": 0
+            },
+            {
+                "id": "aare",
+                "type": "unreal",
+                "level": 1,
+                "column": 0,
+                "value": 1500
+            }
+        ],
+        "Aasl": [
+            {
+                "id": "atar",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "air,enemies,ground"
+            },
+            {
+                "id": "arac",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "creeps"
+            },
+            {
+                "id": "anam",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "TRIGSTR_1154"
+            },
+            {
+                "id": "ansf",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "TRIGSTR_1155"
+            },
+            {
+                "id": "aare",
+                "type": "unreal",
+                "level": 1,
+                "column": 0,
+                "value": 1500
+            },
+            {
+                "id": "Slo3",
+                "type": "int",
+                "level": 1,
+                "column": 3,
+                "value": 1
+            },
+            {
+                "id": "aefs",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "FreezingBreath"
+            },
+            {
+                "id": "aefl",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "FreezingBreath"
+            },
+            {
+                "id": "Slo1",
+                "type": "unreal",
+                "level": 1,
+                "column": 1,
+                "value": -4
+            },
+            {
+                "id": "atat",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "Abilities\\Spells\\Undead\\FrostNova\\FrostNovaTarget.mdl"
+            },
+            {
+                "id": "asat",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "Abilities\\Spells\\Undead\\FrostNova\\FrostNovaTarget.mdl"
+            },
+            {
+                "id": "aeat",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "Abilities\\Spells\\Undead\\FrostNova\\FrostNovaTarget.mdl"
+            },
+            {
+                "id": "acat",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "Abilities\\Spells\\Undead\\FrostNova\\FrostNovaTarget.mdl"
+            },
+            {
+                "id": "aaea",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "Abilities\\Spells\\Undead\\FrostNova\\FrostNovaTarget.mdl"
+            },
+            {
+                "id": "aeff",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "XHbz"
+            },
+            {
+                "id": "abuf",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "B000"
+            }
+        ],
+        "Amgl": [
+            {
+                "id": "aart",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "ReplaceableTextures\\CommandButtons\\BTNChainLightning.blp"
+            },
+            {
+                "id": "atp1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_1156"
+            },
+            {
+                "id": "aub1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": ""
+            },
+            {
+                "id": "anam",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "TRIGSTR_1157"
+            }
+        ],
+        "Aspo": [
+            {
+                "id": "atar",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "enemies"
+            },
+            {
+                "id": "Spo1",
+                "type": "unreal",
+                "level": 1,
+                "column": 1,
+                "value": 1
+            },
+            {
+                "id": "Spo3",
+                "type": "unreal",
+                "level": 1,
+                "column": 3,
+                "value": 0.5
+            },
+            {
+                "id": "Spo4",
+                "type": "int",
+                "level": 1,
+                "column": 4,
+                "value": 14
+            },
+            {
+                "id": "aub1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_1531"
+            },
+            {
+                "id": "abuf",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "Bssd"
+            },
+            {
+                "id": "atp1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_1532"
+            }
+        ]
+    },
+    "custom": {
+        "A001:ANpi": [
+            {
+                "id": "anam",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "TRIGSTR_1158"
+            },
+            {
+                "id": "atar",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "enemies,ground"
+            },
+            {
+                "id": "Eim1",
+                "type": "unreal",
+                "level": 1,
+                "column": 1,
+                "value": 100
+            },
+            {
+                "id": "aare",
+                "type": "unreal",
+                "level": 1,
+                "column": 0,
+                "value": 250
+            },
+            {
+                "id": "ansf",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": ""
+            },
+            {
+                "id": "aub1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_908"
+            },
+            {
+                "id": "atp1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_134"
+            },
+            {
+                "id": "aart",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "ReplaceableTextures\\CommandButtons\\BTNWallOfFire.blp"
+            }
+        ],
+        "A000:AOae": [
+            {
+                "id": "aart",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "ReplaceableTextures\\CommandButtons\\BTNInvisibility.blp"
+            },
+            {
+                "id": "arar",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": ""
+            },
+            {
+                "id": "atat",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": ""
+            },
+            {
+                "id": "alev",
+                "type": "int",
+                "level": 0,
+                "column": 0,
+                "value": 1
+            },
+            {
+                "id": "aher",
+                "type": "int",
+                "level": 0,
+                "column": 0,
+                "value": 0
+            },
+            {
+                "id": "atar",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "structure"
+            },
+            {
+                "id": "anam",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "TRIGSTR_783"
+            },
+            {
+                "id": "atp1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_784"
+            },
+            {
+                "id": "aub1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_1335"
+            },
+            {
+                "id": "Oae2",
+                "type": "unreal",
+                "level": 1,
+                "column": 2,
+                "value": 0.6
+            },
+            {
+                "id": "Oae1",
+                "type": "unreal",
+                "level": 1,
+                "column": 1,
+                "value": 0.6
+            },
+            {
+                "id": "aaea",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "Abilities\\Spells\\NightElf\\ThornsAura\\ThornsAura.mdl"
+            },
+            {
+                "id": "aare",
+                "type": "unreal",
+                "level": 1,
+                "column": 0,
+                "value": 1500
+            },
+            {
+                "id": "aare",
+                "type": "unreal",
+                "level": 2,
+                "column": 0,
+                "value": 2000
+            }
+        ],
+        "A002:AEar": [
+            {
+                "id": "aart",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "ReplaceableTextures\\CommandButtons\\BTNDeathPact.blp"
+            },
+            {
+                "id": "arar",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": ""
+            },
+            {
+                "id": "atat",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": ""
+            },
+            {
+                "id": "alev",
+                "type": "int",
+                "level": 0,
+                "column": 0,
+                "value": 1
+            },
+            {
+                "id": "atar",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "structure"
+            },
+            {
+                "id": "anam",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "TRIGSTR_786"
+            },
+            {
+                "id": "arut",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "TRIGSTR_112"
+            },
+            {
+                "id": "atp1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_788"
+            },
+            {
+                "id": "aub1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_1336"
+            },
+            {
+                "id": "Ear1",
+                "type": "unreal",
+                "level": 1,
+                "column": 1,
+                "value": 0.6
+            },
+            {
+                "id": "aher",
+                "type": "int",
+                "level": 0,
+                "column": 0,
+                "value": 0
+            },
+            {
+                "id": "aaea",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "Abilities\\Spells\\Human\\DevotionAura\\DevotionAura.mdl"
+            },
+            {
+                "id": "aare",
+                "type": "unreal",
+                "level": 1,
+                "column": 0,
+                "value": 1500
+            },
+            {
+                "id": "aare",
+                "type": "unreal",
+                "level": 2,
+                "column": 0,
+                "value": 2000
+            }
+        ],
+        "A003:Afra": [
+            {
+                "id": "anam",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "TRIGSTR_796"
+            },
+            {
+                "id": "adur",
+                "type": "unreal",
+                "level": 1,
+                "column": 0,
+                "value": 10
+            },
+            {
+                "id": "ahdu",
+                "type": "unreal",
+                "level": 1,
+                "column": 0,
+                "value": 10
+            }
+        ],
+        "A004:AOcr": [
+            {
+                "id": "arac",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "unknown"
+            },
+            {
+                "id": "aher",
+                "type": "int",
+                "level": 0,
+                "column": 0,
+                "value": 0
+            },
+            {
+                "id": "atar",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "enemies,air,ground"
+            },
+            {
+                "id": "atar",
+                "type": "string",
+                "level": 2,
+                "column": 0,
+                "value": "enemies,air,ground"
+            },
+            {
+                "id": "atar",
+                "type": "string",
+                "level": 3,
+                "column": 0,
+                "value": "enemies,air,ground"
+            },
+            {
+                "id": "Ocr1",
+                "type": "unreal",
+                "level": 3,
+                "column": 1,
+                "value": 40
+            },
+            {
+                "id": "Ocr1",
+                "type": "unreal",
+                "level": 2,
+                "column": 1,
+                "value": 40
+            },
+            {
+                "id": "Ocr1",
+                "type": "unreal",
+                "level": 1,
+                "column": 1,
+                "value": 40
+            },
+            {
+                "id": "alev",
+                "type": "int",
+                "level": 0,
+                "column": 0,
+                "value": 1
+            },
+            {
+                "id": "Ocr2",
+                "type": "unreal",
+                "level": 1,
+                "column": 2,
+                "value": 4
+            },
+            {
+                "id": "atp1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_1168"
+            },
+            {
+                "id": "aub1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_1337"
+            }
+        ],
+        "A005:Afra": [
+            {
+                "id": "anam",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "TRIGSTR_1159"
+            },
+            {
+                "id": "adur",
+                "type": "unreal",
+                "level": 1,
+                "column": 0,
+                "value": 15
+            },
+            {
+                "id": "ahdu",
+                "type": "unreal",
+                "level": 1,
+                "column": 0,
+                "value": 15
+            },
+            {
+                "id": "amat",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "Abilities\\Spells\\Undead\\FrostNova\\FrostNovaTarget.mdl"
+            }
+        ],
+        "A006:AOae": [
+            {
+                "id": "aart",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "ReplaceableTextures\\CommandButtons\\BTNInvisibility.blp"
+            },
+            {
+                "id": "arar",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": ""
+            },
+            {
+                "id": "atat",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": ""
+            },
+            {
+                "id": "alev",
+                "type": "int",
+                "level": 0,
+                "column": 0,
+                "value": 1
+            },
+            {
+                "id": "aher",
+                "type": "int",
+                "level": 0,
+                "column": 0,
+                "value": 0
+            },
+            {
+                "id": "atar",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "structure"
+            },
+            {
+                "id": "anam",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "TRIGSTR_1160"
+            },
+            {
+                "id": "atp1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_1161"
+            },
+            {
+                "id": "aub1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_1338"
+            },
+            {
+                "id": "Oae2",
+                "type": "unreal",
+                "level": 1,
+                "column": 2,
+                "value": 0.9
+            },
+            {
+                "id": "Oae1",
+                "type": "unreal",
+                "level": 1,
+                "column": 1,
+                "value": 0.9
+            },
+            {
+                "id": "aaea",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "Abilities\\Spells\\NightElf\\ThornsAura\\ThornsAura.mdl"
+            },
+            {
+                "id": "aare",
+                "type": "unreal",
+                "level": 1,
+                "column": 0,
+                "value": 1500
+            },
+            {
+                "id": "aare",
+                "type": "unreal",
+                "level": 2,
+                "column": 0,
+                "value": 2000
+            }
+        ],
+        "A007:AEar": [
+            {
+                "id": "aart",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "ReplaceableTextures\\CommandButtons\\BTNDeathPact.blp"
+            },
+            {
+                "id": "arar",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": ""
+            },
+            {
+                "id": "atat",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": ""
+            },
+            {
+                "id": "alev",
+                "type": "int",
+                "level": 0,
+                "column": 0,
+                "value": 1
+            },
+            {
+                "id": "atar",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "structure"
+            },
+            {
+                "id": "anam",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "TRIGSTR_1163"
+            },
+            {
+                "id": "arut",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "TRIGSTR_787"
+            },
+            {
+                "id": "atp1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_1165"
+            },
+            {
+                "id": "aub1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_1339"
+            },
+            {
+                "id": "Ear1",
+                "type": "unreal",
+                "level": 1,
+                "column": 1,
+                "value": 0.9
+            },
+            {
+                "id": "aher",
+                "type": "int",
+                "level": 0,
+                "column": 0,
+                "value": 0
+            },
+            {
+                "id": "aaea",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "Abilities\\Spells\\Human\\DevotionAura\\DevotionAura.mdl"
+            },
+            {
+                "id": "aare",
+                "type": "unreal",
+                "level": 1,
+                "column": 0,
+                "value": 1500
+            },
+            {
+                "id": "aare",
+                "type": "unreal",
+                "level": 2,
+                "column": 0,
+                "value": 2000
+            }
+        ],
+        "A008:Afra": [
+            {
+                "id": "adur",
+                "type": "unreal",
+                "level": 1,
+                "column": 0,
+                "value": 20
+            },
+            {
+                "id": "ahdu",
+                "type": "unreal",
+                "level": 1,
+                "column": 0,
+                "value": 20
+            },
+            {
+                "id": "amat",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "Abilities\\Weapons\\FrostWyrmMissile\\FrostWyrmMissile.mdl"
+            }
+        ],
+        "A009:AOcr": [
+            {
+                "id": "anam",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "TRIGSTR_1340"
+            },
+            {
+                "id": "aher",
+                "type": "int",
+                "level": 0,
+                "column": 0,
+                "value": 0
+            },
+            {
+                "id": "alev",
+                "type": "int",
+                "level": 0,
+                "column": 0,
+                "value": 1
+            },
+            {
+                "id": "Ocr1",
+                "type": "unreal",
+                "level": 1,
+                "column": 1,
+                "value": 100
+            },
+            {
+                "id": "Ocr4",
+                "type": "unreal",
+                "level": 1,
+                "column": 4,
+                "value": 1
+            },
+            {
+                "id": "Ocr3",
+                "type": "unreal",
+                "level": 1,
+                "column": 3,
+                "value": 99999
+            },
+            {
+                "id": "Ocr2",
+                "type": "unreal",
+                "level": 1,
+                "column": 2,
+                "value": 99999
+            },
+            {
+                "id": "Ocr5",
+                "type": "int",
+                "level": 1,
+                "column": 5,
+                "value": 1
+            },
+            {
+                "id": "atp1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_1341"
+            },
+            {
+                "id": "aub1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_1342"
+            }
+        ],
+        "A00A:AEsb": [
+            {
+                "id": "anam",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "TRIGSTR_1169"
+            },
+            {
+                "id": "aart",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "ReplaceableTextures\\CommandButtons\\BTNBreathOfFrost.blp"
+            },
+            {
+                "id": "aret",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": ""
+            },
+            {
+                "id": "arut",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": ""
+            },
+            {
+                "id": "atp1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_1170"
+            },
+            {
+                "id": "aub1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_1171"
+            },
+            {
+                "id": "arlv",
+                "type": "int",
+                "level": 0,
+                "column": 0,
+                "value": 1
+            },
+            {
+                "id": "aher",
+                "type": "int",
+                "level": 0,
+                "column": 0,
+                "value": 0
+            },
+            {
+                "id": "amcs",
+                "type": "int",
+                "level": 1,
+                "column": 0,
+                "value": 0
+            },
+            {
+                "id": "atar",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "air,enemies,ground"
+            },
+            {
+                "id": "adur",
+                "type": "unreal",
+                "level": 1,
+                "column": 0,
+                "value": 3600
+            },
+            {
+                "id": "ahdu",
+                "type": "unreal",
+                "level": 1,
+                "column": 0,
+                "value": 3600
+            },
+            {
+                "id": "acdn",
+                "type": "unreal",
+                "level": 1,
+                "column": 0,
+                "value": 0
+            },
+            {
+                "id": "Esf1",
+                "type": "unreal",
+                "level": 1,
+                "column": 1,
+                "value": 19637
+            },
+            {
+                "id": "Esf2",
+                "type": "unreal",
+                "level": 1,
+                "column": 2,
+                "value": 0.25
+            },
+            {
+                "id": "amat",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "Abilities\\Spells\\Undead\\FreezingBreath\\FreezingBreathTargetArt.mdl"
+            },
+            {
+                "id": "ansf",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": ""
+            }
+        ],
+        "A00B:Afra": [
+            {
+                "id": "anam",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "TRIGSTR_1172"
+            },
+            {
+                "id": "adur",
+                "type": "unreal",
+                "level": 1,
+                "column": 0,
+                "value": 20
+            },
+            {
+                "id": "ahdu",
+                "type": "unreal",
+                "level": 1,
+                "column": 0,
+                "value": 20
+            },
+            {
+                "id": "amat",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "Doodads\\Northrend\\Water\\North_Iceberg3\\North_Iceberg3"
+            },
+            {
+                "id": "asat",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "Doodads\\Northrend\\Water\\North_Iceberg3\\North_Iceberg3"
+            },
+            {
+                "id": "atat",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "Doodads\\Northrend\\Water\\North_Iceberg3\\North_Iceberg3"
+            },
+            {
+                "id": "aeat",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "Doodads\\Northrend\\Water\\North_Iceberg3\\North_Iceberg3"
+            },
+            {
+                "id": "acat",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "Doodads\\Northrend\\Water\\North_Iceberg3\\North_Iceberg3"
+            },
+            {
+                "id": "aaea",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "Doodads\\Northrend\\Water\\North_Iceberg3\\North_Iceberg3"
+            }
+        ],
+        "A00C:Afra": [
+            {
+                "id": "anam",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "TRIGSTR_1173"
+            },
+            {
+                "id": "adur",
+                "type": "unreal",
+                "level": 1,
+                "column": 0,
+                "value": 20
+            },
+            {
+                "id": "ahdu",
+                "type": "unreal",
+                "level": 1,
+                "column": 0,
+                "value": 20
+            },
+            {
+                "id": "amat",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "Doodads\\Terrain\\CliffDoodad\\IceCrownWaterfall\\IceCrownWaterfall"
+            },
+            {
+                "id": "asat",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "Doodads\\Terrain\\CliffDoodad\\IceCrownWaterfall\\IceCrownWaterfall"
+            },
+            {
+                "id": "atat",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "Doodads\\Terrain\\CliffDoodad\\IceCrownWaterfall\\IceCrownWaterfall"
+            },
+            {
+                "id": "aaea",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "Doodads\\Terrain\\CliffDoodad\\IceCrownWaterfall\\IceCrownWaterfall"
+            },
+            {
+                "id": "acat",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "Doodads\\Terrain\\CliffDoodad\\IceCrownWaterfall\\IceCrownWaterfall"
+            },
+            {
+                "id": "aeat",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "Doodads\\Terrain\\CliffDoodad\\IceCrownWaterfall\\IceCrownWaterfall"
+            }
+        ],
+        "A00D:AEbl": [
+            {
+                "id": "arhk",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "TRIGSTR_1377"
+            },
+            {
+                "id": "ahky",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "TRIGSTR_1378"
+            },
+            {
+                "id": "aret",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "TRIGSTR_1176"
+            },
+            {
+                "id": "arut",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "TRIGSTR_1177"
+            },
+            {
+                "id": "aher",
+                "type": "int",
+                "level": 0,
+                "column": 0,
+                "value": 0
+            },
+            {
+                "id": "alev",
+                "type": "int",
+                "level": 0,
+                "column": 0,
+                "value": 1
+            },
+            {
+                "id": "acdn",
+                "type": "unreal",
+                "level": 1,
+                "column": 0,
+                "value": 2
+            },
+            {
+                "id": "adur",
+                "type": "unreal",
+                "level": 1,
+                "column": 0,
+                "value": 0
+            },
+            {
+                "id": "Ebl1",
+                "type": "unreal",
+                "level": 1,
+                "column": 1,
+                "value": 99999
+            },
+            {
+                "id": "Ebl2",
+                "type": "unreal",
+                "level": 1,
+                "column": 2,
+                "value": 0
+            },
+            {
+                "id": "amcs",
+                "type": "int",
+                "level": 1,
+                "column": 0,
+                "value": 0
+            },
+            {
+                "id": "atp1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_1343"
+            },
+            {
+                "id": "aub1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_1592"
+            },
+            {
+                "id": "anam",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "TRIGSTR_1593"
+            },
+            {
+                "id": "aart",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "ReplaceableTextures\\CommandButtons\\BTNElunesBlessing.blp"
+            },
+            {
+                "id": "asat",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "Abilities\\Spells\\NightElf\\Blink\\BlinkCaster.mdl"
+            }
+        ],
+        "S000:SCae": [
+            {
+                "id": "atp1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_1295"
+            },
+            {
+                "id": "anam",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "TRIGSTR_1296"
+            },
+            {
+                "id": "aub1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": ""
+            },
+            {
+                "id": "ansf",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": ""
+            },
+            {
+                "id": "Oae2",
+                "type": "unreal",
+                "level": 1,
+                "column": 2,
+                "value": 0
+            },
+            {
+                "id": "aare",
+                "type": "unreal",
+                "level": 1,
+                "column": 0,
+                "value": 99999
+            },
+            {
+                "id": "Oae1",
+                "type": "unreal",
+                "level": 1,
+                "column": 1,
+                "value": 0
+            },
+            {
+                "id": "abuf",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "B002"
+            }
+        ],
+        "S001:SCae": [
+            {
+                "id": "atp1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_1297"
+            },
+            {
+                "id": "anam",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "TRIGSTR_1298"
+            },
+            {
+                "id": "aub1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": ""
+            },
+            {
+                "id": "ansf",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": ""
+            },
+            {
+                "id": "Oae2",
+                "type": "unreal",
+                "level": 1,
+                "column": 2,
+                "value": 0
+            },
+            {
+                "id": "Oae1",
+                "type": "unreal",
+                "level": 1,
+                "column": 1,
+                "value": 0.2
+            },
+            {
+                "id": "aare",
+                "type": "unreal",
+                "level": 1,
+                "column": 0,
+                "value": 99999
+            },
+            {
+                "id": "abuf",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "B001"
+            }
+        ],
+        "S002:SCae": [
+            {
+                "id": "atp1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_1299"
+            },
+            {
+                "id": "anam",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "TRIGSTR_1300"
+            },
+            {
+                "id": "aub1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": ""
+            },
+            {
+                "id": "ansf",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": ""
+            },
+            {
+                "id": "Oae2",
+                "type": "unreal",
+                "level": 1,
+                "column": 2,
+                "value": 0
+            },
+            {
+                "id": "aare",
+                "type": "unreal",
+                "level": 1,
+                "column": 0,
+                "value": 99999
+            },
+            {
+                "id": "Oae1",
+                "type": "unreal",
+                "level": 1,
+                "column": 1,
+                "value": -0.2
+            },
+            {
+                "id": "abuf",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "B003"
+            }
+        ],
+        "A00E:ACav": [
+            {
+                "id": "atp1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_1306"
+            },
+            {
+                "id": "anam",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "TRIGSTR_1307"
+            },
+            {
+                "id": "aub1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": ""
+            },
+            {
+                "id": "Had1",
+                "type": "unreal",
+                "level": 1,
+                "column": 1,
+                "value": 0
+            },
+            {
+                "id": "ansf",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": ""
+            },
+            {
+                "id": "aare",
+                "type": "unreal",
+                "level": 1,
+                "column": 0,
+                "value": 99999
+            },
+            {
+                "id": "abuf",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "B005"
+            },
+            {
+                "id": "Had2",
+                "type": "int",
+                "level": 1,
+                "column": 2,
+                "value": 1
+            }
+        ],
+        "A00F:ACav": [
+            {
+                "id": "atp1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_1308"
+            },
+            {
+                "id": "anam",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "TRIGSTR_1309"
+            },
+            {
+                "id": "aub1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": ""
+            },
+            {
+                "id": "ansf",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": ""
+            },
+            {
+                "id": "aare",
+                "type": "unreal",
+                "level": 1,
+                "column": 0,
+                "value": 99999
+            },
+            {
+                "id": "abuf",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "B004"
+            },
+            {
+                "id": "Had2",
+                "type": "int",
+                "level": 1,
+                "column": 2,
+                "value": 1
+            },
+            {
+                "id": "Had1",
+                "type": "unreal",
+                "level": 1,
+                "column": 1,
+                "value": 0
+            }
+        ],
+        "A00G:Aroc": [
+            {
+                "id": "atp1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_1328"
+            },
+            {
+                "id": "anam",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "TRIGSTR_1329"
+            },
+            {
+                "id": "aub1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_1330"
+            },
+            {
+                "id": "aare",
+                "type": "unreal",
+                "level": 1,
+                "column": 0,
+                "value": 900
+            },
+            {
+                "id": "amsp",
+                "type": "int",
+                "level": 0,
+                "column": 0,
+                "value": 1000
+            },
+            {
+                "id": "amat",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "Abilities\\Weapons\\IllidanMissile\\IllidanMissile.mdl,Abilities\\Weapons\\BansheeMissile\\BansheeMissile.mdl,Abilities\\Weapons\\SpiritOfVengeanceMissile\\SpiritOfVengeanceMissile.mdl,Abilities\\Weapons\\DemonHunterMissile\\DemonHunterMissile.mdl,Abilities\\Weapons\\ChimaeraAcidMissile\\ChimaeraAcidMissile.mdl,Abilities\\Weapons\\AvengerMissile\\AvengerMissile.mdl,Abilities\\Weapons\\FaerieDragonMissile\\FaerieDragonMissile.mdl,Abilities\\Weapons\\PhoenixMissile\\Phoenix_Missile.mdl"
+            },
+            {
+                "id": "Efk1",
+                "type": "unreal",
+                "level": 1,
+                "column": 1,
+                "value": 0
+            },
+            {
+                "id": "Efk2",
+                "type": "unreal",
+                "level": 1,
+                "column": 2,
+                "value": 99999
+            },
+            {
+                "id": "Efk3",
+                "type": "int",
+                "level": 1,
+                "column": 3,
+                "value": 7
+            },
+            {
+                "id": "amac",
+                "type": "unreal",
+                "level": 0,
+                "column": 0,
+                "value": 0.35
+            },
+            {
+                "id": "areq",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": ""
+            },
+            {
+                "id": "achd",
+                "type": "int",
+                "level": 0,
+                "column": 0,
+                "value": 0
+            },
+            {
+                "id": "atar",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "enemies"
+            },
+            {
+                "id": "acdn",
+                "type": "unreal",
+                "level": 1,
+                "column": 0,
+                "value": 0.01
+            },
+            {
+                "id": "adur",
+                "type": "unreal",
+                "level": 1,
+                "column": 0,
+                "value": 0.01
+            },
+            {
+                "id": "ahdu",
+                "type": "unreal",
+                "level": 1,
+                "column": 0,
+                "value": 0.01
+            }
+        ],
+        "A00I:Awrh": [
+            {
+                "id": "anam",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "TRIGSTR_1545"
+            },
+            {
+                "id": "atp1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_1546"
+            },
+            {
+                "id": "aub1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_1547"
+            },
+            {
+                "id": "Wrs1",
+                "type": "unreal",
+                "level": 1,
+                "column": 1,
+                "value": 0
+            },
+            {
+                "id": "Wrs2",
+                "type": "unreal",
+                "level": 1,
+                "column": 2,
+                "value": 0
+            },
+            {
+                "id": "Wrs3",
+                "type": "int",
+                "level": 1,
+                "column": 3,
+                "value": 0
+            },
+            {
+                "id": "aare",
+                "type": "unreal",
+                "level": 1,
+                "column": 0,
+                "value": 1
+            },
+            {
+                "id": "acdn",
+                "type": "unreal",
+                "level": 1,
+                "column": 0,
+                "value": 5
+            },
+            {
+                "id": "ahdu",
+                "type": "unreal",
+                "level": 1,
+                "column": 0,
+                "value": 0
+            },
+            {
+                "id": "adur",
+                "type": "unreal",
+                "level": 1,
+                "column": 0,
+                "value": 0
+            },
+            {
+                "id": "amcs",
+                "type": "int",
+                "level": 1,
+                "column": 0,
+                "value": 0
+            },
+            {
+                "id": "acat",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "Abilities\\Spells\\Human\\DispelMagic\\DispelMagicTarget.mdl"
+            },
+            {
+                "id": "aart",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "ReplaceableTextures\\CommandButtons\\BTNGryphonRider.blp"
+            },
+            {
+                "id": "ansf",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": ""
+            },
+            {
+                "id": "ahky",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "TRIGSTR_1548"
+            }
+        ],
+        "A00H:Aasl": [
+            {
+                "id": "anam",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "TRIGSTR_1642"
+            },
+            {
+                "id": "aart",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "ReplaceableTextures\\CommandButtons\\BTNAuraOfDarkness.blp"
+            },
+            {
+                "id": "Slo3",
+                "type": "int",
+                "level": 1,
+                "column": 3,
+                "value": 1
+            },
+            {
+                "id": "atp1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_1643"
+            },
+            {
+                "id": "aub1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_1675"
+            },
+            {
+                "id": "abuf",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "B007"
+            },
+            {
+                "id": "ansf",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": ""
+            },
+            {
+                "id": "Slo1",
+                "type": "unreal",
+                "level": 1,
+                "column": 1,
+                "value": -0.2
+            },
+            {
+                "id": "arac",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "nightelf"
+            },
+            {
+                "id": "aare",
+                "type": "unreal",
+                "level": 1,
+                "column": 0,
+                "value": 400
+            }
+        ],
+        "S003:SCae": [
+            {
+                "id": "anam",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "TRIGSTR_1669"
+            },
+            {
+                "id": "atp1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_1646"
+            },
+            {
+                "id": "aub1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_1676"
+            },
+            {
+                "id": "Oae2",
+                "type": "unreal",
+                "level": 1,
+                "column": 2,
+                "value": 0
+            },
+            {
+                "id": "Oae1",
+                "type": "unreal",
+                "level": 1,
+                "column": 1,
+                "value": 0
+            },
+            {
+                "id": "aare",
+                "type": "unreal",
+                "level": 1,
+                "column": 0,
+                "value": 0
+            },
+            {
+                "id": "abuf",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": ""
+            },
+            {
+                "id": "atar",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "self"
+            },
+            {
+                "id": "aart",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "ReplaceableTextures\\CommandButtons\\BTNAuraOfDarkness.blp"
+            },
+            {
+                "id": "atat",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "Abilities\\Spells\\Undead\\RegenerationAura\\ObsidianRegenAura.mdl"
+            },
+            {
+                "id": "ansf",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": ""
+            }
+        ],
+        "A00J:ACes": [
+            {
+                "id": "anam",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "TRIGSTR_1698"
+            },
+            {
+                "id": "atp1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_1699"
+            },
+            {
+                "id": "aub1",
+                "type": "string",
+                "level": 1,
+                "column": 0,
+                "value": "TRIGSTR_1700"
+            },
+            {
+                "id": "Eev1",
+                "type": "unreal",
+                "level": 1,
+                "column": 1,
+                "value": 0
+            },
+            {
+                "id": "aart",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": "ReplaceableTextures\\CommandButtons\\BTNSpy.blp"
+            },
+            {
+                "id": "ansf",
+                "type": "string",
+                "level": 0,
+                "column": 0,
+                "value": ""
+            }
+        ]
+    }
+}

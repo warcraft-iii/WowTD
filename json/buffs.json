@@ -1,0 +1,313 @@
+{
+    "original": {
+        "AEsd": [
+            {
+                "id": "ftat",
+                "type": "string",
+                "value": "Abilities\\Spells\\Undead\\FreezingBreath\\FreezingBreathTargetArt.mdl"
+            },
+            {
+                "id": "frac",
+                "type": "string",
+                "value": "creeps"
+            },
+            {
+                "id": "feat",
+                "type": "string",
+                "value": "Abilities\\Spells\\Undead\\FreezingBreath\\FreezingBreathTargetArt.mdl"
+            },
+            {
+                "id": "fmat",
+                "type": "string",
+                "value": "Abilities\\Spells\\Undead\\FreezingBreath\\FreezingBreathTargetArt.mdl"
+            },
+            {
+                "id": "fsat",
+                "type": "string",
+                "value": "Abilities\\Spells\\Undead\\FreezingBreath\\FreezingBreathTargetArt.mdl"
+            }
+        ],
+        "XEsf": [
+            {
+                "id": "frac",
+                "type": "string",
+                "value": "creeps"
+            },
+            {
+                "id": "feat",
+                "type": "string",
+                "value": "Abilities\\Spells\\Undead\\FreezingBreath\\FreezingBreathTargetArt.mdl"
+            },
+            {
+                "id": "ftat",
+                "type": "string",
+                "value": "Abilities\\Spells\\Undead\\FreezingBreath\\FreezingBreathTargetArt.mdl"
+            },
+            {
+                "id": "fsat",
+                "type": "string",
+                "value": "Abilities\\Spells\\Undead\\FreezingBreath\\FreezingBreathTargetArt.mdl"
+            },
+            {
+                "id": "fmat",
+                "type": "string",
+                "value": "Abilities\\Spells\\Undead\\FreezingBreath\\FreezingBreathTargetArt.mdl"
+            }
+        ],
+        "Basl": [
+            {
+                "id": "ftat",
+                "type": "string",
+                "value": "Abilities\\Spells\\Undead\\FrostNova\\FrostNovaTarget.mdl"
+            },
+            {
+                "id": "feat",
+                "type": "string",
+                "value": "Abilities\\Spells\\Undead\\FrostNova\\FrostNovaTarget.mdl"
+            },
+            {
+                "id": "fmat",
+                "type": "string",
+                "value": "Abilities\\Spells\\Undead\\FrostNova\\FrostNovaTarget.mdl"
+            },
+            {
+                "id": "fsat",
+                "type": "string",
+                "value": "Abilities\\Spells\\Undead\\FrostNova\\FrostNovaTarget.mdl"
+            }
+        ],
+        "XHbz": [
+            {
+                "id": "ftat",
+                "type": "string",
+                "value": "Abilities\\Spells\\Undead\\FrostNova\\FrostNovaTarget.mdl"
+            },
+            {
+                "id": "fsat",
+                "type": "string",
+                "value": "Abilities\\Spells\\Undead\\FrostNova\\FrostNovaTarget.mdl"
+            },
+            {
+                "id": "fmat",
+                "type": "string",
+                "value": "Abilities\\Spells\\Undead\\FrostNova\\FrostNovaTarget.mdl"
+            }
+        ]
+    },
+    "custom": {
+        "B000:Bfro": [
+            {
+                "id": "ftip",
+                "type": "string",
+                "value": "TRIGSTR_1178"
+            },
+            {
+                "id": "ftat",
+                "type": "string",
+                "value": "Abilities\\Spells\\Undead\\FrostNova\\FrostNovaTarget.mdl"
+            },
+            {
+                "id": "fsat",
+                "type": "string",
+                "value": "Abilities\\Spells\\Undead\\FrostNova\\FrostNovaTarget.mdl"
+            },
+            {
+                "id": "fmat",
+                "type": "string",
+                "value": "Abilities\\Spells\\Undead\\FrostNova\\FrostNovaTarget.mdl"
+            },
+            {
+                "id": "feat",
+                "type": "string",
+                "value": "Abilities\\Spells\\Undead\\FrostNova\\FrostNovaTarget.mdl"
+            }
+        ],
+        "B002:BHad": [
+            {
+                "id": "ftip",
+                "type": "string",
+                "value": "TRIGSTR_1301"
+            },
+            {
+                "id": "fube",
+                "type": "string",
+                "value": "TRIGSTR_1413"
+            },
+            {
+                "id": "ftat",
+                "type": "string",
+                "value": ""
+            },
+            {
+                "id": "fta0",
+                "type": "string",
+                "value": ""
+            }
+        ],
+        "B001:BHad": [
+            {
+                "id": "ftip",
+                "type": "string",
+                "value": "TRIGSTR_1290"
+            },
+            {
+                "id": "fube",
+                "type": "string",
+                "value": "TRIGSTR_1414"
+            },
+            {
+                "id": "ftat",
+                "type": "string",
+                "value": "Abilities\\Spells\\Human\\FlameStrike\\FlameStrikeDamageTarget.mdl,Abilities\\Spells\\Human\\FlameStrike\\FlameStrikeDamageTarget.mdl"
+            },
+            {
+                "id": "fta0",
+                "type": "string",
+                "value": "foot,left"
+            },
+            {
+                "id": "fta1",
+                "type": "string",
+                "value": "foot,right"
+            },
+            {
+                "id": "ftac",
+                "type": "int",
+                "value": 2
+            }
+        ],
+        "B003:BHad": [
+            {
+                "id": "ftip",
+                "type": "string",
+                "value": "TRIGSTR_1304"
+            },
+            {
+                "id": "fube",
+                "type": "string",
+                "value": "TRIGSTR_1323"
+            },
+            {
+                "id": "ftat",
+                "type": "string",
+                "value": "Abilities\\Spells\\Other\\AcidBomb\\BottleImpact.mdl,Abilities\\Spells\\Other\\AcidBomb\\BottleImpact.mdl"
+            },
+            {
+                "id": "fta0",
+                "type": "string",
+                "value": "foot,left"
+            },
+            {
+                "id": "fta1",
+                "type": "string",
+                "value": "foot,right"
+            },
+            {
+                "id": "ftac",
+                "type": "int",
+                "value": 2
+            }
+        ],
+        "B004:BHad": [
+            {
+                "id": "ftip",
+                "type": "string",
+                "value": "TRIGSTR_1313"
+            },
+            {
+                "id": "fube",
+                "type": "string",
+                "value": "TRIGSTR_1326"
+            },
+            {
+                "id": "ftat",
+                "type": "string",
+                "value": ""
+            },
+            {
+                "id": "fta0",
+                "type": "string",
+                "value": ""
+            },
+            {
+                "id": "fnsf",
+                "type": "string",
+                "value": "TRIGSTR_1315"
+            },
+            {
+                "id": "fart",
+                "type": "string",
+                "value": "ReplaceableTextures\\CommandButtons\\BTNCommand.blp"
+            }
+        ],
+        "B005:BHad": [
+            {
+                "id": "ftip",
+                "type": "string",
+                "value": "TRIGSTR_1316"
+            },
+            {
+                "id": "fube",
+                "type": "string",
+                "value": "TRIGSTR_1327"
+            },
+            {
+                "id": "ftat",
+                "type": "string",
+                "value": ""
+            },
+            {
+                "id": "fta0",
+                "type": "string",
+                "value": ""
+            },
+            {
+                "id": "fnsf",
+                "type": "string",
+                "value": "TRIGSTR_1318"
+            },
+            {
+                "id": "fart",
+                "type": "string",
+                "value": "ReplaceableTextures\\CommandButtons\\BTNCommand.blp"
+            }
+        ],
+        "B007:Basl": [
+            {
+                "id": "fnam",
+                "type": "string",
+                "value": "TRIGSTR_1645"
+            },
+            {
+                "id": "fnsf",
+                "type": "string",
+                "value": ""
+            },
+            {
+                "id": "ftip",
+                "type": "string",
+                "value": "TRIGSTR_1648"
+            },
+            {
+                "id": "fube",
+                "type": "string",
+                "value": "TRIGSTR_1651"
+            },
+            {
+                "id": "fart",
+                "type": "string",
+                "value": "ReplaceableTextures\\CommandButtons\\BTNAuraOfDarkness.blp"
+            },
+            {
+                "id": "ftat",
+                "type": "string",
+                "value": "Abilities\\Spells\\Undead\\Cripple\\CrippleTarget.mdl"
+            },
+            {
+                "id": "fta0",
+                "type": "string",
+                "value": "chest"
+            }
+        ]
+    }
+}
