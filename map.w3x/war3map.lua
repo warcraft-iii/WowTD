@@ -3339,38 +3339,6 @@ function InitTrig_OutsideRight()
     TriggerAddAction(gg_trg_OutsideRight, Trig_OutsideRight_Actions)
 end
 
-function Trig_Next_Actions()
-    udg_PredictLevel = udg_LVL
-    udg_TempString = "The current wave is"
-    TriggerExecute(gg_trg_GetLevelInfo)
-    udg_TempString = (udg_TempString .. ".")
-    DisplayTextToForce(GetPlayersAll(), udg_TempString)
-    udg_PredictLevel = (udg_LVL + 1)
-    udg_TempString = "The wave after this is"
-    TriggerExecute(gg_trg_GetLevelInfo)
-    udg_TempString = (udg_TempString .. ".")
-    DisplayTextToForce(GetPlayersAll(), udg_TempString)
-    udg_PredictLevel = (udg_LVL + 2)
-    udg_TempString = "The wave after that is"
-    TriggerExecute(gg_trg_GetLevelInfo)
-    udg_TempString = (udg_TempString .. ".")
-    DisplayTextToForce(GetPlayersAll(), udg_TempString)
-end
-
-function InitTrig_Next()
-    gg_trg_Next = CreateTrigger()
-    TriggerRegisterPlayerChatEvent(gg_trg_Next, Player(0), "-next", false)
-    TriggerRegisterPlayerChatEvent(gg_trg_Next, Player(1), "-next", false)
-    TriggerRegisterPlayerChatEvent(gg_trg_Next, Player(2), "-next", false)
-    TriggerRegisterPlayerChatEvent(gg_trg_Next, Player(3), "-next", false)
-    TriggerRegisterPlayerChatEvent(gg_trg_Next, Player(4), "-next", false)
-    TriggerRegisterPlayerChatEvent(gg_trg_Next, Player(5), "-next", false)
-    TriggerRegisterPlayerChatEvent(gg_trg_Next, Player(6), "-next", false)
-    TriggerRegisterPlayerChatEvent(gg_trg_Next, Player(7), "-next", false)
-    TriggerRegisterPlayerChatEvent(gg_trg_Next, Player(8), "-next", false)
-    TriggerAddAction(gg_trg_Next, Trig_Next_Actions)
-end
-
 function Trig_GetLevelInfo_Func002Func001C()
     if (udg_PredictLevel == 7) then
         return true
@@ -3650,7 +3618,6 @@ function Trig_SetupWave_Actions()
     else
         udg_TempString = ("|c008000FFWave " .. (I2S(udg_LVL) .. " of 36.|r"))
         DisplayTextToForce(GetPlayersAll(), udg_TempString)
-        TriggerExecute(gg_trg_Next)
         LeaderboardSetPlayerItemValueBJ(Player(9), udg_LEADERBOARD, udg_LVL)
         udg_UnitToSpawn = udg_WaveUnits[udg_LVL]
         udg_SpawningRate = (450.00 / I2R(udg_NumberToSpawn[udg_LVL]))
@@ -3786,7 +3753,6 @@ function InitCustomTriggers()
     InitTrig_PinkCorner()
     InitTrig_OutsideBR()
     InitTrig_OutsideRight()
-    InitTrig_Next()
     InitTrig_GetLevelInfo()
     InitTrig_MessageWelcome()
     InitTrig_VoteWarning()
