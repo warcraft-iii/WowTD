@@ -589,6 +589,9 @@ function Trig_Lose_Condition_Actions()
     if (Trig_Lose_Condition_Func003C()) then
         DisplayTextToForce(GetPlayersAll(), "TRIGSTR_1210")
         DisableTrigger(GetTriggeringTrigger())
+        DisableTrigger(gg_trg_SpawnWaves)
+        DisableTrigger(gg_trg_SetupWave)
+        DisableTrigger(gg_trg_WaveTimeManager)
         LeaderboardSetPlayerItemValueColorBJ(Player(11), udg_LEADERBOARD, 100, 0.00, 0.00, 0)
         ForForce(udg_ConnectedPlayers, Trig_Lose_Condition_Func003Func008A)
         TriggerSleepAction(60.00)
@@ -3579,23 +3582,6 @@ function InitTrig_CountVotes()
     TriggerAddAction(gg_trg_CountVotes, Trig_CountVotes_Actions)
 end
 
-function Trig_RangeCheck_Actions()
-    udg_TempPoint = GetUnitLoc(GetEnteringUnit())
-    udg_TempUnitGroup = GetUnitsInRangeOfLocAll(900.00, udg_TempPoint)
-    udg_TempInt = CountUnitsInGroup(udg_TempUnitGroup)
-    udg_RangeCalc = (udg_RangeCalc + I2R(udg_TempInt))
-    udg_RangeCount = (udg_RangeCount + 1.00)
-    DisplayTextToForce(GetPlayersAll(), ("Distance Per Enemy:" .. R2S((900.00 / (udg_RangeCalc / udg_RangeCount)))))
-        RemoveLocation (udg_TempPoint)
-        DestroyGroup (udg_TempUnitGroup)
-end
-
-function InitTrig_RangeCheck()
-    gg_trg_RangeCheck = CreateTrigger()
-    TriggerRegisterEnterRectSimple(gg_trg_RangeCheck, gg_rct_TestArea)
-    TriggerAddAction(gg_trg_RangeCheck, Trig_RangeCheck_Actions)
-end
-
 function Trig_SpawnWaves_Func001Func002Func002A()
     udg_TempPoint = GetRandomLocInRect(udg_SpawnAreas[GetConvertedPlayerId(GetEnumPlayer())])
     CreateNUnitsAtLoc(1, udg_UnitToSpawn, Player(10), udg_TempPoint, bj_UNIT_FACING)
@@ -3659,6 +3645,7 @@ end
 function Trig_SetupWave_Actions()
     udg_LVL = (udg_LVL + 1)
     if (Trig_SetupWave_Func002C()) then
+        TriggerExecute(gg_trg_Victory)
         return 
     else
         udg_TempString = ("|c008000FFWave " .. (I2S(udg_LVL) .. " of 36.|r"))
@@ -3716,6 +3703,7 @@ function InitTrig_WavesWarning()
 end
 
 function Trig_WaveTimeManager_Actions()
+    TriggerExecute(gg_trg_SetupWave)
     PolledWait(55.00)
     TriggerExecute(GetTriggeringTrigger())
 end
@@ -3806,7 +3794,6 @@ function InitCustomTriggers()
     InitTrig_RegisterVoteHard()
     InitTrig_RegisterVoteInsane()
     InitTrig_CountVotes()
-    InitTrig_RangeCheck()
     InitTrig_SpawnWaves()
     InitTrig_SetupWave()
     InitTrig_WavesWarning()
