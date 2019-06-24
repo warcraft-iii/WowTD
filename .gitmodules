@@ -19,3 +19,6 @@
 [submodule "src/lib/commandline"]
 	path = src/lib/commandline
 	url = https://github.com/warcraft-iii/lib-commandline.git
+[submodule "src/lib/enum"]
+	path = src/lib/enum
+	url = https://github.com/warcraft-iii/lib-enum.git
