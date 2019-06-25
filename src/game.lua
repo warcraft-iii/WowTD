@@ -2,7 +2,6 @@
 -- @Author : Dencer (tdaddon@163.com)
 -- @Link   : https://dengsir.github.io
 -- @Date   : 6/24/2019, 9:59:20 PM
-
 -- 还不知道有什么用
 local numberInMapCheckTimer = Timer:create()
 numberInMapCheckTimer:start(9, function()
@@ -18,15 +17,30 @@ numberInMapCheckTimer:start(9, function()
 
     print('numberInMapCheckTimer', val)
 
-    -- udg_CurrentlyOnMap = val
+    udg_CurrentlyOnMap = val
 end)
 
--- local sellTrigger = Trigger:create()
+-- sell 金币有bug
+local sellTrigger = Trigger:create()
+do
+    sellTrigger:registerAllPlayersUnitEvent(PlayerUnitEvent.UnitTrainFinish)
+    sellTrigger:addCondition(function()
+        return Event:getTrainedUnit():getTypeId() == FourCC('ncop')
+    end)
+    sellTrigger:addAction(function()
+        local unit = Event:getTriggerUnit()
+        unit:getOwningPlayer():adjustGold(unit:getPointValue())
+        unit:remove()
+        Event:getTrainedUnit():remove()
+    end)
+end
 
--- sellTrigger:registerPlayerUnitEvent(Player:get(0), PlayerUnitEvent.UnitTrainFinish)
--- sellTrigger:addCondition(Condition:create(function()
---     return Event:getTrainedUnit():getTypeId() == FourCC('ncop')
--- end))
--- sellTrigger:addAction(function()
---     Event:getTriggerUnit():remove()
--- end)
+local downgradeTrigger = Trigger:create() do
+    downgradeTrigger:registerAllPlayersUnitEvent(PlayerUnitEvent.UnitTrainFinish)
+    downgradeTrigger:addCondition(function()
+        return Event:getTrainedUnit():getTypeId() == FourCC('n00F')
+    end)
+    downgradeTrigger:addAction(function()
+        -- body...
+    end)
+end

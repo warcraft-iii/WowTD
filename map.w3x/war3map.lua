@@ -627,26 +627,6 @@ function InitTrig_SetupLeaderBoard()
     TriggerAddAction(gg_trg_SetupLeaderBoard, Trig_SetupLeaderBoard_Actions)
 end
 
-function Trig_sell_Conditions()
-    if (not (GetUnitTypeId(GetTrainedUnit()) == FourCC("ncop"))) then
-        return false
-    end
-    return true
-end
-
-function Trig_sell_Actions()
-    AdjustPlayerStateBJ(GetUnitPointValue(GetTriggerUnit()), GetOwningPlayer(GetTriggerUnit()), PLAYER_STATE_RESOURCE_GOLD)
-    RemoveUnit(GetTrainedUnit())
-    RemoveUnit(GetTriggerUnit())
-end
-
-function InitTrig_sell()
-    gg_trg_sell = CreateTrigger()
-    TriggerRegisterAnyUnitEventBJ(gg_trg_sell, EVENT_PLAYER_UNIT_TRAIN_FINISH)
-    TriggerAddCondition(gg_trg_sell, Condition(Trig_sell_Conditions))
-    TriggerAddAction(gg_trg_sell, Trig_sell_Actions)
-end
-
 function Trig_Downgrade_Conditions()
     if (not (GetUnitTypeId(GetTrainedUnit()) == FourCC("n00F"))) then
         return false
@@ -3705,7 +3685,6 @@ function InitCustomTriggers()
     InitTrig_NumberInMapCheck()
     InitTrig_Lose_Condition()
     InitTrig_SetupLeaderBoard()
-    InitTrig_sell()
     InitTrig_Downgrade()
     InitTrig_Initialization()
     InitTrig_Downgrade_Init()
