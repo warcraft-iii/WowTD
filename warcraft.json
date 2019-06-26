@@ -1,3 +1,12 @@
 {
-  "mapdir": "map.w3x"
+  "mapdir": "map.w3x",
+  "lua.package.path": [
+    "./?.lua",
+    "./?/init.lua",
+    "./hacker/?.lua",
+    "./lib/stdlib/oop/?.lua",
+    "./lib/stdlib/enum/?.lua",
+    "./lib/stdlib/?.lua",
+    "./lib/stdlib/?/init.lua"
+  ]
 }
