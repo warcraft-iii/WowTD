@@ -1,5 +1,5 @@
 
-local CommandLine = require("commandline")
+local CommandLine = require("lib.commandline")
 
 local flyWave = {["7"] = true, ["17"] = true, ["23"] = true, ["27"] = true, ["35"] = true}
 local function isFlyWave(lvl)
