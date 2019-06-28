@@ -1,13 +1,32 @@
+require('base')
+require('enum')
+require('oop')
 
-require('lib')
+--@debug@
+require('console')
+--@end-debug
+
+---fake locale library
+---@class L : table
+L = setmetatable({}, {
+    __index = function(t, k)
+        return k
+    end,
+})
 
 local function main()
 
-    print('Hello warcraft-vscode !')
+    -- init
+    dofile('System/General/CommandLine.lua')
+    dofile('Game.lua')
 
-    -- register command
-    dofile('commandline.lua')
-    dofile('game.lua')
+    dofile('System/General/GameModeMgr.lua')
+
+    -- init finished
+    Timer:after(5, function()
+        print(L['Welcome to World of Warcraft TD v1.0.0'])
+    end)
+
 end
 
 Timer:after(0.1, main)
