@@ -627,181 +627,6 @@ function InitTrig_SetupLeaderBoard()
     TriggerAddAction(gg_trg_SetupLeaderBoard, Trig_SetupLeaderBoard_Actions)
 end
 
-function Trig_Downgrade_Conditions()
-    if (not (GetUnitTypeId(GetTrainedUnit()) == FourCC("n00F"))) then
-        return false
-    end
-    return true
-end
-
-function Trig_Downgrade_Func003Func001Func001C()
-    if (not (GetUnitTypeId(GetTriggerUnit()) == udg_PoisonTowers[GetForLoopIndexA()])) then
-        return false
-    end
-    return true
-end
-
-function Trig_Downgrade_Func003C()
-    if (not (SubStringBJ(GetUnitName(GetTriggerUnit()), 1, 9) == "Poison To")) then
-        return false
-    end
-    return true
-end
-
-function Trig_Downgrade_Func004Func001Func001C()
-    if (not (GetUnitTypeId(GetTriggerUnit()) == udg_AirTowers[GetForLoopIndexA()])) then
-        return false
-    end
-    return true
-end
-
-function Trig_Downgrade_Func004C()
-    if (not (SubStringBJ(GetUnitName(GetTriggerUnit()), 1, 6) == "Air To")) then
-        return false
-    end
-    return true
-end
-
-function Trig_Downgrade_Func005Func001Func001C()
-    if (not (GetUnitTypeId(GetTriggerUnit()) == udg_FrostTowers[GetForLoopIndexA()])) then
-        return false
-    end
-    return true
-end
-
-function Trig_Downgrade_Func005C()
-    if (not (SubStringBJ(GetUnitName(GetTriggerUnit()), 1, 6) == "Frost ")) then
-        return false
-    end
-    return true
-end
-
-function Trig_Downgrade_Func006Func001Func001C()
-    if (not (GetUnitTypeId(GetTriggerUnit()) == udg_SiegeTowers[GetForLoopIndexA()])) then
-        return false
-    end
-    return true
-end
-
-function Trig_Downgrade_Func006C()
-    if (not (SubStringBJ(GetUnitName(GetTriggerUnit()), 1, 6) == "Siege ")) then
-        return false
-    end
-    return true
-end
-
-function Trig_Downgrade_Func007Func001Func001C()
-    if (not (GetUnitTypeId(GetTriggerUnit()) == udg_ChaosTowers[GetForLoopIndexA()])) then
-        return false
-    end
-    return true
-end
-
-function Trig_Downgrade_Func007C()
-    if (not (SubStringBJ(GetUnitName(GetTriggerUnit()), 1, 6) == "Chaos ")) then
-        return false
-    end
-    return true
-end
-
-function Trig_Downgrade_Func011C()
-    if (not (IsUnitSelected(GetTriggerUnit(), GetOwningPlayer(GetTriggerUnit())) == true)) then
-        return false
-    end
-    return true
-end
-
-function Trig_Downgrade_Actions()
-    udg_TempInt = GetUnitPointValue(GetTriggerUnit())
-    udg_TempUnitType = GetUnitTypeId(GetTriggerUnit())
-    if (Trig_Downgrade_Func003C()) then
-        bj_forLoopAIndex = 1
-        bj_forLoopAIndexEnd = 9
-        while (true) do
-            if (bj_forLoopAIndex > bj_forLoopAIndexEnd) then break end
-            if (Trig_Downgrade_Func003Func001Func001C()) then
-                udg_TempUnitType = udg_PoisonTowers[(GetForLoopIndexA() - 1)]
-            else
-                DoNothing()
-            end
-            bj_forLoopAIndex = bj_forLoopAIndex + 1
-        end
-    else
-    end
-    if (Trig_Downgrade_Func004C()) then
-        bj_forLoopAIndex = 1
-        bj_forLoopAIndexEnd = 9
-        while (true) do
-            if (bj_forLoopAIndex > bj_forLoopAIndexEnd) then break end
-            if (Trig_Downgrade_Func004Func001Func001C()) then
-                udg_TempUnitType = udg_AirTowers[(GetForLoopIndexA() - 1)]
-            else
-                DoNothing()
-            end
-            bj_forLoopAIndex = bj_forLoopAIndex + 1
-        end
-    else
-    end
-    if (Trig_Downgrade_Func005C()) then
-        bj_forLoopAIndex = 1
-        bj_forLoopAIndexEnd = 6
-        while (true) do
-            if (bj_forLoopAIndex > bj_forLoopAIndexEnd) then break end
-            if (Trig_Downgrade_Func005Func001Func001C()) then
-                udg_TempUnitType = udg_FrostTowers[(GetForLoopIndexA() - 1)]
-            else
-                DoNothing()
-            end
-            bj_forLoopAIndex = bj_forLoopAIndex + 1
-        end
-    else
-    end
-    if (Trig_Downgrade_Func006C()) then
-        bj_forLoopAIndex = 1
-        bj_forLoopAIndexEnd = 21
-        while (true) do
-            if (bj_forLoopAIndex > bj_forLoopAIndexEnd) then break end
-            if (Trig_Downgrade_Func006Func001Func001C()) then
-                udg_TempUnitType = udg_SiegeTowers[(GetForLoopIndexA() - 1)]
-            else
-                DoNothing()
-            end
-            bj_forLoopAIndex = bj_forLoopAIndex + 1
-        end
-    else
-    end
-    if (Trig_Downgrade_Func007C()) then
-        bj_forLoopAIndex = 1
-        bj_forLoopAIndexEnd = 9
-        while (true) do
-            if (bj_forLoopAIndex > bj_forLoopAIndexEnd) then break end
-            if (Trig_Downgrade_Func007Func001Func001C()) then
-                udg_TempUnitType = udg_ChaosTowers[(GetForLoopIndexA() - 1)]
-            else
-                DoNothing()
-            end
-            bj_forLoopAIndex = bj_forLoopAIndex + 1
-        end
-    else
-    end
-    RemoveUnit(GetTrainedUnit())
-    if (Trig_Downgrade_Func011C()) then
-        ReplaceUnitBJ(GetTriggerUnit(), udg_TempUnitType, bj_UNIT_STATE_METHOD_MAXIMUM)
-        SelectUnitForPlayerSingle(GetLastReplacedUnitBJ(), GetOwningPlayer(GetLastReplacedUnitBJ()))
-    else
-        ReplaceUnitBJ(GetTriggerUnit(), udg_TempUnitType, bj_UNIT_STATE_METHOD_MAXIMUM)
-    end
-    udg_TempInt = (udg_TempInt - GetUnitPointValue(GetLastReplacedUnitBJ()))
-    AdjustPlayerStateBJ(udg_TempInt, GetOwningPlayer(GetLastReplacedUnitBJ()), PLAYER_STATE_RESOURCE_GOLD)
-end
-
-function InitTrig_Downgrade()
-    gg_trg_Downgrade = CreateTrigger()
-    TriggerRegisterAnyUnitEventBJ(gg_trg_Downgrade, EVENT_PLAYER_UNIT_TRAIN_FINISH)
-    TriggerAddCondition(gg_trg_Downgrade, Condition(Trig_Downgrade_Conditions))
-    TriggerAddAction(gg_trg_Downgrade, Trig_Downgrade_Actions)
-end
-
 function Trig_Initialization_Func010Func001C()
     if (not (GetPlayerSlotState(GetEnumPlayer()) == PLAYER_SLOT_STATE_PLAYING)) then
         return false
@@ -952,79 +777,6 @@ end
 function InitTrig_Initialization()
     gg_trg_Initialization = CreateTrigger()
     TriggerAddAction(gg_trg_Initialization, Trig_Initialization_Actions)
-end
-
-function Trig_Downgrade_Init_Actions()
-    udg_AirTowers[0] = FourCC("n009")
-    udg_AirTowers[1] = FourCC("n00B")
-    udg_AirTowers[2] = FourCC("n00D")
-    udg_AirTowers[3] = FourCC("n000")
-    udg_AirTowers[4] = FourCC("n003")
-    udg_AirTowers[5] = FourCC("n001")
-    udg_AirTowers[6] = FourCC("n005")
-    udg_AirTowers[7] = FourCC("n004")
-    udg_AirTowers[8] = FourCC("n00C")
-    udg_AirTowers[9] = FourCC("n00E")
-    udg_ChaosTowers[0] = FourCC("h01O")
-    udg_ChaosTowers[1] = FourCC("h01N")
-    udg_ChaosTowers[2] = FourCC("h017")
-    udg_ChaosTowers[3] = FourCC("h018")
-    udg_ChaosTowers[4] = FourCC("h019")
-    udg_ChaosTowers[5] = FourCC("h01P")
-    udg_ChaosTowers[6] = FourCC("h01Q")
-    udg_ChaosTowers[7] = FourCC("h00T")
-    udg_ChaosTowers[8] = FourCC("h00X")
-    udg_ChaosTowers[9] = FourCC("h00Y")
-    udg_FrostTowers[0] = FourCC("n006")
-    udg_FrostTowers[1] = FourCC("n007")
-    udg_FrostTowers[2] = FourCC("n00A")
-    udg_FrostTowers[3] = FourCC("n008")
-    udg_FrostTowers[4] = FourCC("h01G")
-    udg_FrostTowers[5] = FourCC("h01H")
-    udg_SiegeTowers[0] = FourCC("h000")
-    udg_SiegeTowers[1] = FourCC("h002")
-    udg_SiegeTowers[2] = FourCC("h003")
-    udg_SiegeTowers[3] = FourCC("h004")
-    udg_SiegeTowers[4] = FourCC("h005")
-    udg_SiegeTowers[5] = FourCC("h006")
-    udg_SiegeTowers[6] = FourCC("h001")
-    udg_SiegeTowers[7] = FourCC("h007")
-    udg_SiegeTowers[8] = FourCC("h00K")
-    udg_SiegeTowers[9] = FourCC("h00L")
-    udg_SiegeTowers[10] = FourCC("h00M")
-    udg_SiegeTowers[11] = FourCC("h00S")
-    udg_SiegeTowers[12] = FourCC("h00R")
-    udg_SiegeTowers[13] = FourCC("h00W")
-    udg_SiegeTowers[14] = FourCC("h00Z")
-    udg_SiegeTowers[15] = FourCC("h013")
-    udg_SiegeTowers[16] = FourCC("h01A")
-    udg_SiegeTowers[17] = FourCC("h01B")
-    udg_SiegeTowers[18] = FourCC("h01C")
-    udg_SiegeTowers[19] = FourCC("h01D")
-    udg_SiegeTowers[20] = FourCC("h01E")
-    udg_SiegeTowers[21] = FourCC("h01M")
-    udg_PoisonTowers[0] = FourCC("h008")
-    udg_PoisonTowers[1] = FourCC("h00D")
-    udg_PoisonTowers[2] = FourCC("h00C")
-    udg_PoisonTowers[3] = FourCC("h00B")
-    udg_PoisonTowers[4] = FourCC("h00A")
-    udg_PoisonTowers[5] = FourCC("h009")
-    udg_PoisonTowers[6] = FourCC("h00E")
-    udg_PoisonTowers[7] = FourCC("h00J")
-    udg_PoisonTowers[8] = FourCC("h00N")
-    udg_PoisonTowers[9] = FourCC("h00F")
-    udg_PoisonTowers[10] = FourCC("h00U")
-    udg_PoisonTowers[11] = FourCC("h00V")
-    udg_PoisonTowers[12] = FourCC("h014")
-    udg_PoisonTowers[13] = FourCC("h015")
-    udg_PoisonTowers[14] = FourCC("h016")
-    udg_PoisonTowers[15] = FourCC("h01J")
-        DestroyTrigger( GetTriggeringTrigger() )
-end
-
-function InitTrig_Downgrade_Init()
-    gg_trg_Downgrade_Init = CreateTrigger()
-    TriggerAddAction(gg_trg_Downgrade_Init, Trig_Downgrade_Init_Actions)
 end
 
 function Trig_Leave_Red_Actions()
@@ -3685,9 +3437,7 @@ function InitCustomTriggers()
     InitTrig_NumberInMapCheck()
     InitTrig_Lose_Condition()
     InitTrig_SetupLeaderBoard()
-    InitTrig_Downgrade()
     InitTrig_Initialization()
-    InitTrig_Downgrade_Init()
     InitTrig_Leave_Red()
     InitTrig_Leave_Blue()
     InitTrig_Leave_Teal()
@@ -3748,7 +3498,6 @@ end
 
 function RunInitializationTriggers()
     ConditionalTriggerExecute(gg_trg_Initialization)
-    ConditionalTriggerExecute(gg_trg_Downgrade_Init)
     ConditionalTriggerExecute(gg_trg_WavesWarning)
 end
 

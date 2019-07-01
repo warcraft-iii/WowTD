@@ -2,9 +2,9 @@ require('base')
 require('enum')
 require('oop')
 
---@debug@
+-- @debug@
 require('console')
---@end-debug
+-- @end-debug@
 
 ---fake locale library
 ---@class L : table
@@ -30,4 +30,3 @@ local function main()
 end
 
 Timer:after(0.1, main)
-
