@@ -48,40 +48,40 @@ udg_AirTowers = __jarray(0)
 udg_TempUnitType = 0
 udg_Bouton = {}
 udg_DialogueBouton = nil
-gg_rct_8_Pink_Spawn = nil
-gg_rct_6_Orange_Spawn = nil
-gg_rct_7_Green_Spawn = nil
-gg_rct_1_Red_Spawn = nil
-gg_rct_4_Purple_Spawn = nil
-gg_rct_5_Yellow_Spawn = nil
-gg_rct_2_Blue_Spawn = nil
-gg_rct_3_Teal_Spawn = nil
-gg_rct_RedCorner = nil
-gg_rct_OutsideTL = nil
+gg_rct_Spawn8 = nil
+gg_rct_Spawn6 = nil
+gg_rct_Spawn7 = nil
+gg_rct_Spawn1 = nil
+gg_rct_Spawn4 = nil
+gg_rct_Spawn5 = nil
+gg_rct_Spawn2 = nil
+gg_rct_Spawn3 = nil
+gg_rct_Corner1 = nil
+gg_rct_OutsideTopLeft = nil
 gg_rct_OutsideLeft = nil
-gg_rct_YellowCorner = nil
-gg_rct_OutsideBL = nil
+gg_rct_Corner5 = nil
+gg_rct_OutsideBottomLeft = nil
 gg_rct_OutsideBottom = nil
-gg_rct_BlueCorner = nil
-gg_rct_BlueEnters = nil
-gg_rct_InsideTL = nil
+gg_rct_Corner2 = nil
+gg_rct_Enters2 = nil
+gg_rct_InsideTopLeft = nil
 gg_rct_InsideLeft = nil
-gg_rct_TealCorner = nil
-gg_rct_TealEnters = nil
-gg_rct_InsideTR = nil
-gg_rct_PurpleCorner = nil
-gg_rct_OutsideTR = nil
+gg_rct_Corner3 = nil
+gg_rct_Enters3 = nil
+gg_rct_InsideTopRight = nil
+gg_rct_Corner4 = nil
+gg_rct_OutsideTopRight = nil
 gg_rct_OutsideTop = nil
-gg_rct_OrangeCorner = nil
-gg_rct_OrangeEnters = nil
-gg_rct_InsideBL = nil
+gg_rct_Corner6 = nil
+gg_rct_Enters6 = nil
+gg_rct_InsideBottomLeft = nil
 gg_rct_InsideBottom = nil
-gg_rct_GreenCorner = nil
-gg_rct_GreenEnters = nil
-gg_rct_InsideBR = nil
+gg_rct_Corner7 = nil
+gg_rct_Enters7 = nil
+gg_rct_InsideBottomRight = nil
 gg_rct_InsideRight = nil
-gg_rct_PinkCorner = nil
-gg_rct_OutsideBR = nil
+gg_rct_Corner8 = nil
+gg_rct_OutsideBottomRight = nil
 gg_rct_OutsideRight = nil
 gg_rct_InsideTop = nil
 gg_rct_TestArea = nil
@@ -344,44 +344,44 @@ end
 
 function CreateRegions()
     local we
-    gg_rct_8_Pink_Spawn = Rect(5152.0, -5632.0, 5632.0, -5120.0)
-    gg_rct_6_Orange_Spawn = Rect(-1024.0, -1024.0, -544.0, -544.0)
-    gg_rct_7_Green_Spawn = Rect(512.0, -1024.0, 1024.0, -512.0)
-    gg_rct_1_Red_Spawn = Rect(-5600.0, 5120.0, -5152.0, 5600.0)
-    gg_rct_4_Purple_Spawn = Rect(5152.0, 5152.0, 5632.0, 5600.0)
-    gg_rct_5_Yellow_Spawn = Rect(-5632.0, -5632.0, -5120.0, -5120.0)
-    gg_rct_2_Blue_Spawn = Rect(-1024.0, 512.0, -512.0, 992.0)
-    gg_rct_3_Teal_Spawn = Rect(544.0, 512.0, 992.0, 1024.0)
-    gg_rct_RedCorner = Rect(-5472.0, 3744.0, -5216.0, 3936.0)
-    gg_rct_OutsideTL = Rect(-3936.0, 3744.0, -3744.0, 3904.0)
-    gg_rct_OutsideLeft = Rect(-3936.0, -96.0, -3712.0, 96.0)
-    gg_rct_YellowCorner = Rect(-3936.0, -5504.0, -3744.0, -5184.0)
-    gg_rct_OutsideBL = Rect(-3936.0, -3936.0, -3744.0, -3744.0)
-    gg_rct_OutsideBottom = Rect(-96.0, -3904.0, 96.0, -3744.0)
-    gg_rct_BlueCorner = Rect(-1888.0, 672.0, -1696.0, 928.0)
-    gg_rct_BlueEnters = Rect(-1984.0, 2688.0, -1568.0, 2880.0)
-    gg_rct_InsideTL = Rect(-2912.0, 2784.0, -2816.0, 2912.0)
-    gg_rct_InsideLeft = Rect(-2912.0, -64.0, -2752.0, 64.0)
-    gg_rct_TealCorner = Rect(640.0, 1728.0, 1024.0, 1920.0)
-    gg_rct_TealEnters = Rect(2720.0, 1600.0, 2912.0, 1952.0)
-    gg_rct_InsideTR = Rect(2720.0, 2720.0, 2880.0, 2880.0)
-    gg_rct_PurpleCorner = Rect(3712.0, 5248.0, 3936.0, 5536.0)
-    gg_rct_OutsideTR = Rect(3712.0, 3744.0, 3936.0, 3904.0)
-    gg_rct_OutsideTop = Rect(-64.0, 3840.0, 64.0, 3936.0)
-    gg_rct_OrangeCorner = Rect(-928.0, -1920.0, -640.0, -1696.0)
-    gg_rct_OrangeEnters = Rect(-2912.0, -1984.0, -2720.0, -1600.0)
-    gg_rct_InsideBL = Rect(-2912.0, -2944.0, -2688.0, -2752.0)
+    gg_rct_Corner1 = Rect(-5472.0, 3744.0, -5216.0, 3936.0)
+    gg_rct_Corner2 = Rect(-1888.0, 672.0, -1696.0, 928.0)
+    gg_rct_Corner3 = Rect(640.0, 1728.0, 1024.0, 1920.0)
+    gg_rct_Corner4 = Rect(3712.0, 5248.0, 3936.0, 5536.0)
+    gg_rct_Corner5 = Rect(-3936.0, -5504.0, -3744.0, -5184.0)
+    gg_rct_Corner6 = Rect(-928.0, -1920.0, -640.0, -1696.0)
+    gg_rct_Corner7 = Rect(1696.0, -1024.0, 1888.0, -608.0)
+    gg_rct_Corner8 = Rect(5216.0, -3936.0, 5472.0, -3744.0)
+    gg_rct_Enters2 = Rect(-1984.0, 2688.0, -1568.0, 2880.0)
+    gg_rct_Enters3 = Rect(2720.0, 1600.0, 2912.0, 1952.0)
+    gg_rct_Enters6 = Rect(-2912.0, -1984.0, -2720.0, -1600.0)
+    gg_rct_Enters7 = Rect(1600.0, -2944.0, 1984.0, -2752.0)
     gg_rct_InsideBottom = Rect(-96.0, -2912.0, 96.0, -2752.0)
-    gg_rct_GreenCorner = Rect(1696.0, -1024.0, 1888.0, -608.0)
-    gg_rct_GreenEnters = Rect(1600.0, -2944.0, 1984.0, -2752.0)
-    gg_rct_InsideBR = Rect(2720.0, -2880.0, 2880.0, -2720.0)
+    gg_rct_InsideBottomLeft = Rect(-2912.0, -2944.0, -2688.0, -2752.0)
+    gg_rct_InsideBottomRight = Rect(2720.0, -2880.0, 2880.0, -2720.0)
+    gg_rct_InsideLeft = Rect(-2912.0, -64.0, -2752.0, 64.0)
     gg_rct_InsideRight = Rect(2752.0, -64.0, 2912.0, 64.0)
-    gg_rct_PinkCorner = Rect(5216.0, -3936.0, 5472.0, -3744.0)
-    gg_rct_OutsideBR = Rect(3744.0, -3936.0, 3936.0, -3776.0)
-    gg_rct_OutsideRight = Rect(3744.0, -96.0, 3936.0, 64.0)
     gg_rct_InsideTop = Rect(-96.0, 2720.0, 96.0, 2912.0)
+    gg_rct_InsideTopLeft = Rect(-2912.0, 2784.0, -2816.0, 2912.0)
+    gg_rct_InsideTopRight = Rect(2720.0, 2720.0, 2880.0, 2880.0)
+    gg_rct_OutsideBottom = Rect(-96.0, -3904.0, 96.0, -3744.0)
+    gg_rct_OutsideBottomLeft = Rect(-3936.0, -3936.0, -3744.0, -3744.0)
+    gg_rct_OutsideBottomRight = Rect(3744.0, -3936.0, 3936.0, -3776.0)
+    gg_rct_OutsideLeft = Rect(-3936.0, -96.0, -3712.0, 96.0)
+    gg_rct_OutsideRight = Rect(3744.0, -96.0, 3936.0, 64.0)
+    gg_rct_OutsideTop = Rect(-64.0, 3840.0, 64.0, 3936.0)
+    gg_rct_OutsideTopLeft = Rect(-3936.0, 3744.0, -3744.0, 3904.0)
+    gg_rct_OutsideTopRight = Rect(3712.0, 3744.0, 3936.0, 3904.0)
+    gg_rct_Rect_010 = Rect(-6016.0, -6144.0, 5920.0, 5856.0)
+    gg_rct_Spawn1 = Rect(-5600.0, 5120.0, -5152.0, 5600.0)
+    gg_rct_Spawn2 = Rect(-1024.0, 512.0, -512.0, 992.0)
+    gg_rct_Spawn3 = Rect(544.0, 512.0, 992.0, 1024.0)
+    gg_rct_Spawn4 = Rect(5152.0, 5152.0, 5632.0, 5600.0)
+    gg_rct_Spawn5 = Rect(-5632.0, -5632.0, -5120.0, -5120.0)
+    gg_rct_Spawn6 = Rect(-1024.0, -1024.0, -544.0, -544.0)
+    gg_rct_Spawn7 = Rect(512.0, -1024.0, 1024.0, -512.0)
+    gg_rct_Spawn8 = Rect(5152.0, -5632.0, 5632.0, -5120.0)
     gg_rct_TestArea = Rect(-192.0, -192.0, 192.0, 192.0)
-    gg_rct_Rect_010 = Rect(-5984.0, -5984.0, 5952.0, 6016.0)
 end
 
 function Trig_Adding_to_Quests_Actions()
@@ -684,14 +684,14 @@ function Trig_Initialization_Actions()
     ForceAddPlayerSimple(Player(6), udg_GroupInside)
     ForForce(udg_GroupOutside, Trig_Initialization_Func010A)
     ForForce(udg_GroupInside, Trig_Initialization_Func011A)
-    udg_SpawnAreas[1] = gg_rct_1_Red_Spawn
-    udg_SpawnAreas[2] = gg_rct_2_Blue_Spawn
-    udg_SpawnAreas[3] = gg_rct_3_Teal_Spawn
-    udg_SpawnAreas[4] = gg_rct_4_Purple_Spawn
-    udg_SpawnAreas[5] = gg_rct_5_Yellow_Spawn
-    udg_SpawnAreas[6] = gg_rct_6_Orange_Spawn
-    udg_SpawnAreas[7] = gg_rct_7_Green_Spawn
-    udg_SpawnAreas[8] = gg_rct_8_Pink_Spawn
+    udg_SpawnAreas[1] = gg_rct_Spawn1
+    udg_SpawnAreas[2] = gg_rct_Spawn2
+    udg_SpawnAreas[3] = gg_rct_Spawn3
+    udg_SpawnAreas[4] = gg_rct_Spawn4
+    udg_SpawnAreas[5] = gg_rct_Spawn5
+    udg_SpawnAreas[6] = gg_rct_Spawn6
+    udg_SpawnAreas[7] = gg_rct_Spawn7
+    udg_SpawnAreas[8] = gg_rct_Spawn8
     FogMaskEnableOff()
     FogEnableOff()
     ForForce(udg_ConnectedPlayers, Trig_Initialization_Func022A)
@@ -901,13 +901,13 @@ function Trig_Red_Conditions()
 end
 
 function Trig_Red_Actions()
-    IssuePointOrderLocBJ(GetEnteringUnit(), "move", GetRectCenter(gg_rct_RedCorner))
+    IssuePointOrderLocBJ(GetEnteringUnit(), "move", GetRectCenter(gg_rct_Corner1))
     UnitAddAbilityBJ(FourCC("Aeth"), GetEnteringUnit())
 end
 
 function InitTrig_Red()
     gg_trg_Red = CreateTrigger()
-    TriggerRegisterEnterRectSimple(gg_trg_Red, gg_rct_1_Red_Spawn)
+    TriggerRegisterEnterRectSimple(gg_trg_Red, gg_rct_Spawn1)
     TriggerAddCondition(gg_trg_Red, Condition(Trig_Red_Conditions))
     TriggerAddAction(gg_trg_Red, Trig_Red_Actions)
 end
@@ -930,13 +930,13 @@ function Trig_RedCorner_Conditions()
 end
 
 function Trig_RedCorner_Actions()
-    IssuePointOrderLocBJ(GetEnteringUnit(), "move", GetRectCenter(gg_rct_OutsideTL))
+    IssuePointOrderLocBJ(GetEnteringUnit(), "move", GetRectCenter(gg_rct_OutsideTopLeft))
     SetUnitUserData(GetEnteringUnit(), 0)
 end
 
 function InitTrig_RedCorner()
     gg_trg_RedCorner = CreateTrigger()
-    TriggerRegisterEnterRectSimple(gg_trg_RedCorner, gg_rct_RedCorner)
+    TriggerRegisterEnterRectSimple(gg_trg_RedCorner, gg_rct_Corner1)
     TriggerAddCondition(gg_trg_RedCorner, Condition(Trig_RedCorner_Conditions))
     TriggerAddAction(gg_trg_RedCorner, Trig_RedCorner_Actions)
 end
@@ -1002,7 +1002,7 @@ end
 
 function InitTrig_OutsideTL()
     gg_trg_OutsideTL = CreateTrigger()
-    TriggerRegisterEnterRectSimple(gg_trg_OutsideTL, gg_rct_OutsideTL)
+    TriggerRegisterEnterRectSimple(gg_trg_OutsideTL, gg_rct_OutsideTopLeft)
     TriggerAddCondition(gg_trg_OutsideTL, Condition(Trig_OutsideTL_Conditions))
     TriggerAddAction(gg_trg_OutsideTL, Trig_OutsideTL_Actions)
 end
@@ -1116,12 +1116,12 @@ function Trig_OutsideLeft_Actions()
         DoNothing()
     end
     if (Trig_OutsideLeft_Func007C()) then
-        udg_TempPoint = GetRectCenter(gg_rct_OutsideTL)
+        udg_TempPoint = GetRectCenter(gg_rct_OutsideTopLeft)
     else
         DoNothing()
     end
     if (Trig_OutsideLeft_Func008C()) then
-        udg_TempPoint = GetRectCenter(gg_rct_OutsideBL)
+        udg_TempPoint = GetRectCenter(gg_rct_OutsideBottomLeft)
     else
         DoNothing()
     end
@@ -1159,13 +1159,13 @@ function Trig_Blue_Conditions()
 end
 
 function Trig_Blue_Actions()
-    IssuePointOrderLocBJ(GetEnteringUnit(), "move", GetRectCenter(gg_rct_BlueCorner))
+    IssuePointOrderLocBJ(GetEnteringUnit(), "move", GetRectCenter(gg_rct_Corner2))
     UnitAddAbilityBJ(FourCC("Aeth"), GetEnteringUnit())
 end
 
 function InitTrig_Blue()
     gg_trg_Blue = CreateTrigger()
-    TriggerRegisterEnterRectSimple(gg_trg_Blue, gg_rct_2_Blue_Spawn)
+    TriggerRegisterEnterRectSimple(gg_trg_Blue, gg_rct_Spawn2)
     TriggerAddCondition(gg_trg_Blue, Condition(Trig_Blue_Conditions))
     TriggerAddAction(gg_trg_Blue, Trig_Blue_Actions)
 end
@@ -1188,13 +1188,13 @@ function Trig_BlueCorner_Conditions()
 end
 
 function Trig_BlueCorner_Actions()
-    IssuePointOrderLocBJ(GetEnteringUnit(), "move", GetRectCenter(gg_rct_BlueEnters))
+    IssuePointOrderLocBJ(GetEnteringUnit(), "move", GetRectCenter(gg_rct_Enters2))
     SetUnitUserData(GetEnteringUnit(), 0)
 end
 
 function InitTrig_BlueCorner()
     gg_trg_BlueCorner = CreateTrigger()
-    TriggerRegisterEnterRectSimple(gg_trg_BlueCorner, gg_rct_BlueCorner)
+    TriggerRegisterEnterRectSimple(gg_trg_BlueCorner, gg_rct_Corner2)
     TriggerAddCondition(gg_trg_BlueCorner, Condition(Trig_BlueCorner_Conditions))
     TriggerAddAction(gg_trg_BlueCorner, Trig_BlueCorner_Actions)
 end
@@ -1235,10 +1235,10 @@ function Trig_BlueEnters_Actions()
         udg_CurrentlyOnMap = (udg_CurrentlyOnMap + (225.00 / I2R(udg_NumberToSpawn[GetUnitLevel(GetEnteringUnit())])))
         SetUnitOwner(GetEnteringUnit(), Player(11), false)
         if (Trig_BlueEnters_Func002Func004C()) then
-            udg_TempPoint = GetRectCenter(gg_rct_InsideTL)
+            udg_TempPoint = GetRectCenter(gg_rct_InsideTopLeft)
             SetUnitUserData(GetEnteringUnit(), udg_InsideCounterClockwise)
         else
-            udg_TempPoint = GetRectCenter(gg_rct_InsideTR)
+            udg_TempPoint = GetRectCenter(gg_rct_InsideTopRight)
             SetUnitUserData(GetEnteringUnit(), udg_InsideClockwise)
         end
         IssuePointOrderLocBJ(GetEnteringUnit(), "move", udg_TempPoint)
@@ -1250,7 +1250,7 @@ end
 
 function InitTrig_BlueEnters()
     gg_trg_BlueEnters = CreateTrigger()
-    TriggerRegisterEnterRectSimple(gg_trg_BlueEnters, gg_rct_BlueEnters)
+    TriggerRegisterEnterRectSimple(gg_trg_BlueEnters, gg_rct_Enters2)
     TriggerAddCondition(gg_trg_BlueEnters, Condition(Trig_BlueEnters_Conditions))
     TriggerAddAction(gg_trg_BlueEnters, Trig_BlueEnters_Actions)
 end
@@ -1291,7 +1291,7 @@ end
 
 function InitTrig_InsideTL()
     gg_trg_InsideTL = CreateTrigger()
-    TriggerRegisterEnterRectSimple(gg_trg_InsideTL, gg_rct_InsideTL)
+    TriggerRegisterEnterRectSimple(gg_trg_InsideTL, gg_rct_InsideTopLeft)
     TriggerAddCondition(gg_trg_InsideTL, Condition(Trig_InsideTL_Conditions))
     TriggerAddAction(gg_trg_InsideTL, Trig_InsideTL_Actions)
 end
@@ -1405,12 +1405,12 @@ function Trig_InsideLeft_Actions()
         DoNothing()
     end
     if (Trig_InsideLeft_Func007C()) then
-        udg_TempPoint = GetRectCenter(gg_rct_InsideTL)
+        udg_TempPoint = GetRectCenter(gg_rct_InsideTopLeft)
     else
         DoNothing()
     end
     if (Trig_InsideLeft_Func008C()) then
-        udg_TempPoint = GetRectCenter(gg_rct_InsideBL)
+        udg_TempPoint = GetRectCenter(gg_rct_InsideBottomLeft)
     else
         DoNothing()
     end
@@ -1448,13 +1448,13 @@ function Trig_Teal_Conditions()
 end
 
 function Trig_Teal_Actions()
-    IssuePointOrderLocBJ(GetEnteringUnit(), "move", GetRectCenter(gg_rct_TealCorner))
+    IssuePointOrderLocBJ(GetEnteringUnit(), "move", GetRectCenter(gg_rct_Corner3))
     UnitAddAbilityBJ(FourCC("Aeth"), GetEnteringUnit())
 end
 
 function InitTrig_Teal()
     gg_trg_Teal = CreateTrigger()
-    TriggerRegisterEnterRectSimple(gg_trg_Teal, gg_rct_3_Teal_Spawn)
+    TriggerRegisterEnterRectSimple(gg_trg_Teal, gg_rct_Spawn3)
     TriggerAddCondition(gg_trg_Teal, Condition(Trig_Teal_Conditions))
     TriggerAddAction(gg_trg_Teal, Trig_Teal_Actions)
 end
@@ -1477,13 +1477,13 @@ function Trig_TealCorner_Conditions()
 end
 
 function Trig_TealCorner_Actions()
-    IssuePointOrderLocBJ(GetEnteringUnit(), "move", GetRectCenter(gg_rct_TealEnters))
+    IssuePointOrderLocBJ(GetEnteringUnit(), "move", GetRectCenter(gg_rct_Enters3))
     SetUnitUserData(GetEnteringUnit(), 0)
 end
 
 function InitTrig_TealCorner()
     gg_trg_TealCorner = CreateTrigger()
-    TriggerRegisterEnterRectSimple(gg_trg_TealCorner, gg_rct_TealCorner)
+    TriggerRegisterEnterRectSimple(gg_trg_TealCorner, gg_rct_Corner3)
     TriggerAddCondition(gg_trg_TealCorner, Condition(Trig_TealCorner_Conditions))
     TriggerAddAction(gg_trg_TealCorner, Trig_TealCorner_Actions)
 end
@@ -1524,10 +1524,10 @@ function Trig_TealEnters_Actions()
         udg_CurrentlyOnMap = (udg_CurrentlyOnMap + (225.00 / I2R(udg_NumberToSpawn[GetUnitLevel(GetEnteringUnit())])))
         SetUnitOwner(GetEnteringUnit(), Player(11), false)
         if (Trig_TealEnters_Func002Func004C()) then
-            udg_TempPoint = GetRectCenter(gg_rct_InsideTR)
+            udg_TempPoint = GetRectCenter(gg_rct_InsideTopRight)
             SetUnitUserData(GetEnteringUnit(), udg_InsideCounterClockwise)
         else
-            udg_TempPoint = GetRectCenter(gg_rct_InsideBR)
+            udg_TempPoint = GetRectCenter(gg_rct_InsideBottomRight)
             SetUnitUserData(GetEnteringUnit(), udg_InsideClockwise)
         end
         IssuePointOrderLocBJ(GetEnteringUnit(), "move", udg_TempPoint)
@@ -1539,7 +1539,7 @@ end
 
 function InitTrig_TealEnters()
     gg_trg_TealEnters = CreateTrigger()
-    TriggerRegisterEnterRectSimple(gg_trg_TealEnters, gg_rct_TealEnters)
+    TriggerRegisterEnterRectSimple(gg_trg_TealEnters, gg_rct_Enters3)
     TriggerAddCondition(gg_trg_TealEnters, Condition(Trig_TealEnters_Conditions))
     TriggerAddAction(gg_trg_TealEnters, Trig_TealEnters_Actions)
 end
@@ -1580,7 +1580,7 @@ end
 
 function InitTrig_InsideTR()
     gg_trg_InsideTR = CreateTrigger()
-    TriggerRegisterEnterRectSimple(gg_trg_InsideTR, gg_rct_InsideTR)
+    TriggerRegisterEnterRectSimple(gg_trg_InsideTR, gg_rct_InsideTopRight)
     TriggerAddCondition(gg_trg_InsideTR, Condition(Trig_InsideTR_Conditions))
     TriggerAddAction(gg_trg_InsideTR, Trig_InsideTR_Actions)
 end
@@ -1694,12 +1694,12 @@ function Trig_InsideTop_Actions()
         DoNothing()
     end
     if (Trig_InsideTop_Func006C()) then
-        udg_TempPoint = GetRectCenter(gg_rct_InsideTR)
+        udg_TempPoint = GetRectCenter(gg_rct_InsideTopRight)
     else
         DoNothing()
     end
     if (Trig_InsideTop_Func007C()) then
-        udg_TempPoint = GetRectCenter(gg_rct_InsideTL)
+        udg_TempPoint = GetRectCenter(gg_rct_InsideTopLeft)
     else
         DoNothing()
     end
@@ -1737,13 +1737,13 @@ function Trig_Purple_Conditions()
 end
 
 function Trig_Purple_Actions()
-    IssuePointOrderLocBJ(GetEnteringUnit(), "move", GetRectCenter(gg_rct_PurpleCorner))
+    IssuePointOrderLocBJ(GetEnteringUnit(), "move", GetRectCenter(gg_rct_Corner4))
     UnitAddAbilityBJ(FourCC("Aeth"), GetEnteringUnit())
 end
 
 function InitTrig_Purple()
     gg_trg_Purple = CreateTrigger()
-    TriggerRegisterEnterRectSimple(gg_trg_Purple, gg_rct_4_Purple_Spawn)
+    TriggerRegisterEnterRectSimple(gg_trg_Purple, gg_rct_Spawn4)
     TriggerAddCondition(gg_trg_Purple, Condition(Trig_Purple_Conditions))
     TriggerAddAction(gg_trg_Purple, Trig_Purple_Actions)
 end
@@ -1766,13 +1766,13 @@ function Trig_PurpleCorner_Conditions()
 end
 
 function Trig_PurpleCorner_Actions()
-    IssuePointOrderLocBJ(GetEnteringUnit(), "move", GetRectCenter(gg_rct_OutsideTR))
+    IssuePointOrderLocBJ(GetEnteringUnit(), "move", GetRectCenter(gg_rct_OutsideTopRight))
     SetUnitUserData(GetEnteringUnit(), 0)
 end
 
 function InitTrig_PurpleCorner()
     gg_trg_PurpleCorner = CreateTrigger()
-    TriggerRegisterEnterRectSimple(gg_trg_PurpleCorner, gg_rct_PurpleCorner)
+    TriggerRegisterEnterRectSimple(gg_trg_PurpleCorner, gg_rct_Corner4)
     TriggerAddCondition(gg_trg_PurpleCorner, Condition(Trig_PurpleCorner_Conditions))
     TriggerAddAction(gg_trg_PurpleCorner, Trig_PurpleCorner_Actions)
 end
@@ -1838,7 +1838,7 @@ end
 
 function InitTrig_OutsideTR()
     gg_trg_OutsideTR = CreateTrigger()
-    TriggerRegisterEnterRectSimple(gg_trg_OutsideTR, gg_rct_OutsideTR)
+    TriggerRegisterEnterRectSimple(gg_trg_OutsideTR, gg_rct_OutsideTopRight)
     TriggerAddCondition(gg_trg_OutsideTR, Condition(Trig_OutsideTR_Conditions))
     TriggerAddAction(gg_trg_OutsideTR, Trig_OutsideTR_Actions)
 end
@@ -1952,12 +1952,12 @@ function Trig_OutsideTop_Actions()
         DoNothing()
     end
     if (Trig_OutsideTop_Func007C()) then
-        udg_TempPoint = GetRectCenter(gg_rct_OutsideTR)
+        udg_TempPoint = GetRectCenter(gg_rct_OutsideTopRight)
     else
         DoNothing()
     end
     if (Trig_OutsideTop_Func008C()) then
-        udg_TempPoint = GetRectCenter(gg_rct_OutsideTL)
+        udg_TempPoint = GetRectCenter(gg_rct_OutsideTopLeft)
     else
         DoNothing()
     end
@@ -1995,13 +1995,13 @@ function Trig_Yellow_Conditions()
 end
 
 function Trig_Yellow_Actions()
-    IssuePointOrderLocBJ(GetEnteringUnit(), "move", GetRectCenter(gg_rct_YellowCorner))
+    IssuePointOrderLocBJ(GetEnteringUnit(), "move", GetRectCenter(gg_rct_Corner5))
     UnitAddAbilityBJ(FourCC("Aeth"), GetEnteringUnit())
 end
 
 function InitTrig_Yellow()
     gg_trg_Yellow = CreateTrigger()
-    TriggerRegisterEnterRectSimple(gg_trg_Yellow, gg_rct_5_Yellow_Spawn)
+    TriggerRegisterEnterRectSimple(gg_trg_Yellow, gg_rct_Spawn5)
     TriggerAddCondition(gg_trg_Yellow, Condition(Trig_Yellow_Conditions))
     TriggerAddAction(gg_trg_Yellow, Trig_Yellow_Actions)
 end
@@ -2024,13 +2024,13 @@ function Trig_YellowCorner_Conditions()
 end
 
 function Trig_YellowCorner_Actions()
-    IssuePointOrderLocBJ(GetEnteringUnit(), "move", GetRectCenter(gg_rct_OutsideBL))
+    IssuePointOrderLocBJ(GetEnteringUnit(), "move", GetRectCenter(gg_rct_OutsideBottomLeft))
     SetUnitUserData(GetEnteringUnit(), 0)
 end
 
 function InitTrig_YellowCorner()
     gg_trg_YellowCorner = CreateTrigger()
-    TriggerRegisterEnterRectSimple(gg_trg_YellowCorner, gg_rct_YellowCorner)
+    TriggerRegisterEnterRectSimple(gg_trg_YellowCorner, gg_rct_Corner5)
     TriggerAddCondition(gg_trg_YellowCorner, Condition(Trig_YellowCorner_Conditions))
     TriggerAddAction(gg_trg_YellowCorner, Trig_YellowCorner_Actions)
 end
@@ -2096,7 +2096,7 @@ end
 
 function InitTrig_OutsideBL()
     gg_trg_OutsideBL = CreateTrigger()
-    TriggerRegisterEnterRectSimple(gg_trg_OutsideBL, gg_rct_OutsideBL)
+    TriggerRegisterEnterRectSimple(gg_trg_OutsideBL, gg_rct_OutsideBottomLeft)
     TriggerAddCondition(gg_trg_OutsideBL, Condition(Trig_OutsideBL_Conditions))
     TriggerAddAction(gg_trg_OutsideBL, Trig_OutsideBL_Actions)
 end
@@ -2210,12 +2210,12 @@ function Trig_OutsideBottom_Actions()
         DoNothing()
     end
     if (Trig_OutsideBottom_Func007C()) then
-        udg_TempPoint = GetRectCenter(gg_rct_OutsideBL)
+        udg_TempPoint = GetRectCenter(gg_rct_OutsideBottomLeft)
     else
         DoNothing()
     end
     if (Trig_OutsideBottom_Func008C()) then
-        udg_TempPoint = GetRectCenter(gg_rct_OutsideBR)
+        udg_TempPoint = GetRectCenter(gg_rct_OutsideBottomRight)
     else
         DoNothing()
     end
@@ -2253,13 +2253,13 @@ function Trig_Orange_Conditions()
 end
 
 function Trig_Orange_Actions()
-    IssuePointOrderLocBJ(GetEnteringUnit(), "move", GetRectCenter(gg_rct_OrangeCorner))
+    IssuePointOrderLocBJ(GetEnteringUnit(), "move", GetRectCenter(gg_rct_Corner6))
     UnitAddAbilityBJ(FourCC("Aeth"), GetEnteringUnit())
 end
 
 function InitTrig_Orange()
     gg_trg_Orange = CreateTrigger()
-    TriggerRegisterEnterRectSimple(gg_trg_Orange, gg_rct_6_Orange_Spawn)
+    TriggerRegisterEnterRectSimple(gg_trg_Orange, gg_rct_Spawn6)
     TriggerAddCondition(gg_trg_Orange, Condition(Trig_Orange_Conditions))
     TriggerAddAction(gg_trg_Orange, Trig_Orange_Actions)
 end
@@ -2282,13 +2282,13 @@ function Trig_OrangeCorner_Conditions()
 end
 
 function Trig_OrangeCorner_Actions()
-    IssuePointOrderLocBJ(GetEnteringUnit(), "move", GetRectCenter(gg_rct_OrangeEnters))
+    IssuePointOrderLocBJ(GetEnteringUnit(), "move", GetRectCenter(gg_rct_Enters6))
     SetUnitUserData(GetEnteringUnit(), 0)
 end
 
 function InitTrig_OrangeCorner()
     gg_trg_OrangeCorner = CreateTrigger()
-    TriggerRegisterEnterRectSimple(gg_trg_OrangeCorner, gg_rct_OrangeCorner)
+    TriggerRegisterEnterRectSimple(gg_trg_OrangeCorner, gg_rct_Corner6)
     TriggerAddCondition(gg_trg_OrangeCorner, Condition(Trig_OrangeCorner_Conditions))
     TriggerAddAction(gg_trg_OrangeCorner, Trig_OrangeCorner_Actions)
 end
@@ -2329,10 +2329,10 @@ function Trig_OrangeEnters_Actions()
         udg_CurrentlyOnMap = (udg_CurrentlyOnMap + (225.00 / I2R(udg_NumberToSpawn[GetUnitLevel(GetEnteringUnit())])))
         SetUnitOwner(GetEnteringUnit(), Player(11), false)
         if (Trig_OrangeEnters_Func002Func004C()) then
-            udg_TempPoint = GetRectCenter(gg_rct_InsideBL)
+            udg_TempPoint = GetRectCenter(gg_rct_InsideBottomLeft)
             SetUnitUserData(GetEnteringUnit(), udg_InsideCounterClockwise)
         else
-            udg_TempPoint = GetRectCenter(gg_rct_InsideTL)
+            udg_TempPoint = GetRectCenter(gg_rct_InsideTopLeft)
             SetUnitUserData(GetEnteringUnit(), udg_InsideClockwise)
         end
         IssuePointOrderLocBJ(GetEnteringUnit(), "move", udg_TempPoint)
@@ -2344,7 +2344,7 @@ end
 
 function InitTrig_OrangeEnters()
     gg_trg_OrangeEnters = CreateTrigger()
-    TriggerRegisterEnterRectSimple(gg_trg_OrangeEnters, gg_rct_OrangeEnters)
+    TriggerRegisterEnterRectSimple(gg_trg_OrangeEnters, gg_rct_Enters6)
     TriggerAddCondition(gg_trg_OrangeEnters, Condition(Trig_OrangeEnters_Conditions))
     TriggerAddAction(gg_trg_OrangeEnters, Trig_OrangeEnters_Actions)
 end
@@ -2385,7 +2385,7 @@ end
 
 function InitTrig_InsideBL()
     gg_trg_InsideBL = CreateTrigger()
-    TriggerRegisterEnterRectSimple(gg_trg_InsideBL, gg_rct_InsideBL)
+    TriggerRegisterEnterRectSimple(gg_trg_InsideBL, gg_rct_InsideBottomLeft)
     TriggerAddCondition(gg_trg_InsideBL, Condition(Trig_InsideBL_Conditions))
     TriggerAddAction(gg_trg_InsideBL, Trig_InsideBL_Actions)
 end
@@ -2499,12 +2499,12 @@ function Trig_InsideBottom_Actions()
         DoNothing()
     end
     if (Trig_InsideBottom_Func007C()) then
-        udg_TempPoint = GetRectCenter(gg_rct_InsideBL)
+        udg_TempPoint = GetRectCenter(gg_rct_InsideBottomLeft)
     else
         DoNothing()
     end
     if (Trig_InsideBottom_Func008C()) then
-        udg_TempPoint = GetRectCenter(gg_rct_InsideBR)
+        udg_TempPoint = GetRectCenter(gg_rct_InsideBottomRight)
     else
         DoNothing()
     end
@@ -2542,13 +2542,13 @@ function Trig_Green_Conditions()
 end
 
 function Trig_Green_Actions()
-    IssuePointOrderLocBJ(GetEnteringUnit(), "move", GetRectCenter(gg_rct_GreenCorner))
+    IssuePointOrderLocBJ(GetEnteringUnit(), "move", GetRectCenter(gg_rct_Corner7))
     UnitAddAbilityBJ(FourCC("Aeth"), GetEnteringUnit())
 end
 
 function InitTrig_Green()
     gg_trg_Green = CreateTrigger()
-    TriggerRegisterEnterRectSimple(gg_trg_Green, gg_rct_7_Green_Spawn)
+    TriggerRegisterEnterRectSimple(gg_trg_Green, gg_rct_Spawn7)
     TriggerAddCondition(gg_trg_Green, Condition(Trig_Green_Conditions))
     TriggerAddAction(gg_trg_Green, Trig_Green_Actions)
 end
@@ -2571,13 +2571,13 @@ function Trig_GreenCorner_Conditions()
 end
 
 function Trig_GreenCorner_Actions()
-    IssuePointOrderLocBJ(GetEnteringUnit(), "move", GetRectCenter(gg_rct_GreenEnters))
+    IssuePointOrderLocBJ(GetEnteringUnit(), "move", GetRectCenter(gg_rct_Enters7))
     SetUnitUserData(GetEnteringUnit(), 0)
 end
 
 function InitTrig_GreenCorner()
     gg_trg_GreenCorner = CreateTrigger()
-    TriggerRegisterEnterRectSimple(gg_trg_GreenCorner, gg_rct_GreenCorner)
+    TriggerRegisterEnterRectSimple(gg_trg_GreenCorner, gg_rct_Corner7)
     TriggerAddCondition(gg_trg_GreenCorner, Condition(Trig_GreenCorner_Conditions))
     TriggerAddAction(gg_trg_GreenCorner, Trig_GreenCorner_Actions)
 end
@@ -2618,10 +2618,10 @@ function Trig_GreenEnters_Actions()
         udg_CurrentlyOnMap = (udg_CurrentlyOnMap + (225.00 / I2R(udg_NumberToSpawn[GetUnitLevel(GetEnteringUnit())])))
         SetUnitOwner(GetEnteringUnit(), Player(11), false)
         if (Trig_GreenEnters_Func002Func004C()) then
-            udg_TempPoint = GetRectCenter(gg_rct_InsideBR)
+            udg_TempPoint = GetRectCenter(gg_rct_InsideBottomRight)
             SetUnitUserData(GetEnteringUnit(), udg_InsideCounterClockwise)
         else
-            udg_TempPoint = GetRectCenter(gg_rct_InsideBL)
+            udg_TempPoint = GetRectCenter(gg_rct_InsideBottomLeft)
             SetUnitUserData(GetEnteringUnit(), udg_InsideClockwise)
         end
         IssuePointOrderLocBJ(GetEnteringUnit(), "move", udg_TempPoint)
@@ -2633,7 +2633,7 @@ end
 
 function InitTrig_GreenEnters()
     gg_trg_GreenEnters = CreateTrigger()
-    TriggerRegisterEnterRectSimple(gg_trg_GreenEnters, gg_rct_GreenEnters)
+    TriggerRegisterEnterRectSimple(gg_trg_GreenEnters, gg_rct_Enters7)
     TriggerAddCondition(gg_trg_GreenEnters, Condition(Trig_GreenEnters_Conditions))
     TriggerAddAction(gg_trg_GreenEnters, Trig_GreenEnters_Actions)
 end
@@ -2674,7 +2674,7 @@ end
 
 function InitTrig_InsideBR()
     gg_trg_InsideBR = CreateTrigger()
-    TriggerRegisterEnterRectSimple(gg_trg_InsideBR, gg_rct_InsideBR)
+    TriggerRegisterEnterRectSimple(gg_trg_InsideBR, gg_rct_InsideBottomRight)
     TriggerAddCondition(gg_trg_InsideBR, Condition(Trig_InsideBR_Conditions))
     TriggerAddAction(gg_trg_InsideBR, Trig_InsideBR_Actions)
 end
@@ -2788,12 +2788,12 @@ function Trig_InsideRight_Actions()
         DoNothing()
     end
     if (Trig_InsideRight_Func007C()) then
-        udg_TempPoint = GetRectCenter(gg_rct_InsideBR)
+        udg_TempPoint = GetRectCenter(gg_rct_InsideBottomRight)
     else
         DoNothing()
     end
     if (Trig_InsideRight_Func008C()) then
-        udg_TempPoint = GetRectCenter(gg_rct_InsideTR)
+        udg_TempPoint = GetRectCenter(gg_rct_InsideTopRight)
     else
         DoNothing()
     end
@@ -2831,13 +2831,13 @@ function Trig_Pink_Conditions()
 end
 
 function Trig_Pink_Actions()
-    IssuePointOrderLocBJ(GetEnteringUnit(), "move", GetRectCenter(gg_rct_PinkCorner))
+    IssuePointOrderLocBJ(GetEnteringUnit(), "move", GetRectCenter(gg_rct_Corner8))
     UnitAddAbilityBJ(FourCC("Aeth"), GetEnteringUnit())
 end
 
 function InitTrig_Pink()
     gg_trg_Pink = CreateTrigger()
-    TriggerRegisterEnterRectSimple(gg_trg_Pink, gg_rct_8_Pink_Spawn)
+    TriggerRegisterEnterRectSimple(gg_trg_Pink, gg_rct_Spawn8)
     TriggerAddCondition(gg_trg_Pink, Condition(Trig_Pink_Conditions))
     TriggerAddAction(gg_trg_Pink, Trig_Pink_Actions)
 end
@@ -2860,13 +2860,13 @@ function Trig_PinkCorner_Conditions()
 end
 
 function Trig_PinkCorner_Actions()
-    IssuePointOrderLocBJ(GetEnteringUnit(), "move", GetRectCenter(gg_rct_OutsideBR))
+    IssuePointOrderLocBJ(GetEnteringUnit(), "move", GetRectCenter(gg_rct_OutsideBottomRight))
     SetUnitUserData(GetEnteringUnit(), 0)
 end
 
 function InitTrig_PinkCorner()
     gg_trg_PinkCorner = CreateTrigger()
-    TriggerRegisterEnterRectSimple(gg_trg_PinkCorner, gg_rct_PinkCorner)
+    TriggerRegisterEnterRectSimple(gg_trg_PinkCorner, gg_rct_Corner8)
     TriggerAddCondition(gg_trg_PinkCorner, Condition(Trig_PinkCorner_Conditions))
     TriggerAddAction(gg_trg_PinkCorner, Trig_PinkCorner_Actions)
 end
@@ -2932,7 +2932,7 @@ end
 
 function InitTrig_OutsideBR()
     gg_trg_OutsideBR = CreateTrigger()
-    TriggerRegisterEnterRectSimple(gg_trg_OutsideBR, gg_rct_OutsideBR)
+    TriggerRegisterEnterRectSimple(gg_trg_OutsideBR, gg_rct_OutsideBottomRight)
     TriggerAddCondition(gg_trg_OutsideBR, Condition(Trig_OutsideBR_Conditions))
     TriggerAddAction(gg_trg_OutsideBR, Trig_OutsideBR_Actions)
 end
@@ -3046,12 +3046,12 @@ function Trig_OutsideRight_Actions()
         DoNothing()
     end
     if (Trig_OutsideRight_Func007C()) then
-        udg_TempPoint = GetRectCenter(gg_rct_OutsideBR)
+        udg_TempPoint = GetRectCenter(gg_rct_OutsideBottomRight)
     else
         DoNothing()
     end
     if (Trig_OutsideRight_Func008C()) then
-        udg_TempPoint = GetRectCenter(gg_rct_OutsideTR)
+        udg_TempPoint = GetRectCenter(gg_rct_OutsideTopRight)
     else
         DoNothing()
     end
