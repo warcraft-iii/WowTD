@@ -8,24 +8,6 @@ local Player = require('oop.player')
 
 local ReplaceUnitStateMethod = require('enum.replaceunitstatemethod')
 
--- 还不知道有什么用
-local numberInMapCheckTimer = Timer:create()
-numberInMapCheckTimer:start(9, function()
-    local val = 0.0
-
-    for unit in Player:get(11):iterateUnits() do
-        print(unit)
-
-        if unit:isAlive() then
-            val = val + 225 / udg_NumberToSpawn[unit:getLevel()]
-        end
-    end
-
-    print('numberInMapCheckTimer', val)
-
-    udg_CurrentlyOnMap = val
-end)
-
 -- sell 金币有bug
 local sellTrigger = Trigger:create()
 do

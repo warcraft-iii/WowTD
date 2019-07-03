@@ -1,6 +1,6 @@
 --- 游戏模式管理
 ---
-local DialogBox = require('system.ui.dialogbox')
+local DialogBox = require('ui.dialogbox')
 local Force = require('oop.force')
 
 ---@class GameModeMgr : object
@@ -12,8 +12,8 @@ local GameModeType = {Easy = 1, Normal = 2, Hard = 3}
 function GameModeMgr:constructor()
     ---@type DialogItem[]
     self.menus = {
-        {text = L['|c0000FF00Easy (Handicap: 75%)|r'], value = GameModeType.Easy}, --
-        {text = L['|c000080FFNormal (Handicap: 100%)|r'], value = GameModeType.Normal}, --
+        {text = L['|c0000FF00Easy (Handicap: 75%)|r'], value = GameModeType.Easy},
+        {text = L['|c000080FFNormal (Handicap: 100%)|r'], value = GameModeType.Normal},
         {text = L['|c00FF0000Hard (+125% Handicap)|r'], value = GameModeType.Hard},
     }
     self.hardVotes = 0

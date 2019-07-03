@@ -6,6 +6,8 @@ require('oop')
 require('console')
 -- @end-debug@
 
+require('Data')
+
 ---fake locale library
 ---@class L : table
 L = setmetatable({}, {
@@ -19,6 +21,8 @@ local function main()
     -- init
     dofile('System/General/CommandLine.lua')
     dofile('Game.lua')
+    dofile('System/Game/Pathing.lua')
+    dofile('System/Game/EnemyCheck.lua')
 
     dofile('System/General/GameModeMgr.lua')
 
