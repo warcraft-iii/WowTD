@@ -7,6 +7,7 @@ local Trigger = require('oop.trigger')
 local Event = require('oop.event')
 local Player = require('oop.player')
 local Unit = require('oop.unit')
+local Order = require('enum.order')
 
 local Events = require('System.Game.Events')
 
@@ -59,7 +60,7 @@ function Pathing:onEnter()
         unit:setOwner(Player:get(11), false)
     end
 
-    unit:issuePointOrder('move', targetRect:getCenterX(), targetRect:getCenterY())
+    unit:issuePointOrder(Order.move, targetRect:getCenterX(), targetRect:getCenterY())
     unit:setLastRect(rect)
 end
 
