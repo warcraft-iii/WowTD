@@ -23,15 +23,15 @@ end
 ---onVote
 ---@param dialogItem DialogItem
 function GameModeMgr:onVote(dialogItem)
-    local hardVote, insaneVote = 0
+    local hardVote, insaneVote = 0, 0
     local text
     if dialogItem.value == GameModeType.Easy then
-        text = L["%s voted |c0000FF00Easy|r"]
+        text = L['%s voted |c0000FF00Easy|r']
     elseif dialogItem.value == GameModeType.Normal then
-        text = L["%s voted |c000080FFNormal|r"]
+        text = L['%s voted |c000080FFNormal|r']
         hardVote = 1
     elseif dialogItem.value == GameModeType.Hard then
-        text = L["%s voted |c00FF0000Hard|r"]
+        text = L['%s voted |c00FF0000Hard|r']
         insaneVote = 1
     end
     local player = Event:getTriggerPlayer()
@@ -63,13 +63,13 @@ function GameModeMgr:voteResult()
     local votes = players:size() - self.hardVotes - self.insaneVotes
     local text, handicap
     if votes >= self.hardVotes and votes >= self.insaneVotes then
-        text = L["|c0000FF00Gamemode is set to: Easy|r"]
+        text = L['|c0000FF00Gamemode is set to: Easy|r']
         handicap = 75
     elseif votes >= self.insaneVotes then
-        text = L["|c000080FFGamemode is set to: Normal|r"]
+        text = L['|c000080FFGamemode is set to: Normal|r']
         handicap = 100
     elseif votes >= self.hardVotes then
-        text = L["|c00FF0000Gametyp is set to: Hard|r"]
+        text = L['|c00FF0000Gametyp is set to: Hard|r']
         handicap = 125
     end
 
