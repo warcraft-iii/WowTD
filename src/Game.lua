@@ -13,7 +13,7 @@ local numberInMapCheckTimer = Timer:create()
 numberInMapCheckTimer:start(9, function()
     local val = 0.0
 
-    for unit in Player:get(11):iterUnits() do
+    for unit in Player:get(11):iterateUnits() do
         print(unit)
 
         if unit:isAlive() then
