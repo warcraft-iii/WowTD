@@ -1,6 +1,3 @@
-[submodule "src/lib/observer"]
-	path = src/lib/observer
-	url = https://github.com/warcraft-iii/lib-observer.git
 [submodule "src/lib/console"]
 	path = src/lib/console
 	url = https://github.com/warcraft-iii/lib-console.git
