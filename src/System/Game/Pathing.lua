@@ -42,7 +42,7 @@ end
 
 function Pathing:onEnter()
     local unit = Event:getEnteringUnit()
-    local player = unit:getOwningPlayer()
+    local player = unit:getOwner()
     if not (player == Player:get(10) or player == Player:get(11)) then
         return false
     end

@@ -17,9 +17,9 @@ do
     end)
     sellTrigger:addAction(function()
         local unit = Event:getTriggerUnit()
-        unit:getOwningPlayer():adjustGold(unit:getPointValue())
-        unit:remove()
-        Event:getTrainedUnit():remove()
+        unit:getOwner():adjustGold(unit:getPointValue())
+        unit:delete()
+        Event:getTrainedUnit():delete()
     end)
 end
 
@@ -34,12 +34,12 @@ do
         local unitPoint = unit:getPointValue()
         local prevLevelId = unit:getPrevLevelId()
 
-        Event:getTrainedUnit():remove()
+        Event:getTrainedUnit():delete()
 
-        local isSelected = unit:isSelected(unit:getOwningPlayer())
+        local isSelected = unit:isSelected(unit:getOwner())
 
         local replaced = unit:replace(prevLevelId, ReplaceUnitStateMethod.Maximum)
-        local owner = replaced:getOwningPlayer()
+        local owner = replaced:getOwner()
         if isSelected then
             owner:selectUnitSingle(replaced)
         end
