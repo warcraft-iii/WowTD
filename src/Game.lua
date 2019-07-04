@@ -36,12 +36,13 @@ do
 
         Event:getTrainedUnit():delete()
 
-        local isSelected = unit:isSelected(unit:getOwner())
+        local owner = unit:getOwner()
+        local isSelected = unit:isSelected(owner)
 
         local replaced = unit:replace(prevLevelId, ReplaceUnitStateMethod.Maximum)
         local owner = replaced:getOwner()
         if isSelected then
-            owner:selectUnitSingle(replaced)
+            owner:selectUnit(replaced)
         end
 
         owner:adjustGold(unitPoint - replaced:getPointValue())
