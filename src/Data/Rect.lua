@@ -144,7 +144,7 @@ PathingRects.InsideTopRight.targets = {PathingRects.Enters3, PathingRects.Inside
 PathingRects.InsideBottomLeft.targets = {PathingRects.Enters6, PathingRects.InsideBottom}
 PathingRects.InsideBottomRight.targets = {PathingRects.Enters7, PathingRects.InsideRight}
 
-PathingRects.InsideLeft.targets = {PathingRects.Enters6, PathingRects.InsideTopLeft}
-PathingRects.InsideRight.targets = {PathingRects.Enters3, PathingRects.InsideBottomRight}
-PathingRects.InsideTop.targets = {PathingRects.Enters2, PathingRects.InsideTopRight}
-PathingRects.InsideBottom.targets = {PathingRects.Enters7, PathingRects.InsideBottomLeft}
+PathingRects.InsideLeft.targets = {PathingRects.Enters6, PathingRects.InsideTopLeft, PathingRects.OutsideLeft}
+PathingRects.InsideRight.targets = {PathingRects.Enters3, PathingRects.InsideBottomRight, PathingRects.OutsideRight}
+PathingRects.InsideTop.targets = {PathingRects.Enters2, PathingRects.InsideTopRight, PathingRects.OutsideTop}
+PathingRects.InsideBottom.targets = {PathingRects.Enters7, PathingRects.InsideBottomLeft, PathingRects.OutsideBottom}
