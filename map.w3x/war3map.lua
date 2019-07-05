@@ -48,6 +48,7 @@ udg_AirTowers = __jarray(0)
 udg_TempUnitType = 0
 udg_Bouton = {}
 udg_DialogueBouton = nil
+udg_DarkSummoner = {}
 gg_rct_Corner1 = nil
 gg_rct_Corner2 = nil
 gg_rct_Corner3 = nil
@@ -197,6 +198,7 @@ gg_unit_u000_0030 = nil
 gg_unit_u000_0033 = nil
 gg_unit_u000_0032 = nil
 gg_unit_u000_0040 = nil
+gg_trg_InitVariables = nil
 function InitGlobals()
     local i = 0
     udg_LVL = 0
@@ -255,6 +257,12 @@ function InitGlobals()
     udg_RangeCalc = 0.0
     udg_RangeCount = 0.0
     udg_DialogueBouton = DialogCreate()
+    i = 0
+    while (true) do
+        if ((i > 1)) then break end
+        udg_DarkSummoner[i] = nil
+        i = i + 1
+    end
 end
 
 function InitSounds()
@@ -384,6 +392,38 @@ function CreateRegions()
     gg_rct_TestArea = Rect(-192.0, -192.0, 192.0, 192.0)
 end
 
+function Trig_InitVariables_Actions()
+    udg_DarkSummoner[1] = gg_unit_u000_0011
+    udg_DarkSummoner[2] = gg_unit_u000_0012
+    udg_DarkSummoner[3] = gg_unit_u000_0010
+    udg_DarkSummoner[4] = gg_unit_u000_0016
+    udg_DarkSummoner[5] = gg_unit_u000_0014
+    udg_DarkSummoner[6] = gg_unit_u000_0017
+    udg_DarkSummoner[7] = gg_unit_u000_0038
+    udg_DarkSummoner[8] = gg_unit_u000_0040
+    udg_DarkSummoner[9] = gg_unit_u000_0037
+    udg_DarkSummoner[10] = gg_unit_u000_0032
+    udg_DarkSummoner[11] = gg_unit_u000_0030
+    udg_DarkSummoner[12] = gg_unit_u000_0033
+    udg_DarkSummoner[13] = gg_unit_u000_0024
+    udg_DarkSummoner[14] = gg_unit_u000_0023
+    udg_DarkSummoner[15] = gg_unit_u000_0025
+    udg_DarkSummoner[16] = gg_unit_u000_0019
+    udg_DarkSummoner[17] = gg_unit_u000_0020
+    udg_DarkSummoner[18] = gg_unit_u000_0018
+    udg_DarkSummoner[19] = gg_unit_u000_0035
+    udg_DarkSummoner[20] = gg_unit_u000_0034
+    udg_DarkSummoner[21] = gg_unit_u000_0036
+    udg_DarkSummoner[22] = gg_unit_u000_0027
+    udg_DarkSummoner[23] = gg_unit_u000_0026
+    udg_DarkSummoner[24] = gg_unit_u000_0029
+end
+
+function InitTrig_InitVariables()
+    gg_trg_InitVariables = CreateTrigger()
+    TriggerAddAction(gg_trg_InitVariables, Trig_InitVariables_Actions)
+end
+
 function Trig_Adding_to_Quests_Actions()
     CreateQuestBJ(bj_QUESTTYPE_REQ_DISCOVERED, "TRIGSTR_1535", "TRIGSTR_1536", "ReplaceableTextures\\CommandButtons\\BTNStatUp.blp")
     CreateQuestBJ(bj_QUESTTYPE_REQ_DISCOVERED, "TRIGSTR_1537", "TRIGSTR_1538", "ReplaceableTextures\\PassiveButtons\\PASBTNStatUp.blp")
@@ -494,117 +534,18 @@ function InitTrig_SetupLeaderBoard()
     TriggerAddAction(gg_trg_SetupLeaderBoard, Trig_SetupLeaderBoard_Actions)
 end
 
-function Trig_Leave_Red_Actions()
-    DisplayTimedTextToForce(GetPlayersAll(), 5.00, "TRIGSTR_1354")
-    ExplodeUnitBJ(gg_unit_u000_0011)
-    ExplodeUnitBJ(gg_unit_u000_0012)
-    ExplodeUnitBJ(gg_unit_u000_0010)
-end
-
-function InitTrig_Leave_Red()
-    gg_trg_Leave_Red = CreateTrigger()
-    TriggerAddAction(gg_trg_Leave_Red, Trig_Leave_Red_Actions)
-end
-
-function Trig_Leave_Blue_Actions()
-    DisplayTimedTextToForce(GetPlayersAll(), 5.00, "TRIGSTR_1355")
-    ExplodeUnitBJ(gg_unit_u000_0016)
-    ExplodeUnitBJ(gg_unit_u000_0014)
-    ExplodeUnitBJ(gg_unit_u000_0017)
-end
-
-function InitTrig_Leave_Blue()
-    gg_trg_Leave_Blue = CreateTrigger()
-    TriggerAddAction(gg_trg_Leave_Blue, Trig_Leave_Blue_Actions)
-end
-
-function Trig_Leave_Teal_Actions()
-    DisplayTimedTextToForce(GetPlayersAll(), 5.00, "TRIGSTR_1356")
-    ExplodeUnitBJ(gg_unit_u000_0038)
-    ExplodeUnitBJ(gg_unit_u000_0040)
-    ExplodeUnitBJ(gg_unit_u000_0037)
-end
-
-function InitTrig_Leave_Teal()
-    gg_trg_Leave_Teal = CreateTrigger()
-    TriggerAddAction(gg_trg_Leave_Teal, Trig_Leave_Teal_Actions)
-end
-
-function Trig_Leave_Purple_Actions()
-    DisplayTimedTextToForce(GetPlayersAll(), 5.00, "TRIGSTR_1357")
-    ExplodeUnitBJ(gg_unit_u000_0032)
-    ExplodeUnitBJ(gg_unit_u000_0030)
-    ExplodeUnitBJ(gg_unit_u000_0033)
-end
-
-function InitTrig_Leave_Purple()
-    gg_trg_Leave_Purple = CreateTrigger()
-    TriggerAddAction(gg_trg_Leave_Purple, Trig_Leave_Purple_Actions)
-end
-
-function Trig_Leave_Yellow_Actions()
-    DisplayTimedTextToForce(GetPlayersAll(), 5.00, "TRIGSTR_1358")
-    ExplodeUnitBJ(gg_unit_u000_0024)
-    ExplodeUnitBJ(gg_unit_u000_0023)
-    ExplodeUnitBJ(gg_unit_u000_0025)
-end
-
-function InitTrig_Leave_Yellow()
-    gg_trg_Leave_Yellow = CreateTrigger()
-    TriggerAddAction(gg_trg_Leave_Yellow, Trig_Leave_Yellow_Actions)
-end
-
-function Trig_Leave_Orange_Actions()
-    DisplayTimedTextToForce(GetPlayersAll(), 5.00, "TRIGSTR_1359")
-    ExplodeUnitBJ(gg_unit_u000_0019)
-    ExplodeUnitBJ(gg_unit_u000_0020)
-    ExplodeUnitBJ(gg_unit_u000_0018)
-end
-
-function InitTrig_Leave_Orange()
-    gg_trg_Leave_Orange = CreateTrigger()
-    TriggerAddAction(gg_trg_Leave_Orange, Trig_Leave_Orange_Actions)
-end
-
-function Trig_Leave_Green_Actions()
-    DisplayTimedTextToForce(GetPlayersAll(), 5.00, "TRIGSTR_1360")
-    ExplodeUnitBJ(gg_unit_u000_0034)
-    ExplodeUnitBJ(gg_unit_u000_0035)
-    ExplodeUnitBJ(gg_unit_u000_0036)
-end
-
-function InitTrig_Leave_Green()
-    gg_trg_Leave_Green = CreateTrigger()
-    TriggerAddAction(gg_trg_Leave_Green, Trig_Leave_Green_Actions)
-end
-
-function Trig_Leave_Pink_Actions()
-    DisplayTimedTextToForce(GetPlayersAll(), 5.00, "TRIGSTR_1361")
-    ExplodeUnitBJ(gg_unit_u000_0027)
-    ExplodeUnitBJ(gg_unit_u000_0026)
-    ExplodeUnitBJ(gg_unit_u000_0029)
-end
-
-function InitTrig_Leave_Pink()
-    gg_trg_Leave_Pink = CreateTrigger()
-    TriggerAddAction(gg_trg_Leave_Pink, Trig_Leave_Pink_Actions)
-end
-
 function InitCustomTriggers()
+    InitTrig_InitVariables()
     InitTrig_Adding_to_Quests()
     InitTrig_Enemy_DiesWithValue()
     InitTrig_Enemy_DiesNoValue()
     InitTrig_PlayerQuit()
     InitTrig_Update_Leaderboard()
     InitTrig_SetupLeaderBoard()
-    InitTrig_Leave_Red()
-    InitTrig_Leave_Blue()
-    InitTrig_Leave_Teal()
-    InitTrig_Leave_Purple()
-    InitTrig_Leave_Yellow()
-    InitTrig_Leave_Orange()
-    InitTrig_Leave_Green()
-    InitTrig_Leave_Pink()
+end
+
+function RunInitializationTriggers()
+    ConditionalTriggerExecute(gg_trg_InitVariables)
 end
 
 function InitCustomPlayerSlots()
@@ -841,6 +782,7 @@ function main()
     InitBlizzard()
     InitGlobals()
     InitCustomTriggers()
+    RunInitializationTriggers()
 end
 
 function config()

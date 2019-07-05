@@ -123,9 +123,9 @@ function WaveMgr:firstWaveTip()
     sound:setDuration(12120)
     sound:start()
 
-    for i, v in ipairs(DarkSummoner) do
-        for _, u in ipairs(v) do
-            u:setAnimation('stand channel')
+    for _, player in ipairs(PlayerMgr:getPlayers()) do
+        for _, unit in ipairs(DarkSummoner[player]) do
+            unit:setAnimation('stand channel')
         end
     end
 

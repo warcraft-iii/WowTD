@@ -13,7 +13,7 @@ function BattleGroundMgr:init()
         local player = Event:getTriggerPlayer()
         print(string.format(L['|c00FF0000Player %s leaves the game. His spawnunits will kill directly!|r'],
                             player:getName()))
-        for _, unit in ipairs(DarkSummoner[player:getId() + 1]) do
+        for _, unit in ipairs(DarkSummoner[player]) do
             unit:setExploded(true)
             unit:kill()
         end
@@ -76,7 +76,7 @@ function BattleGroundMgr:checkLose()
 
         for i, p in ipairs(players) do
             for u in p:iterateUnits(Unit.isAlive) do
-                u:remove()
+                u:delete()
             end
         end
 
