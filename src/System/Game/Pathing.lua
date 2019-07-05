@@ -4,12 +4,9 @@
 -- @Date   : 7/3/2019, 9:33:54 PM
 local Observer = require('utils.observer')
 local Trigger = require('oop.trigger')
-local Event = require('oop.event')
 local Player = require('oop.player')
 local Unit = require('oop.unit')
 local Order = require('enum.order')
-
-local Events = require('System.Game.Events')
 
 local Pathing = Observer:new()
 

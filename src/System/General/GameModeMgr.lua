@@ -2,22 +2,35 @@
 ---
 local DialogBox = require('ui.dialogbox')
 local Force = require('oop.force')
+local Timer = require('oop.timer')
+local Observer = require('utils.observer')
+local Event = require('oop.event')
+local Native = require('native')
 
----@class GameModeMgr : object
-local GameModeMgr = class('GameModeMgr')
+local GameModeMgr = Observer:new()
 
----@class GameModeType
-local GameModeType = {Easy = 1, Normal = 2, Hard = 3}
-
-function GameModeMgr:constructor()
+function GameModeMgr:init()
     ---@type DialogItem[]
     self.menus = {
-        {text = L['|c0000FF00Easy (Handicap: 75%)|r'], value = GameModeType.Easy},
-        {text = L['|c000080FFNormal (Handicap: 100%)|r'], value = GameModeType.Normal},
-        {text = L['|c00FF0000Hard (+125% Handicap)|r'], value = GameModeType.Hard},
+        {
+            text = string.format(L['|c0000FF00Easy (Handicap: %d%%)|r'], GameModeHandicap.Easy), --
+            value = GameModeType.Easy,
+        }, {
+            text = string.format(L['|c000080FFNormal (Handicap: %d%%)|r'], GameModeHandicap.Normal), --
+            value = GameModeType.Normal,
+        }, {
+            text = string.format(L['|c00FF0000Hard (+%d%% Handicap)|r'], GameModeHandicap.Hard), --
+            value = GameModeType.Hard,
+        },
     }
     self.hardVotes = 0
     self.insaneVotes = 0
+
+    self:showVote()
+
+    Timer:after(GameConfig.VoteDuration, function()
+        self:voteResult()
+    end)
 end
 
 ---onVote
@@ -64,28 +77,18 @@ function GameModeMgr:voteResult()
     local text, handicap
     if votes >= self.hardVotes and votes >= self.insaneVotes then
         text = L['|c0000FF00Gamemode is set to: Easy|r']
-        handicap = 75
+        handicap = GameModeHandicap.Easy
     elseif votes >= self.insaneVotes then
         text = L['|c000080FFGamemode is set to: Normal|r']
-        handicap = 100
+        handicap = GameModeHandicap.Normal
     elseif votes >= self.hardVotes then
         text = L['|c00FF0000Gametyp is set to: Hard|r']
-        handicap = 125
+        handicap = GameModeHandicap.Hard
     end
 
     print(text)
     Player:get(11):setHandicap(handicap * 0.01)
     Player:get(10):setHandicap(handicap * 0.01)
-
 end
 
-local function main()
-    local gameModeMgr = GameModeMgr:new()
-    gameModeMgr:showVote()
-
-    Timer:after(20, function()
-        gameModeMgr:voteResult()
-    end)
-end
-
-main()
+GameModeMgr:init()

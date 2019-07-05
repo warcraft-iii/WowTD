@@ -2,11 +2,9 @@
 -- @Author : Dencer (tdaddon@163.com)
 -- @Link   : https://dengsir.github.io
 -- @Date   : 7/1/2019, 8:39:07 PM
-
 ---@class TowerData
 ---@field nextLevel integer
 ---@field prevLevel integer
-
 TowerData = {}
 
 TowerType = {
@@ -106,3 +104,50 @@ for towerType, list in pairs(TowerUpgradeLine) do
         TowerData[unitId].prevLevel = list[i - 1]
     end
 end
+
+---@class WaveUintItem : table
+---@field id integer
+---@field count integer
+---@field fly boolean
+
+---WaveUnits
+---@class WaveUintItem[]
+WaveUnits = {
+    [1] = {id = FourCC("hfoo"), count = 82},
+    [2] = {id = FourCC("hrif"), count = 189},
+    [3] = {id = FourCC("hsor"), count = 24},
+    [4] = {id = FourCC("hspt"), count = 104},
+    [5] = {id = FourCC("hmpr"), count = 73},
+    [6] = {id = FourCC("hkni"), count = 185},
+    [7] = {id = FourCC("hgyr"), count = 133, fly = true},
+    [8] = {id = FourCC("hmtm"), count = 189},
+    [9] = {id = FourCC("hmtt"), count = 16},
+    [10] = {id = FourCC("ogru"), count = 101},
+    [11] = {id = FourCC("ohun"), count = 100},
+    [12] = {id = FourCC("odoc"), count = 32},
+    [13] = {id = FourCC("oshm"), count = 80},
+    [14] = {id = FourCC("otbr"), count = 40},
+    [15] = {id = FourCC("otau"), count = 20},
+    [16] = {id = FourCC("orai"), count = 182},
+    [17] = {id = FourCC("okod"), count = 121, fly = true},
+    [18] = {id = FourCC("ospw"), count = 40},
+    [19] = {id = FourCC("ugho"), count = 200},
+    [20] = {id = FourCC("ucry"), count = 70},
+    [21] = {id = FourCC("ugar"), count = 25},
+    [22] = {id = FourCC("uban"), count = 105},
+    [23] = {id = FourCC("unec"), count = 20, fly = true},
+    [24] = {id = FourCC("uabo"), count = 140},
+    [25] = {id = FourCC("umtw"), count = 111},
+    [26] = {id = FourCC("uobs"), count = 20},
+    [27] = {id = FourCC("Obla"), count = 200, fly = true},
+    [28] = {id = FourCC("ufro"), count = 15},
+    [29] = {id = FourCC("Edem"), count = 165},
+    [30] = {id = FourCC("Hmkg"), count = 200},
+    [31] = {id = FourCC("ninf"), count = 30},
+    [32] = {id = FourCC("Nngs"), count = 80},
+    [33] = {id = FourCC("Ucrl"), count = 15},
+    [34] = {id = FourCC("Udea"), count = 200},
+    [35] = {id = FourCC("nrwm"), count = 145, fly = true},
+    [36] = {id = FourCC("nsgh"), count = 120},
+}
+

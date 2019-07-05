@@ -5,8 +5,6 @@
 local Timer = require('oop.timer')
 local Observer = require('utils.observer')
 
-local Events = require('System.Game.Events')
-
 local EnemyCheck = Observer:new()
 
 function EnemyCheck:init()

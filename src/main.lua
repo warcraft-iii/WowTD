@@ -6,6 +6,7 @@ require('oop')
 require('console')
 -- @end-debug@
 
+require('System.Config')
 require('Data')
 
 ---fake locale library
@@ -19,11 +20,13 @@ L = setmetatable({}, {
 local function main()
 
     -- init
-    dofile('System/General/CommandLine.lua')
+    dofile('System/Game/PlayerMgr.lua')
+    dofile('System/General/CommandMgr.lua')
     dofile('Game.lua')
     dofile('System/Game/Pathing.lua')
     dofile('System/Game/EnemyCheck.lua')
 
+    dofile('System/Game/WaveMgr.lua')
     dofile('System/General/GameModeMgr.lua')
 
     -- init finished

@@ -397,73 +397,6 @@ function InitTrig_Adding_to_Quests()
     TriggerAddAction(gg_trg_Adding_to_Quests, Trig_Adding_to_Quests_Actions)
 end
 
-function Trig_Help_System_Want_help_Actions()
-    DisplayTimedTextToForce(GetPlayersAll(), 10.00, "TRIGSTR_1693")
-end
-
-function InitTrig_Help_System_Want_help()
-    gg_trg_Help_System_Want_help = CreateTrigger()
-    TriggerRegisterTimerEventPeriodic(gg_trg_Help_System_Want_help, 35.00)
-    TriggerAddAction(gg_trg_Help_System_Want_help, Trig_Help_System_Want_help_Actions)
-end
-
-function Trig_Help_System_Immun_Actions()
-    DisplayTimedTextToForce(GetPlayersAll(), 10.00, "TRIGSTR_1694")
-end
-
-function InitTrig_Help_System_Immun()
-    gg_trg_Help_System_Immun = CreateTrigger()
-    TriggerRegisterPlayerChatEvent(gg_trg_Help_System_Immun, Player(0), "-immun", false)
-    TriggerRegisterPlayerChatEvent(gg_trg_Help_System_Immun, Player(1), "-immun", false)
-    TriggerRegisterPlayerChatEvent(gg_trg_Help_System_Immun, Player(2), "-immun", false)
-    TriggerRegisterPlayerChatEvent(gg_trg_Help_System_Immun, Player(3), "-immun", false)
-    TriggerRegisterPlayerChatEvent(gg_trg_Help_System_Immun, Player(4), "-immun", false)
-    TriggerRegisterPlayerChatEvent(gg_trg_Help_System_Immun, Player(5), "-immun", false)
-    TriggerRegisterPlayerChatEvent(gg_trg_Help_System_Immun, Player(6), "-immun", false)
-    TriggerRegisterPlayerChatEvent(gg_trg_Help_System_Immun, Player(7), "-immun", false)
-    TriggerRegisterPlayerChatEvent(gg_trg_Help_System_Immun, Player(8), "-immun", false)
-    TriggerRegisterPlayerChatEvent(gg_trg_Help_System_Immun, Player(9), "-immun", false)
-    TriggerAddAction(gg_trg_Help_System_Immun, Trig_Help_System_Immun_Actions)
-end
-
-function Trig_Help_System_Air_Actions()
-    DisplayTimedTextToForce(GetPlayersAll(), 10.00, "TRIGSTR_1695")
-end
-
-function InitTrig_Help_System_Air()
-    gg_trg_Help_System_Air = CreateTrigger()
-    TriggerRegisterPlayerChatEvent(gg_trg_Help_System_Air, Player(0), "-air", true)
-    TriggerRegisterPlayerChatEvent(gg_trg_Help_System_Air, Player(1), "-air", true)
-    TriggerRegisterPlayerChatEvent(gg_trg_Help_System_Air, Player(2), "-air", true)
-    TriggerRegisterPlayerChatEvent(gg_trg_Help_System_Air, Player(3), "-air", true)
-    TriggerRegisterPlayerChatEvent(gg_trg_Help_System_Air, Player(4), "-air", true)
-    TriggerRegisterPlayerChatEvent(gg_trg_Help_System_Air, Player(5), "-air", true)
-    TriggerRegisterPlayerChatEvent(gg_trg_Help_System_Air, Player(6), "-air", true)
-    TriggerRegisterPlayerChatEvent(gg_trg_Help_System_Air, Player(7), "-air", true)
-    TriggerRegisterPlayerChatEvent(gg_trg_Help_System_Air, Player(8), "-air", true)
-    TriggerRegisterPlayerChatEvent(gg_trg_Help_System_Air, Player(9), "-air", true)
-    TriggerAddAction(gg_trg_Help_System_Air, Trig_Help_System_Air_Actions)
-end
-
-function Trig_Help_System_Hero_Actions()
-    DisplayTimedTextToForce(GetPlayersAll(), 10.00, "TRIGSTR_1696")
-end
-
-function InitTrig_Help_System_Hero()
-    gg_trg_Help_System_Hero = CreateTrigger()
-    TriggerRegisterPlayerChatEvent(gg_trg_Help_System_Hero, Player(0), "-Hero", true)
-    TriggerRegisterPlayerChatEvent(gg_trg_Help_System_Hero, Player(1), "-Hero", true)
-    TriggerRegisterPlayerChatEvent(gg_trg_Help_System_Hero, Player(2), "-Hero", true)
-    TriggerRegisterPlayerChatEvent(gg_trg_Help_System_Hero, Player(3), "-Hero", true)
-    TriggerRegisterPlayerChatEvent(gg_trg_Help_System_Hero, Player(4), "-Hero", true)
-    TriggerRegisterPlayerChatEvent(gg_trg_Help_System_Hero, Player(5), "-Hero", true)
-    TriggerRegisterPlayerChatEvent(gg_trg_Help_System_Hero, Player(6), "-Hero", true)
-    TriggerRegisterPlayerChatEvent(gg_trg_Help_System_Hero, Player(7), "-Hero", true)
-    TriggerRegisterPlayerChatEvent(gg_trg_Help_System_Hero, Player(8), "-Hero", true)
-    TriggerRegisterPlayerChatEvent(gg_trg_Help_System_Hero, Player(9), "-Hero", true)
-    TriggerAddAction(gg_trg_Help_System_Hero, Trig_Help_System_Hero_Actions)
-end
-
 function Trig_Enemy_DiesWithValue_Actions()
     udg_TempInt = GetConvertedPlayerId(GetOwningPlayer(GetKillingUnitBJ()))
     udg_Kills[udg_TempInt] = (udg_Kills[udg_TempInt] + 1)
@@ -589,9 +522,6 @@ function Trig_Lose_Condition_Actions()
     if (Trig_Lose_Condition_Func003C()) then
         DisplayTextToForce(GetPlayersAll(), "TRIGSTR_1210")
         DisableTrigger(GetTriggeringTrigger())
-        DisableTrigger(gg_trg_SpawnWaves)
-        DisableTrigger(gg_trg_SetupWave)
-        DisableTrigger(gg_trg_WaveTimeManager)
         LeaderboardSetPlayerItemValueColorBJ(Player(11), udg_LEADERBOARD, 100, 0.00, 0.00, 0)
         ForForce(udg_ConnectedPlayers, Trig_Lose_Condition_Func003Func008A)
         TriggerSleepAction(60.00)
@@ -883,205 +813,8 @@ function InitTrig_Leave_Pink()
     TriggerAddAction(gg_trg_Leave_Pink, Trig_Leave_Pink_Actions)
 end
 
-function Trig_GetLevelInfo_Func002Func001C()
-    if (udg_PredictLevel == 7) then
-        return true
-    end
-    if (udg_PredictLevel == 17) then
-        return true
-    end
-    if (udg_PredictLevel == 23) then
-        return true
-    end
-    if (udg_PredictLevel == 27) then
-        return true
-    end
-    if (udg_PredictLevel == 35) then
-        return true
-    end
-    return false
-end
-
-function Trig_GetLevelInfo_Func002Func002C()
-    if (not (ModuloInteger(udg_PredictLevel, 5) == 0)) then
-        return false
-    end
-    return true
-end
-
-function Trig_GetLevelInfo_Func002C()
-    if (not Trig_GetLevelInfo_Func002Func001C()) then
-        return false
-    end
-    return true
-end
-
-function Trig_GetLevelInfo_Actions()
-    udg_TempString = ((udg_TempString .. " ") .. (I2S(udg_NumberToSpawn[udg_PredictLevel]) .. " "))
-    if (Trig_GetLevelInfo_Func002C()) then
-        udg_TempString = (udg_TempString .. "flying enemies")
-    else
-        if (Trig_GetLevelInfo_Func002Func002C()) then
-            udg_TempString = (udg_TempString .. "immune enemies")
-        else
-            udg_TempString = (udg_TempString .. "normal enemies")
-        end
-    end
-end
-
-function InitTrig_GetLevelInfo()
-    gg_trg_GetLevelInfo = CreateTrigger()
-    TriggerAddAction(gg_trg_GetLevelInfo, Trig_GetLevelInfo_Actions)
-end
-
-function Trig_SpawnWaves_Func001Func002Func002A()
-    udg_TempPoint = GetRandomLocInRect(udg_SpawnAreas[GetConvertedPlayerId(GetEnumPlayer())])
-    CreateNUnitsAtLoc(1, udg_UnitToSpawn, Player(10), udg_TempPoint, bj_UNIT_FACING)
-        RemoveLocation (udg_TempPoint)
-end
-
-function Trig_SpawnWaves_Func001Func002Func004A()
-    udg_TempPoint = GetRandomLocInRect(udg_SpawnAreas[GetConvertedPlayerId(GetEnumPlayer())])
-    CreateNUnitsAtLoc(1, udg_UnitToSpawn, Player(10), udg_TempPoint, bj_UNIT_FACING)
-        RemoveLocation (udg_TempPoint)
-end
-
-function Trig_SpawnWaves_Func001Func002C()
-    if (not (udg_SpawningGroup == true)) then
-        return false
-    end
-    return true
-end
-
-function Trig_SpawnWaves_Func001C()
-    if (not (udg_SpawnCounter >= udg_SpawningCalc)) then
-        return false
-    end
-    if (not (udg_UnitToSpawn ~= 0)) then
-        return false
-    end
-    return true
-end
-
-function Trig_SpawnWaves_Actions()
-    if (Trig_SpawnWaves_Func001C()) then
-        if (Trig_SpawnWaves_Func001Func002C()) then
-            udg_SpawningGroup = false
-            ForForce(udg_GroupOutside, Trig_SpawnWaves_Func001Func002Func004A)
-            udg_NextSpawnTracker = (udg_NextSpawnTracker + udg_SpawningRate)
-            udg_SpawningCalc = R2I(udg_NextSpawnTracker)
-        else
-            udg_SpawningGroup = true
-            ForForce(udg_GroupInside, Trig_SpawnWaves_Func001Func002Func002A)
-        end
-        udg_EmptySpawnCounter = (udg_EmptySpawnCounter + 1)
-    else
-        DoNothing()
-    end
-    udg_SpawnCounter = (udg_SpawnCounter + 1)
-end
-
-function InitTrig_SpawnWaves()
-    gg_trg_SpawnWaves = CreateTrigger()
-    TriggerRegisterTimerEventPeriodic(gg_trg_SpawnWaves, 0.15)
-    TriggerAddAction(gg_trg_SpawnWaves, Trig_SpawnWaves_Actions)
-end
-
-function Trig_SetupWave_Func002C()
-    if (not (udg_LVL >= 37)) then
-        return false
-    end
-    return true
-end
-
-function Trig_SetupWave_Actions()
-    udg_LVL = (udg_LVL + 1)
-    if (Trig_SetupWave_Func002C()) then
-        TriggerExecute(gg_trg_Victory)
-        return 
-    else
-        udg_TempString = ("|c008000FFWave " .. (I2S(udg_LVL) .. " of 36.|r"))
-        DisplayTextToForce(GetPlayersAll(), udg_TempString)
-        LeaderboardSetPlayerItemValueBJ(Player(9), udg_LEADERBOARD, udg_LVL)
-        udg_UnitToSpawn = udg_WaveUnits[udg_LVL]
-        udg_SpawningRate = (450.00 / I2R(udg_NumberToSpawn[udg_LVL]))
-        udg_SpawnCounter = 0
-        udg_EmptySpawnCounter = 0
-        udg_NextSpawnTracker = 0.00
-        udg_SpawningCalc = R2I(udg_NextSpawnTracker)
-    end
-end
-
-function InitTrig_SetupWave()
-    gg_trg_SetupWave = CreateTrigger()
-    TriggerAddAction(gg_trg_SetupWave, Trig_SetupWave_Actions)
-end
-
-function Trig_WavesWarning_Actions()
-    PolledWait(20.00)
-    DisplayTimedTextToForce(GetPlayersAll(), 15.00, "TRIGSTR_993")
-        DestroyTrigger( GetTriggeringTrigger() )
-    PlaySoundBJ(gg_snd_TheHornOfCenarius)
-    SetUnitAnimation(gg_unit_u000_0010, "stand channel")
-    SetUnitAnimation(gg_unit_u000_0011, "stand channel")
-    SetUnitAnimation(gg_unit_u000_0012, "stand channel")
-    SetUnitAnimation(gg_unit_u000_0014, "stand channel")
-    SetUnitAnimation(gg_unit_u000_0016, "stand channel")
-    SetUnitAnimation(gg_unit_u000_0017, "stand channel")
-    SetUnitAnimation(gg_unit_u000_0018, "stand channel")
-    SetUnitAnimation(gg_unit_u000_0019, "stand channel")
-    SetUnitAnimation(gg_unit_u000_0020, "stand channel")
-    SetUnitAnimation(gg_unit_u000_0023, "stand channel")
-    SetUnitAnimation(gg_unit_u000_0024, "stand channel")
-    SetUnitAnimation(gg_unit_u000_0025, "stand channel")
-    SetUnitAnimation(gg_unit_u000_0026, "stand channel")
-    SetUnitAnimation(gg_unit_u000_0027, "stand channel")
-    SetUnitAnimation(gg_unit_u000_0029, "stand channel")
-    SetUnitAnimation(gg_unit_u000_0030, "stand channel")
-    SetUnitAnimation(gg_unit_u000_0032, "stand channel")
-    SetUnitAnimation(gg_unit_u000_0033, "stand channel")
-    SetUnitAnimation(gg_unit_u000_0034, "stand channel")
-    SetUnitAnimation(gg_unit_u000_0035, "stand channel")
-    SetUnitAnimation(gg_unit_u000_0036, "stand channel")
-    SetUnitAnimation(gg_unit_u000_0037, "stand channel")
-    SetUnitAnimation(gg_unit_u000_0038, "stand channel")
-    SetUnitAnimation(gg_unit_u000_0040, "stand channel")
-end
-
-function InitTrig_WavesWarning()
-    gg_trg_WavesWarning = CreateTrigger()
-    TriggerAddAction(gg_trg_WavesWarning, Trig_WavesWarning_Actions)
-end
-
-function Trig_WaveTimeManager_Actions()
-    TriggerExecute(gg_trg_SetupWave)
-    PolledWait(55.00)
-    TriggerExecute(GetTriggeringTrigger())
-end
-
-function InitTrig_WaveTimeManager()
-    gg_trg_WaveTimeManager = CreateTrigger()
-    TriggerRegisterTimerEventSingle(gg_trg_WaveTimeManager, 25.00)
-    TriggerAddAction(gg_trg_WaveTimeManager, Trig_WaveTimeManager_Actions)
-end
-
-function Trig_Victory_Actions()
-    PolledWait(15.00)
-    udg_UnitToSpawn = 0
-    DisplayTextToForce(GetPlayersAll(), "TRIGSTR_1213")
-end
-
-function InitTrig_Victory()
-    gg_trg_Victory = CreateTrigger()
-    TriggerAddAction(gg_trg_Victory, Trig_Victory_Actions)
-end
-
 function InitCustomTriggers()
     InitTrig_Adding_to_Quests()
-    InitTrig_Help_System_Want_help()
-    InitTrig_Help_System_Immun()
-    InitTrig_Help_System_Air()
-    InitTrig_Help_System_Hero()
     InitTrig_Enemy_DiesWithValue()
     InitTrig_Enemy_DiesNoValue()
     InitTrig_PlayerQuit()
@@ -1098,17 +831,10 @@ function InitCustomTriggers()
     InitTrig_Leave_Orange()
     InitTrig_Leave_Green()
     InitTrig_Leave_Pink()
-    InitTrig_GetLevelInfo()
-    InitTrig_SpawnWaves()
-    InitTrig_SetupWave()
-    InitTrig_WavesWarning()
-    InitTrig_WaveTimeManager()
-    InitTrig_Victory()
 end
 
 function RunInitializationTriggers()
     ConditionalTriggerExecute(gg_trg_Initialization)
-    ConditionalTriggerExecute(gg_trg_WavesWarning)
 end
 
 function InitCustomPlayerSlots()
