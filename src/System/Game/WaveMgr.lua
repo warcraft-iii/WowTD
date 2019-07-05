@@ -92,8 +92,7 @@ function WaveMgr:createUnit(players)
             print('error spawn id ', id)
             return
         end
-        local pt = rt:randomPosition()
-        Unit:create(PlayerMgr:getBirthPlayer(), self.spawnUnit, pt.x, pt.y, bj_UNIT_FACING)
+        Unit:create(PlayerMgr:getBirthPlayer(), self.spawnUnit, rt:randomPosition(), bj_UNIT_FACING)
     end
 end
 

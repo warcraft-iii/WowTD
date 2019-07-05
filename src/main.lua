@@ -32,6 +32,7 @@ local function main()
     dofile('System/Game/ScoreMgr.lua')
 
     dofile('System/General/ReadMe.lua')
+    dofile('System/General/ChangeLogs.lua')
 
     -- init finished
     Timer:after(5, function()

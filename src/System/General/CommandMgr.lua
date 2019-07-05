@@ -1,4 +1,4 @@
-local CommandLine = require('lib.commandline')
+local CommandLine = require('utils.commandline')
 local Observer = require('utils.observer')
 local Timer = require('oop.timer')
 

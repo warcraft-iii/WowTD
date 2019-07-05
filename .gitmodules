@@ -4,6 +4,3 @@
 [submodule "src/lib/console"]
 	path = src/lib/console
 	url = git@github.com:warcraft-iii/lib-console.git
-[submodule "src/lib/commandline"]
-	path = src/lib/commandline
-	url = git@github.com:warcraft-iii/lib-commandline.git
