@@ -30,6 +30,7 @@ function GameModeMgr:init()
 
     Timer:after(GameConfig.VoteDuration, function()
         self:voteResult()
+        self:fireEvent(Events.GameModeFinished)
     end)
 end
 
@@ -72,8 +73,7 @@ function GameModeMgr:voteResult()
     Native.SetMapFlag(MapFlag.UseHandicaps, true)
 
     ---@type Force
-    local players = Force:fromUd(udg_ConnectedPlayers)
-    local votes = players:size() - self.hardVotes - self.insaneVotes
+    local votes = #PlayerMgr:getPlayers() - self.hardVotes - self.insaneVotes
     local text, handicap
     if votes >= self.hardVotes and votes >= self.insaneVotes then
         text = L['|c0000FF00Gamemode is set to: Easy|r']
@@ -87,8 +87,8 @@ function GameModeMgr:voteResult()
     end
 
     print(text)
-    Player:get(11):setHandicap(handicap * 0.01)
-    Player:get(10):setHandicap(handicap * 0.01)
+    PlayerMgr:getBirthPlayer():setHandicap(handicap * 0.01)
+    PlayerMgr:getWavePlayer():setHandicap(handicap * 0.01)
 end
 
 GameModeMgr:init()

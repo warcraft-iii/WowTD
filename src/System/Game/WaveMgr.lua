@@ -13,17 +13,29 @@ function WaveMgr:init()
     self.spawningCalc = 0
     self.spawnUnit = 0
 
-    Timer:after(GameConfig.FirstWave, function()
-        self:next()
-    end)
+    self:registerEvent(Events.GameModeFinished, function()
 
-    Timer:create():start(0.15, function()
-        self:spawnWave()
-    end)
-
-    Timer:after(GameConfig.VoteDuration, function()
         self:firstWaveTip()
+
+        -- 开始第一波
+        Timer:after(GameConfig.FirstWave, function()
+            self:next()
+        end)
+
+        -- 刷兵
+        self.timerSpawnWave = Timer:create()
+        self.timerSpawnWave:start(0.15, function()
+            self:spawnWave()
+        end)
+
     end)
+
+    self:registerEvents({Events.GameVictory, Events.GameLose}, function()
+        if self.timerSpawnWave then
+            self.timerSpawnWave:delete()
+        end
+    end)
+
 end
 
 function WaveMgr:next()
@@ -80,7 +92,7 @@ function WaveMgr:createUnit(players)
             return
         end
         local pt = rt:randomPosition()
-        Unit:create(PlayerMgr:BirthPlayer(), self.spawnUnit, pt.x, pt.y, bj_UNIT_FACING)
+        Unit:create(PlayerMgr:getBirthPlayer(), self.spawnUnit, pt.x, pt.y, bj_UNIT_FACING)
     end
 end
 
@@ -111,18 +123,12 @@ function WaveMgr:firstWaveTip()
     sound:setDuration(12120)
     sound:start()
 
-    local units = {
-        gg_unit_u000_0010, gg_unit_u000_0011, gg_unit_u000_0012, gg_unit_u000_0014, gg_unit_u000_0016,
-        gg_unit_u000_0017, gg_unit_u000_0018, gg_unit_u000_0019, gg_unit_u000_0020, gg_unit_u000_0023,
-        gg_unit_u000_0024, gg_unit_u000_0025, gg_unit_u000_0026, gg_unit_u000_0027, gg_unit_u000_0029,
-        gg_unit_u000_0030, gg_unit_u000_0032, gg_unit_u000_0033, gg_unit_u000_0034, gg_unit_u000_0035,
-        gg_unit_u000_0036, gg_unit_u000_0037, gg_unit_u000_0038, gg_unit_u000_0040,
-    }
-
-    for i, v in ipairs(units) do
-        local u = Unit:fromUd(v)
-        u:setAnimation('stand channel')
+    for i, v in ipairs(DarkSummoner) do
+        for _, u in ipairs(v) do
+            u:setAnimation('stand channel')
+        end
     end
+
 end
 
 WaveMgr:init()

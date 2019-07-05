@@ -7,6 +7,14 @@ GameConfig = {
     WaveInterval = 55, -- 每波间隔
 
     VoteDuration = 20, -- 难度选择时长
+
+    InitGold = 185, -- 初始金币
+
+    --@debug@
+    FirstWave = 3, -- 第一波开始时间
+    VoteDuration = 3, -- 难度选择时长
+    InitGold = 9999, -- 初始金币
+    --@end-debug@
 }
 
 ---游戏难度

@@ -6,8 +6,12 @@ function PlayerMgr:init()
     self.validPlayers = {}
     self.outSidePlayers = {}
     self.inSidePlayers = {}
+
     self.birthPlayer = Player:get(10)
+    self.birthPlayer:setColor(PlayerColor.Violet)
+
     self.wavePlayer = Player:get(11)
+    self.wavePlayer:setColor(PlayerColor.Wheat)
 
     for i = 0, GameConfig.MaxPlayers - 1 do
         local p = Player:get(i)
@@ -38,11 +42,11 @@ function PlayerMgr:getInSide()
     return self.inSidePlayers
 end
 
-function PlayerMgr:BirthPlayer()
+function PlayerMgr:getBirthPlayer()
     return self.birthPlayer
 end
 
-function PlayerMgr:WavePlayer()
+function PlayerMgr:getWavePlayer()
     return self.wavePlayer
 end
 

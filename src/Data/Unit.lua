@@ -151,3 +151,53 @@ WaveUnits = {
     [36] = {id = FourCC("nsgh"), count = 120},
 }
 
+DarkSummoner = {
+    [1] = {
+        Unit:fromUd(gg_unit_u000_0010), --
+        Unit:fromUd(gg_unit_u000_0011), --
+        Unit:fromUd(gg_unit_u000_0012),
+    } --
+    ,
+    [2] = {
+        Unit:fromUd(gg_unit_u000_0014), --
+        Unit:fromUd(gg_unit_u000_0016), --
+        Unit:fromUd(gg_unit_u000_0017),
+    } --
+    ,
+    [3] = {
+        Unit:fromUd(gg_unit_u000_0037), --
+        Unit:fromUd(gg_unit_u000_0038), --
+        Unit:fromUd(gg_unit_u000_0040),
+    } --
+    ,
+    [4] = {
+        Unit:fromUd(gg_unit_u000_0030), --
+        Unit:fromUd(gg_unit_u000_0032), --
+        Unit:fromUd(gg_unit_u000_0033),
+    } --
+    ,
+    [5] = {
+        Unit:fromUd(gg_unit_u000_0023), --
+        Unit:fromUd(gg_unit_u000_0024), --
+        Unit:fromUd(gg_unit_u000_0025),
+    } --
+    ,
+    [6] = {
+        Unit:fromUd(gg_unit_u000_0018), --
+        Unit:fromUd(gg_unit_u000_0019), --
+        Unit:fromUd(gg_unit_u000_0020),
+    } --
+    ,
+    [7] = {
+        Unit:fromUd(gg_unit_u000_0034), --
+        Unit:fromUd(gg_unit_u000_0035), --
+        Unit:fromUd(gg_unit_u000_0036),
+    } --
+    ,
+    [8] = {
+        Unit:fromUd(gg_unit_u000_0026), --
+        Unit:fromUd(gg_unit_u000_0027), --
+        Unit:fromUd(gg_unit_u000_0029),
+    } --
+    ,
+}

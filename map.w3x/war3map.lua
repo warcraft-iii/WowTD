@@ -474,69 +474,6 @@ function InitTrig_Update_Leaderboard()
     TriggerAddAction(gg_trg_Update_Leaderboard, Trig_Update_Leaderboard_Actions)
 end
 
-function Trig_NumberInMapCheck_Func002002002()
-    return (IsUnitAliveBJ(GetFilterUnit()) == true)
-end
-
-function Trig_NumberInMapCheck_Func004A()
-    udg_TempReal = (udg_TempReal + (225.00 / I2R(udg_NumberToSpawn[GetUnitLevel(GetEnumUnit())])))
-end
-
-function Trig_NumberInMapCheck_Actions()
-    udg_TempUnitGroup = GetUnitsOfPlayerMatching(Player(11), Condition(Trig_NumberInMapCheck_Func002002002))
-    udg_TempReal = 0.00
-    ForGroupBJ(udg_TempUnitGroup, Trig_NumberInMapCheck_Func004A)
-    udg_CurrentlyOnMap = udg_TempReal
-        DestroyGroup (udg_TempUnitGroup)
-end
-
-function InitTrig_NumberInMapCheck()
-    gg_trg_NumberInMapCheck = CreateTrigger()
-    TriggerRegisterTimerEventPeriodic(gg_trg_NumberInMapCheck, 9.00)
-    TriggerAddAction(gg_trg_NumberInMapCheck, Trig_NumberInMapCheck_Actions)
-end
-
-function Trig_Lose_Condition_Func003Func008Func002A()
-    RemoveUnit(GetEnumUnit())
-end
-
-function Trig_Lose_Condition_Func003Func008A()
-    udg_TempUnitGroup = GetUnitsOfPlayerAll(GetEnumPlayer())
-    ForGroupBJ(udg_TempUnitGroup, Trig_Lose_Condition_Func003Func008Func002A)
-        DestroyGroup (udg_TempUnitGroup)
-end
-
-function Trig_Lose_Condition_Func003Func010002()
-    CustomDefeatBJ(GetEnumPlayer(), "TRIGSTR_1671")
-end
-
-function Trig_Lose_Condition_Func003C()
-    if (not (udg_CurrentlyOnMap >= udg_LoseValue)) then
-        return false
-    end
-    return true
-end
-
-function Trig_Lose_Condition_Actions()
-    LeaderboardSetPlayerItemValueBJ(Player(11), udg_LEADERBOARD, R2I(((udg_CurrentlyOnMap / udg_LoseValue) * 100.00)))
-    if (Trig_Lose_Condition_Func003C()) then
-        DisplayTextToForce(GetPlayersAll(), "TRIGSTR_1210")
-        DisableTrigger(GetTriggeringTrigger())
-        LeaderboardSetPlayerItemValueColorBJ(Player(11), udg_LEADERBOARD, 100, 0.00, 0.00, 0)
-        ForForce(udg_ConnectedPlayers, Trig_Lose_Condition_Func003Func008A)
-        TriggerSleepAction(60.00)
-        ForForce(udg_ConnectedPlayers, Trig_Lose_Condition_Func003Func010002)
-    else
-        DoNothing()
-    end
-end
-
-function InitTrig_Lose_Condition()
-    gg_trg_Lose_Condition = CreateTrigger()
-    TriggerRegisterTimerEventPeriodic(gg_trg_Lose_Condition, 0.44)
-    TriggerAddAction(gg_trg_Lose_Condition, Trig_Lose_Condition_Actions)
-end
-
 function Trig_SetupLeaderBoard_Func004A()
     LeaderboardAddItemBJ(GetEnumPlayer(), udg_LEADERBOARD, GetPlayerName(GetEnumPlayer()), 0)
 end
@@ -557,158 +494,6 @@ function InitTrig_SetupLeaderBoard()
     TriggerAddAction(gg_trg_SetupLeaderBoard, Trig_SetupLeaderBoard_Actions)
 end
 
-function Trig_Initialization_Func010Func001C()
-    if (not (GetPlayerSlotState(GetEnumPlayer()) == PLAYER_SLOT_STATE_PLAYING)) then
-        return false
-    end
-    if (not (GetPlayerController(GetEnumPlayer()) == MAP_CONTROL_USER)) then
-        return false
-    end
-    return true
-end
-
-function Trig_Initialization_Func010A()
-    if (Trig_Initialization_Func010Func001C()) then
-        ForceAddPlayerSimple(GetEnumPlayer(), udg_ConnectedPlayers)
-    else
-        ForceAddPlayerSimple(GetEnumPlayer(), udg_EmptyPlayers)
-        ForceRemovePlayerSimple(GetEnumPlayer(), udg_GroupOutside)
-    end
-end
-
-function Trig_Initialization_Func011Func001C()
-    if (not (GetPlayerSlotState(GetEnumPlayer()) == PLAYER_SLOT_STATE_PLAYING)) then
-        return false
-    end
-    if (not (GetPlayerController(GetEnumPlayer()) == MAP_CONTROL_USER)) then
-        return false
-    end
-    return true
-end
-
-function Trig_Initialization_Func011A()
-    if (Trig_Initialization_Func011Func001C()) then
-        ForceAddPlayerSimple(GetEnumPlayer(), udg_ConnectedPlayers)
-    else
-        ForceAddPlayerSimple(GetEnumPlayer(), udg_EmptyPlayers)
-        ForceRemovePlayerSimple(GetEnumPlayer(), udg_GroupInside)
-    end
-end
-
-function Trig_Initialization_Func022A()
-    CreateNUnitsAtLoc(1, FourCC("uaco"), GetEnumPlayer(), GetPlayerStartLocationLoc(GetEnumPlayer()), bj_UNIT_FACING)
-end
-
-function Trig_Initialization_Func025A()
-    AdjustPlayerStateBJ(185, GetEnumPlayer(), PLAYER_STATE_RESOURCE_GOLD)
-end
-
-function Trig_Initialization_Actions()
-    ForceAddPlayerSimple(Player(0), udg_GroupOutside)
-    ForceAddPlayerSimple(Player(3), udg_GroupOutside)
-    ForceAddPlayerSimple(Player(4), udg_GroupOutside)
-    ForceAddPlayerSimple(Player(7), udg_GroupOutside)
-    ForceAddPlayerSimple(Player(1), udg_GroupInside)
-    ForceAddPlayerSimple(Player(2), udg_GroupInside)
-    ForceAddPlayerSimple(Player(5), udg_GroupInside)
-    ForceAddPlayerSimple(Player(6), udg_GroupInside)
-    ForForce(udg_GroupOutside, Trig_Initialization_Func010A)
-    ForForce(udg_GroupInside, Trig_Initialization_Func011A)
-    udg_SpawnAreas[1] = gg_rct_Spawn1
-    udg_SpawnAreas[2] = gg_rct_Spawn2
-    udg_SpawnAreas[3] = gg_rct_Spawn3
-    udg_SpawnAreas[4] = gg_rct_Spawn4
-    udg_SpawnAreas[5] = gg_rct_Spawn5
-    udg_SpawnAreas[6] = gg_rct_Spawn6
-    udg_SpawnAreas[7] = gg_rct_Spawn7
-    udg_SpawnAreas[8] = gg_rct_Spawn8
-    FogMaskEnableOff()
-    FogEnableOff()
-    ForForce(udg_ConnectedPlayers, Trig_Initialization_Func022A)
-    SetPlayerFlagBJ(PLAYER_STATE_GIVES_BOUNTY, true, Player(11))
-    SetPlayerFlagBJ(PLAYER_STATE_GIVES_BOUNTY, true, Player(10))
-    ForForce(udg_ConnectedPlayers, Trig_Initialization_Func025A)
-    udg_NumberToSpawn[1] = 82
-    udg_NumberToSpawn[2] = 189
-    udg_NumberToSpawn[3] = 24
-    udg_NumberToSpawn[4] = 104
-    udg_NumberToSpawn[5] = 73
-    udg_NumberToSpawn[6] = 185
-    udg_NumberToSpawn[7] = 133
-    udg_NumberToSpawn[8] = 189
-    udg_NumberToSpawn[9] = 16
-    udg_NumberToSpawn[10] = 101
-    udg_NumberToSpawn[11] = 100
-    udg_NumberToSpawn[12] = 32
-    udg_NumberToSpawn[13] = 80
-    udg_NumberToSpawn[14] = 40
-    udg_NumberToSpawn[15] = 20
-    udg_NumberToSpawn[16] = 182
-    udg_NumberToSpawn[17] = 121
-    udg_NumberToSpawn[18] = 40
-    udg_NumberToSpawn[19] = 200
-    udg_NumberToSpawn[20] = 70
-    udg_NumberToSpawn[21] = 25
-    udg_NumberToSpawn[22] = 105
-    udg_NumberToSpawn[23] = 20
-    udg_NumberToSpawn[24] = 140
-    udg_NumberToSpawn[25] = 111
-    udg_NumberToSpawn[26] = 20
-    udg_NumberToSpawn[27] = 200
-    udg_NumberToSpawn[28] = 15
-    udg_NumberToSpawn[29] = 165
-    udg_NumberToSpawn[30] = 200
-    udg_NumberToSpawn[31] = 30
-    udg_NumberToSpawn[32] = 80
-    udg_NumberToSpawn[33] = 15
-    udg_NumberToSpawn[34] = 200
-    udg_NumberToSpawn[35] = 145
-    udg_NumberToSpawn[36] = 120
-    udg_WaveUnits[1] = FourCC("hfoo")
-    udg_WaveUnits[2] = FourCC("hrif")
-    udg_WaveUnits[3] = FourCC("hsor")
-    udg_WaveUnits[4] = FourCC("hspt")
-    udg_WaveUnits[5] = FourCC("hmpr")
-    udg_WaveUnits[6] = FourCC("hkni")
-    udg_WaveUnits[7] = FourCC("hgyr")
-    udg_WaveUnits[8] = FourCC("hmtm")
-    udg_WaveUnits[9] = FourCC("hmtt")
-    udg_WaveUnits[10] = FourCC("ogru")
-    udg_WaveUnits[11] = FourCC("ohun")
-    udg_WaveUnits[12] = FourCC("odoc")
-    udg_WaveUnits[13] = FourCC("oshm")
-    udg_WaveUnits[14] = FourCC("otbr")
-    udg_WaveUnits[15] = FourCC("otau")
-    udg_WaveUnits[16] = FourCC("orai")
-    udg_WaveUnits[17] = FourCC("okod")
-    udg_WaveUnits[18] = FourCC("ospw")
-    udg_WaveUnits[19] = FourCC("ugho")
-    udg_WaveUnits[20] = FourCC("ucry")
-    udg_WaveUnits[21] = FourCC("ugar")
-    udg_WaveUnits[22] = FourCC("uban")
-    udg_WaveUnits[23] = FourCC("unec")
-    udg_WaveUnits[24] = FourCC("uabo")
-    udg_WaveUnits[25] = FourCC("umtw")
-    udg_WaveUnits[26] = FourCC("uobs")
-    udg_WaveUnits[27] = FourCC("Obla")
-    udg_WaveUnits[28] = FourCC("ufro")
-    udg_WaveUnits[29] = FourCC("Edem")
-    udg_WaveUnits[30] = FourCC("Hmkg")
-    udg_WaveUnits[31] = FourCC("ninf")
-    udg_WaveUnits[32] = FourCC("Nngs")
-    udg_WaveUnits[33] = FourCC("Ucrl")
-    udg_WaveUnits[34] = FourCC("Udea")
-    udg_WaveUnits[35] = FourCC("nrwm")
-    udg_WaveUnits[36] = FourCC("nsgh")
-    udg_WaveUnits[37] = 0
-        DestroyTrigger( GetTriggeringTrigger() )
-end
-
-function InitTrig_Initialization()
-    gg_trg_Initialization = CreateTrigger()
-    TriggerAddAction(gg_trg_Initialization, Trig_Initialization_Actions)
-end
-
 function Trig_Leave_Red_Actions()
     DisplayTimedTextToForce(GetPlayersAll(), 5.00, "TRIGSTR_1354")
     ExplodeUnitBJ(gg_unit_u000_0011)
@@ -718,7 +503,6 @@ end
 
 function InitTrig_Leave_Red()
     gg_trg_Leave_Red = CreateTrigger()
-    TriggerRegisterPlayerEventLeave(gg_trg_Leave_Red, Player(0))
     TriggerAddAction(gg_trg_Leave_Red, Trig_Leave_Red_Actions)
 end
 
@@ -731,7 +515,6 @@ end
 
 function InitTrig_Leave_Blue()
     gg_trg_Leave_Blue = CreateTrigger()
-    TriggerRegisterPlayerEventLeave(gg_trg_Leave_Blue, Player(1))
     TriggerAddAction(gg_trg_Leave_Blue, Trig_Leave_Blue_Actions)
 end
 
@@ -744,7 +527,6 @@ end
 
 function InitTrig_Leave_Teal()
     gg_trg_Leave_Teal = CreateTrigger()
-    TriggerRegisterPlayerEventLeave(gg_trg_Leave_Teal, Player(2))
     TriggerAddAction(gg_trg_Leave_Teal, Trig_Leave_Teal_Actions)
 end
 
@@ -757,7 +539,6 @@ end
 
 function InitTrig_Leave_Purple()
     gg_trg_Leave_Purple = CreateTrigger()
-    TriggerRegisterPlayerEventLeave(gg_trg_Leave_Purple, Player(3))
     TriggerAddAction(gg_trg_Leave_Purple, Trig_Leave_Purple_Actions)
 end
 
@@ -770,7 +551,6 @@ end
 
 function InitTrig_Leave_Yellow()
     gg_trg_Leave_Yellow = CreateTrigger()
-    TriggerRegisterPlayerEventLeave(gg_trg_Leave_Yellow, Player(4))
     TriggerAddAction(gg_trg_Leave_Yellow, Trig_Leave_Yellow_Actions)
 end
 
@@ -783,7 +563,6 @@ end
 
 function InitTrig_Leave_Orange()
     gg_trg_Leave_Orange = CreateTrigger()
-    TriggerRegisterPlayerEventLeave(gg_trg_Leave_Orange, Player(5))
     TriggerAddAction(gg_trg_Leave_Orange, Trig_Leave_Orange_Actions)
 end
 
@@ -796,7 +575,6 @@ end
 
 function InitTrig_Leave_Green()
     gg_trg_Leave_Green = CreateTrigger()
-    TriggerRegisterPlayerEventLeave(gg_trg_Leave_Green, Player(6))
     TriggerAddAction(gg_trg_Leave_Green, Trig_Leave_Green_Actions)
 end
 
@@ -809,7 +587,6 @@ end
 
 function InitTrig_Leave_Pink()
     gg_trg_Leave_Pink = CreateTrigger()
-    TriggerRegisterPlayerEventLeave(gg_trg_Leave_Pink, Player(7))
     TriggerAddAction(gg_trg_Leave_Pink, Trig_Leave_Pink_Actions)
 end
 
@@ -819,10 +596,7 @@ function InitCustomTriggers()
     InitTrig_Enemy_DiesNoValue()
     InitTrig_PlayerQuit()
     InitTrig_Update_Leaderboard()
-    InitTrig_NumberInMapCheck()
-    InitTrig_Lose_Condition()
     InitTrig_SetupLeaderBoard()
-    InitTrig_Initialization()
     InitTrig_Leave_Red()
     InitTrig_Leave_Blue()
     InitTrig_Leave_Teal()
@@ -831,10 +605,6 @@ function InitCustomTriggers()
     InitTrig_Leave_Orange()
     InitTrig_Leave_Green()
     InitTrig_Leave_Pink()
-end
-
-function RunInitializationTriggers()
-    ConditionalTriggerExecute(gg_trg_Initialization)
 end
 
 function InitCustomPlayerSlots()
@@ -1071,7 +841,6 @@ function main()
     InitBlizzard()
     InitGlobals()
     InitCustomTriggers()
-    RunInitializationTriggers()
 end
 
 function config()
