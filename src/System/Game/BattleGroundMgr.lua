@@ -22,8 +22,7 @@ function BattleGroundMgr:init()
     end)
 
     for _, player in ipairs(PlayerMgr:getPlayers()) do
-        local x, y = player:getStartPos()
-        Unit:create(player, FourCC('uaco'), x, y, bj_UNIT_FACING)
+        Unit:create(player, FourCC('uaco'), player:getStartPos(), bj_UNIT_FACING)
         player:setState(PlayerState.ResourceGold, GameConfig.InitGold)
     end
 
