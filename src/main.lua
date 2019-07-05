@@ -29,6 +29,7 @@ local function main()
     dofile('System/Game/BattleGroundMgr.lua')
     dofile('System/Game/WaveMgr.lua')
     dofile('System/General/GameModeMgr.lua')
+    dofile('System/Game/ScoreMgr.lua')
 
     -- init finished
     Timer:after(5, function()

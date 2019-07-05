@@ -16,9 +16,9 @@ function Pathing:init()
     end
 
     for k, rect in pairs(PathingRects) do
-        local trig = Trigger:create()
-        trig:registerEnterRect(rect)
-        trig:addAction(onEnter)
+        local trigger = Trigger:create()
+        trigger:registerEnterRect(rect)
+        trigger:addAction(onEnter)
     end
 end
 

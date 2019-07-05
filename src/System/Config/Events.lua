@@ -6,7 +6,10 @@ Events = {
     UnitEnterBattleground = 1,
     NextWave = 2, -- 开始下一波敌人
     GameModeFinished = 3, -- 选模式完成
-    
+
     GameVictory = 4, -- 游戏胜利
     GameLose = 5,
+
+    EnemyDeath = 6, -- 敌人死亡
+    PlayerLeave = 7, -- 玩家离开
 }

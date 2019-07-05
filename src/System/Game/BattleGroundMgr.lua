@@ -2,28 +2,29 @@ local Observer = require('utils.observer')
 local Timer = require('oop.timer')
 local Native = require('native')
 
-local BattleGroundMgr = Observer:new()
+BattleGroundMgr = Observer:new()
 
 function BattleGroundMgr:init()
     self.currentOnMap = 0
     self.loseValue = 900
 
-    local trig = Trigger:create()
-    trig:addAction(function()
-        local player = Event:getTriggerPlayer()
+    self:registerEvent(Events.PlayerLeave, function(_, player)
         print(string.format(L['|c00FF0000Player %s leaves the game. His spawnunits will kill directly!|r'],
                             player:getName()))
         for _, unit in ipairs(DarkSummoner[player]) do
             unit:setExploded(true)
             unit:kill()
         end
+
+        for unit in player:iterateUnits() do
+            unit:delete()
+        end
     end)
 
     for _, player in ipairs(PlayerMgr:getPlayers()) do
         local x, y = player:getStartPos()
-        Unit:create(player, FourCC("uaco"), x, y, bj_UNIT_FACING)
+        Unit:create(player, FourCC('uaco'), x, y, bj_UNIT_FACING)
         player:setState(PlayerState.ResourceGold, GameConfig.InitGold)
-        trig:registerPlayerEvent(player, PlayerEvent.Leave)
     end
 
     PlayerMgr:getBirthPlayer():setState(PlayerState.GivesBounty, 1)
@@ -33,7 +34,6 @@ function BattleGroundMgr:init()
     Native.FogEnable(false)
 
     self:registerEvent(Events.GameModeFinished, function()
-
         self.timerCheckAlive = Timer:create()
         self.timerCheckAlive:start(9, function()
             self:checkAlive()
@@ -44,13 +44,24 @@ function BattleGroundMgr:init()
         self.timerCheckLose:start(0.44, function()
             self:checkLose()
         end)
-
     end)
 
-    self:registerEvents({Events.GameVictory, Events.GameLose}, function()
+    self:registerEvents(Events.GameVictory, Events.GameLose, function()
         self:clear()
     end)
 
+    local trigger = Trigger:create()
+    trigger:registerPlayerUnitEvent(PlayerMgr:getWavePlayer(), PlayerUnitEvent.UnitDeath, nil)
+    trigger:registerPlayerUnitEvent(PlayerMgr:getBirthPlayer(), PlayerUnitEvent.UnitDeath, nil)
+    trigger:addAction(function()
+        local unit = Event:getDyingUnit()
+        self:fireEvent(Events.EnemyDeath, Event:getKillingUnit():getOwner(), unit)
+        if unit:getOwner() == PlayerMgr:getWavePlayer() then
+            self.currentOnMap = self.currentOnMap - 255.0 / WaveMgr:getInfo(unit:getLevel()).count
+        end
+        unit:setExploded(true)
+        unit:kill()
+    end)
 end
 
 function BattleGroundMgr:checkAlive()
@@ -64,7 +75,6 @@ function BattleGroundMgr:checkAlive()
 end
 
 function BattleGroundMgr:checkLose()
-
     LeaderboardSetPlayerItemValueBJ(Player(11), udg_LEADERBOARD, R2I(((self.currentOnMap / self.loseValue) * 100.00)))
 
     if self.currentOnMap >= self.loseValue then
@@ -89,11 +99,9 @@ function BattleGroundMgr:checkLose()
 
         self:fireEvent(Events.GameLose)
     end
-
 end
 
 function BattleGroundMgr:clear()
-
     if self.timerCheckAlive then
         self.timerCheckAlive:delete()
     end
@@ -101,6 +109,10 @@ function BattleGroundMgr:clear()
     if self.timerCheckLose then
         self.timerCheckLose:delete()
     end
+end
+
+function BattleGroundMgr:getCurrentOnMap()
+    return self.currentOnMap
 end
 
 BattleGroundMgr:init()

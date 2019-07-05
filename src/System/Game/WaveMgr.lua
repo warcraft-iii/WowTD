@@ -62,7 +62,7 @@ function WaveMgr:next()
     self.spawningCalc = 0
     self.spawnUnit = data.id
 
-    self:fireEvent(Events.NextWave)
+    self:fireEvent(Events.NextWave, self.currentLvl)
 
     Timer:after(GameConfig.WaveInterval, function()
         self:next()

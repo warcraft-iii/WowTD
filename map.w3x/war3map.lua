@@ -46,9 +46,9 @@ udg_PoisonTowers = __jarray(0)
 udg_ChaosTowers = __jarray(0)
 udg_AirTowers = __jarray(0)
 udg_TempUnitType = 0
+udg_DarkSummoner = {}
 udg_Bouton = {}
 udg_DialogueBouton = nil
-udg_DarkSummoner = {}
 gg_rct_Corner1 = nil
 gg_rct_Corner2 = nil
 gg_rct_Corner3 = nil
@@ -256,13 +256,13 @@ function InitGlobals()
     udg_TempPlayerGroup = CreateForce()
     udg_RangeCalc = 0.0
     udg_RangeCount = 0.0
-    udg_DialogueBouton = DialogCreate()
     i = 0
     while (true) do
         if ((i > 1)) then break end
         udg_DarkSummoner[i] = nil
         i = i + 1
     end
+    udg_DialogueBouton = DialogCreate()
 end
 
 function InitSounds()
@@ -437,111 +437,9 @@ function InitTrig_Adding_to_Quests()
     TriggerAddAction(gg_trg_Adding_to_Quests, Trig_Adding_to_Quests_Actions)
 end
 
-function Trig_Enemy_DiesWithValue_Actions()
-    udg_TempInt = GetConvertedPlayerId(GetOwningPlayer(GetKillingUnitBJ()))
-    udg_Kills[udg_TempInt] = (udg_Kills[udg_TempInt] + 1)
-    udg_CurrentlyOnMap = (udg_CurrentlyOnMap - (225.00 / I2R(udg_NumberToSpawn[GetUnitLevel(GetDyingUnit())])))
-    ExplodeUnitBJ(GetDyingUnit())
-end
-
-function InitTrig_Enemy_DiesWithValue()
-    gg_trg_Enemy_DiesWithValue = CreateTrigger()
-    TriggerRegisterPlayerUnitEventSimple(gg_trg_Enemy_DiesWithValue, Player(11), EVENT_PLAYER_UNIT_DEATH)
-    TriggerAddAction(gg_trg_Enemy_DiesWithValue, Trig_Enemy_DiesWithValue_Actions)
-end
-
-function Trig_Enemy_DiesNoValue_Actions()
-    udg_TempInt = GetConvertedPlayerId(GetOwningPlayer(GetKillingUnitBJ()))
-    udg_Kills[udg_TempInt] = (udg_Kills[udg_TempInt] + 1)
-    ExplodeUnitBJ(GetDyingUnit())
-end
-
-function InitTrig_Enemy_DiesNoValue()
-    gg_trg_Enemy_DiesNoValue = CreateTrigger()
-    TriggerRegisterPlayerUnitEventSimple(gg_trg_Enemy_DiesNoValue, Player(10), EVENT_PLAYER_UNIT_DEATH)
-    TriggerAddAction(gg_trg_Enemy_DiesNoValue, Trig_Enemy_DiesNoValue_Actions)
-end
-
-function Trig_PlayerQuit_Func011C()
-    if (not (IsPlayerInForce(GetTriggerPlayer(), udg_GroupOutside) == true)) then
-        return false
-    end
-    return true
-end
-
-function Trig_PlayerQuit_Func014A()
-    RemoveUnit(GetEnumUnit())
-end
-
-function Trig_PlayerQuit_Actions()
-    LeaderboardSetPlayerItemLabelBJ(GetTriggerPlayer(), udg_LEADERBOARD, "TRIGSTR_242")
-    ForceRemovePlayerSimple(GetTriggerPlayer(), udg_ConnectedPlayers)
-    if (Trig_PlayerQuit_Func011C()) then
-        ForceRemovePlayerSimple(GetTriggerPlayer(), udg_GroupOutside)
-    else
-        ForceRemovePlayerSimple(GetTriggerPlayer(), udg_GroupInside)
-    end
-    ForceAddPlayerSimple(GetTriggerPlayer(), udg_EmptyPlayers)
-    udg_TempUnitGroup = GetUnitsInRectOfPlayer(GetPlayableMapRect(), GetTriggerPlayer())
-    ForGroupBJ(udg_TempUnitGroup, Trig_PlayerQuit_Func014A)
-        DestroyGroup (udg_TempUnitGroup)
-end
-
-function InitTrig_PlayerQuit()
-    gg_trg_PlayerQuit = CreateTrigger()
-    TriggerRegisterPlayerEventLeave(gg_trg_PlayerQuit, Player(0))
-    TriggerRegisterPlayerEventLeave(gg_trg_PlayerQuit, Player(1))
-    TriggerRegisterPlayerEventLeave(gg_trg_PlayerQuit, Player(2))
-    TriggerRegisterPlayerEventLeave(gg_trg_PlayerQuit, Player(3))
-    TriggerRegisterPlayerEventLeave(gg_trg_PlayerQuit, Player(4))
-    TriggerRegisterPlayerEventLeave(gg_trg_PlayerQuit, Player(5))
-    TriggerRegisterPlayerEventLeave(gg_trg_PlayerQuit, Player(6))
-    TriggerRegisterPlayerEventLeave(gg_trg_PlayerQuit, Player(7))
-    TriggerAddAction(gg_trg_PlayerQuit, Trig_PlayerQuit_Actions)
-end
-
-function Trig_Update_Leaderboard_Func001A()
-    LeaderboardSetPlayerItemValueBJ(GetEnumPlayer(), udg_LEADERBOARD, udg_Kills[GetConvertedPlayerId(GetEnumPlayer())])
-end
-
-function Trig_Update_Leaderboard_Actions()
-    ForForce(udg_ConnectedPlayers, Trig_Update_Leaderboard_Func001A)
-end
-
-function InitTrig_Update_Leaderboard()
-    gg_trg_Update_Leaderboard = CreateTrigger()
-    TriggerRegisterTimerEventPeriodic(gg_trg_Update_Leaderboard, 1.00)
-    TriggerAddAction(gg_trg_Update_Leaderboard, Trig_Update_Leaderboard_Actions)
-end
-
-function Trig_SetupLeaderBoard_Func004A()
-    LeaderboardAddItemBJ(GetEnumPlayer(), udg_LEADERBOARD, GetPlayerName(GetEnumPlayer()), 0)
-end
-
-function Trig_SetupLeaderBoard_Actions()
-    CreateLeaderboardBJ(GetPlayersAll(), "TRIGSTR_226")
-    udg_LEADERBOARD = GetLastCreatedLeaderboard()
-    ForForce(udg_ConnectedPlayers, Trig_SetupLeaderBoard_Func004A)
-    LeaderboardAddItemBJ(Player(9), udg_LEADERBOARD, "TRIGSTR_372", udg_LVL)
-    LeaderboardAddItemBJ(Player(11), udg_LEADERBOARD, "TRIGSTR_985", 0)
-    LeaderboardSetPlayerItemValueColorBJ(Player(11), udg_LEADERBOARD, 50.00, 100.00, 83.00, 0)
-        DestroyTrigger( GetTriggeringTrigger() )
-end
-
-function InitTrig_SetupLeaderBoard()
-    gg_trg_SetupLeaderBoard = CreateTrigger()
-    TriggerRegisterTimerEventSingle(gg_trg_SetupLeaderBoard, 2.00)
-    TriggerAddAction(gg_trg_SetupLeaderBoard, Trig_SetupLeaderBoard_Actions)
-end
-
 function InitCustomTriggers()
     InitTrig_InitVariables()
     InitTrig_Adding_to_Quests()
-    InitTrig_Enemy_DiesWithValue()
-    InitTrig_Enemy_DiesNoValue()
-    InitTrig_PlayerQuit()
-    InitTrig_Update_Leaderboard()
-    InitTrig_SetupLeaderBoard()
 end
 
 function RunInitializationTriggers()
