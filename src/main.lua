@@ -31,6 +31,8 @@ local function main()
     dofile('System/General/GameModeMgr.lua')
     dofile('System/Game/ScoreMgr.lua')
 
+    dofile('System/General/ReadMe.lua')
+
     -- init finished
     Timer:after(5, function()
         print(L['Welcome to World of Warcraft TD v1.0.0'])

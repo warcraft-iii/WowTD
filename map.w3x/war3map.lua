@@ -424,22 +424,8 @@ function InitTrig_InitVariables()
     TriggerAddAction(gg_trg_InitVariables, Trig_InitVariables_Actions)
 end
 
-function Trig_Adding_to_Quests_Actions()
-    CreateQuestBJ(bj_QUESTTYPE_REQ_DISCOVERED, "TRIGSTR_1535", "TRIGSTR_1536", "ReplaceableTextures\\CommandButtons\\BTNStatUp.blp")
-    CreateQuestBJ(bj_QUESTTYPE_REQ_DISCOVERED, "TRIGSTR_1537", "TRIGSTR_1538", "ReplaceableTextures\\PassiveButtons\\PASBTNStatUp.blp")
-    CreateQuestBJ(bj_QUESTTYPE_OPT_DISCOVERED, "TRIGSTR_1588", "TRIGSTR_1589", "ReplaceableTextures\\PassiveButtons\\PASBTNStatUp.blp")
-    CreateQuestBJ(bj_QUESTTYPE_OPT_DISCOVERED, "TRIGSTR_1590", "TRIGSTR_1591", "ReplaceableTextures\\PassiveButtons\\PASBTNStatUp.blp")
-end
-
-function InitTrig_Adding_to_Quests()
-    gg_trg_Adding_to_Quests = CreateTrigger()
-    TriggerRegisterTimerEventSingle(gg_trg_Adding_to_Quests, 0.01)
-    TriggerAddAction(gg_trg_Adding_to_Quests, Trig_Adding_to_Quests_Actions)
-end
-
 function InitCustomTriggers()
     InitTrig_InitVariables()
-    InitTrig_Adding_to_Quests()
 end
 
 function RunInitializationTriggers()
