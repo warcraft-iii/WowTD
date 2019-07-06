@@ -2,6 +2,7 @@ local CommandLine = require('utils.commandline')
 local Observer = require('utils.observer')
 local Timer = require('oop.timer')
 
+---@class CommandMgr: Observer
 local CommandMgr = Observer:new()
 
 function CommandMgr:init()

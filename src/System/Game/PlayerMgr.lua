@@ -1,5 +1,6 @@
 local Observer = require('utils.observer')
 
+---@class PlayerMgr: Observer
 PlayerMgr = Observer:new()
 
 function PlayerMgr:init()

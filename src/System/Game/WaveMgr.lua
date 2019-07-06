@@ -2,6 +2,7 @@ local Observer = require('utils.observer')
 local Timer = require('oop.timer')
 local Color = require('utils.color')
 
+---@class WaveMgr: Observer
 WaveMgr = Observer:new()
 
 function WaveMgr:init()
@@ -31,7 +32,7 @@ function WaveMgr:init()
 
     end)
 
-    self:registerEvents({Events.GameVictory, Events.GameLose}, function()
+    self:registerEvent(Events.GameVictory, Events.GameLose, function()
         if self.timerSpawnWave then
             self.timerSpawnWave:delete()
         end

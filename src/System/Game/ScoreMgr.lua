@@ -1,12 +1,13 @@
 local Observer = require('utils.observer')
 
+---@class ScoreMgr: Observer
 local ScoreMgr = Observer:new()
 
 function ScoreMgr:init()
     self:setup()
     self.kills = {}
 
-    self:registerEvent(Events.EnemyDeath, function(_, player, unit)
+    self:registerEvent(Events.EnemyDeath, function(player, unit)
         self.kills[player] = self.kills[player] or 0
         self.kills[player] = self.kills[player] + 1
     end)
@@ -20,15 +21,15 @@ function ScoreMgr:init()
         self.lb:setItemValue(self.lb:getPlayerIndex(PlayerMgr:getWavePlayer()), currentOnMap >= 0 and currentOnMap or 0)
     end)
 
-    self:registerEvents(Events.GameVictory, Events.GameLose, function()
+    self:registerEvent(Events.GameVictory, Events.GameLose, function()
         self.timerUpdate:delete()
     end)
 
-    self:registerEvent(Events.PlayerLeave, function(_, player)
+    self:registerEvent(Events.PlayerLeave, function(player)
         self.lb:setItemLabel(self.lb:getPlayerIndex(player), L['<Left Game>'])
     end)
 
-    self:registerEvent(Events.NextWave, function(_, lvl)
+    self:registerEvent(Events.NextWave, function(lvl)
         self.lb:setItemValue(self.lb:getPlayerIndex(Player:get(9)), lvl)
     end)
 

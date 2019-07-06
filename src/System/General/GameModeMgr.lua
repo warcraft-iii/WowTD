@@ -7,6 +7,7 @@ local Observer = require('utils.observer')
 local Event = require('oop.event')
 local Native = require('native')
 
+---@class GameModeMgr: Observer
 local GameModeMgr = Observer:new()
 
 function GameModeMgr:init()

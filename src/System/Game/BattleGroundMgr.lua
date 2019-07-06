@@ -2,13 +2,14 @@ local Observer = require('utils.observer')
 local Timer = require('oop.timer')
 local Native = require('native')
 
+---@class BattleGroundMgr: Observer
 BattleGroundMgr = Observer:new()
 
 function BattleGroundMgr:init()
     self.currentOnMap = 0
     self.loseValue = 900
 
-    self:registerEvent(Events.PlayerLeave, function(_, player)
+    self:registerEvent(Events.PlayerLeave, function(player)
         print(string.format(L['|c00FF0000Player %s leaves the game. His spawnunits will kill directly!|r'],
                             player:getName()))
         for _, unit in ipairs(DarkSummoner[player]) do
@@ -45,8 +46,13 @@ function BattleGroundMgr:init()
         end)
     end)
 
-    self:registerEvents(Events.GameVictory, Events.GameLose, function()
+    self:registerEvent(Events.GameVictory, Events.GameLose, function()
         self:clear()
+    end)
+
+    ---@param unit Unit
+    self:registerEvent(Events.UnitEnterBattleground, function(unit)
+        self.currentOnMap = self.currentOnMap + 225 / WaveMgr:getInfo(unit:getLevel()).count
     end)
 
     local trigger = Trigger:create()

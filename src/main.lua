@@ -24,7 +24,6 @@ local function main()
     dofile('System/General/CommandMgr.lua')
     dofile('Game.lua')
     dofile('System/Game/Pathing.lua')
-    dofile('System/Game/EnemyCheck.lua')
 
     dofile('System/Game/BattleGroundMgr.lua')
     dofile('System/Game/WaveMgr.lua')

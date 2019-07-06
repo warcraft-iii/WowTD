@@ -1,6 +1,7 @@
 local Observer = require('utils.observer')
 local Icons = require('ui.icons')
 
+---@class ReadMe: Observer
 local ReadMe = Observer:new()
 
 function ReadMe:init()
@@ -10,33 +11,33 @@ function ReadMe:init()
 
     - Increase the attackspeed of some towers
     - Now ALL! siegetowers got new and better splash
-    
+
     |c0000FF00--> Poisontowers <--|r
-    
+
     - Remove Poisonattack
     - Addet 350 AOE Poisonaura
     - Reduced the damage of some towers
     - Fixed attackspeed of one tower
     - Now the towers realy have multi-attack
-    
+
     |c007EBFF1--> Airtowers <--|r
-    
+
     - Increased attackspeed of some towers
     - Increased damage of some towers
     - Now ALL air towers have splash
     - Fixed some tooltips
-    
+
     |c00959697--> Auratowers <--|r
     - Increase Speedbonus of the speed-aura-tower
     - Increase Attackbonus of the damage-aura-tower
     - Change the tooltips
-    
+
     |c000042FF--> Frosttowers <--|r
-    
+
     - Increase the attackspeed of some towers
     - Increase the damage of all towers
     - Change some tooltips
-    
+
     ]])
     towers:setIconPath(Icons.bTNStatUp)
     towers:setRequired(true)

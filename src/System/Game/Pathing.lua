@@ -8,6 +8,7 @@ local Player = require('oop.player')
 local Unit = require('oop.unit')
 local Order = require('enum.order')
 
+---@class Pathing: Observer
 local Pathing = Observer:new()
 
 function Pathing:init()
