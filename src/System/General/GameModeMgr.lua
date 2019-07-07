@@ -53,7 +53,7 @@ function GameModeMgr:onVote(dialogItem)
     local playerId = Event:getTriggerPlayer():getId() + 1
     self.hardVotes = self.hardVotes + hardVote
     self.insaneVotes = self.insaneVotes + insaneVote
-    print(string.format(text, player:getName()))
+    Message:toAll(string.format(text, player:getName()))
 end
 
 function GameModeMgr:showVote()
@@ -87,7 +87,7 @@ function GameModeMgr:voteResult()
         handicap = GameModeHandicap.Hard
     end
 
-    print(text)
+    Message:toAll(text)
     PlayerMgr:getBirthPlayer():setHandicap(handicap * 0.01)
     PlayerMgr:getWavePlayer():setHandicap(handicap * 0.01)
 end

@@ -10,7 +10,7 @@ function BattleGroundMgr:init()
     self.loseValue = 900
 
     self:registerEvent(Events.PlayerLeave, function(player)
-        print(string.format(L['|c00FF0000Player %s leaves the game. His spawnunits will kill directly!|r'],
+        Message:toAll(string.format(L['|c00FF0000Player %s leaves the game. His spawnunits will kill directly!|r'],
                             player:getName()))
         for _, unit in ipairs(DarkSummoner[player]) do
             unit:setExploded(true)
@@ -83,7 +83,7 @@ function BattleGroundMgr:checkLose()
     LeaderboardSetPlayerItemValueBJ(Player(11), udg_LEADERBOARD, R2I(((self.currentOnMap / self.loseValue) * 100.00)))
 
     if self.currentOnMap >= self.loseValue then
-        print(L['Sorry, you lost.  Try again!'])
+        Message:toAll(L['Sorry, you lost.  Try again!'])
 
         LeaderboardSetPlayerItemValueColorBJ(Player(11), udg_LEADERBOARD, 100, 0.00, 0.00, 0)
 

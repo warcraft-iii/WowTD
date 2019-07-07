@@ -46,14 +46,14 @@ function WaveMgr:next()
         Timer:after(15, function()
             self:fireEvent(Events.GameVictory)
             self.spawnUnit = 0
-            print(L['You win, nice going!'])
+            Message:toAll(L['You win, nice going!'])
         end)
         return
     end
 
     local data = self:getInfo(self.currentLvl)
 
-    print(string.format(L['|c008000FFWave %d of 36.|r'], self.currentLvl))
+    Message:toAll(string.format(L['|c008000FFWave %d of 36.|r'], self.currentLvl))
 
     LeaderboardSetPlayerItemValueBJ(Player(9), udg_LEADERBOARD, self.currentLvl)
 
@@ -90,7 +90,7 @@ function WaveMgr:createUnit(players)
         local id = p:getId() + 1
         local rt = PathingRects['Spawn' .. id]
         if not rt then
-            print('error spawn id ', id)
+            Message:toAll('error spawn id ', id)
             return
         end
         Unit:create(PlayerMgr:getBirthPlayer(), self.spawnUnit, rt:randomPosition(), bj_UNIT_FACING)
@@ -116,7 +116,7 @@ end
 
 function WaveMgr:firstWaveTip()
 
-    print(Color:gradientText('First wave in 15 sec', 0xBB, 0xFF, 0x00, 0xFE, 0x01, 0x00))
+    Message:toAll(Color:gradientText('First wave in 15 sec', 0xBB, 0xFF, 0x00, 0xFE, 0x01, 0x00))
 
     local sound = Sound:create([[Sound\Ambient\DoodadEffects\TheHornOfCenarius.wav]], false, false, false, 10, 10,
                                'DefaultEAXON')

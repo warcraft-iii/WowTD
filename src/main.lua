@@ -6,6 +6,8 @@ require('oop')
 require('console')
 -- @end-debug@
 
+Message = require('utils.message')
+
 require('System.Config')
 require('Data')
 
@@ -35,7 +37,7 @@ local function main()
 
     -- init finished
     Timer:after(5, function()
-        print(L['Welcome to World of Warcraft TD v1.0.0'])
+        Message:toAll(L['Welcome to World of Warcraft TD v1.0.0'])
     end)
 
 end
