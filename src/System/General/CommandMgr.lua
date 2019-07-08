@@ -6,36 +6,36 @@ local Timer = require('oop.timer')
 local CommandMgr = Observer:new()
 
 function CommandMgr:init()
-    CommandLine:addOptionAnyPlayer('-next', function(p, data)
-        self:next(p)
+    CommandLine:addOptionToAll('-next', function(player, data)
+        self:next(player)
     end)
 
-    CommandLine:addOptionAnyPlayer('-air', function(p)
-        Message:toPlayer(p, [[|c007EBFF1== The Air Wave ==|r
+    CommandLine:addOptionToAll('-air', function(player)
+        Message:toPlayer(player, [[|c007EBFF1== The Air Wave ==|r
 
         |c00FFEAEA- The air creeps spawn every 7 waves
         - The most effective towers are the |r|c00C7FFBBAir tower|r |c00FFEAEAand the |r|c00C7FFBBPoison tower|r
         |c00FFEAEA- The tower with NO effect is the |r|c00C7FFBBSiege tower|r]])
     end)
 
-    CommandLine:addOptionAnyPlayer('-hero', function(p)
-        Message:toPlayer(p, [[|c007EBFF1== The Hero Wave ==|r
+    CommandLine:addOptionToAll('-hero', function(player)
+        Message:toPlayer(player, [[|c007EBFF1== The Hero Wave ==|r
 
         |c00FFEAEA- The most effective tower are the |r|c00C7FFBBSiege tower|r |c00FFEAEAand the |r|c00C7FFBBPoison tower|r
         |c00FFEAEA- The low effective towers is the |r|c00C7FFBBIce tower|r
         |c00FFEAEA- The tower with NO effect is the |r|c00C7FFBBAir tower|r]])
     end)
 
-    CommandLine:addOptionAnyPlayer('-immun', function(p)
-        Message:toPlayer(p, [[|c007EBFF1== The Immun Wave ==|r
+    CommandLine:addOptionToAll('-immun', function(player)
+        Message:toPlayer(player, [[|c007EBFF1== The Immun Wave ==|r
 
         |c00FFEAEA- The immun creeps spawns every 5 waves.
         - The effective tower is the |r |c00C7FFBBChaos tower|r
         |c00FFEAEA- The tower with NO effect is the |r|c00C7FFBBIce tower|r]])
     end)
 
-    Timer:create():start(35, function(p)
-        Message:toPlayer(p, [[|c00EEEEEENeed help?
+    Timer:create():start(35, function()
+        Message:toPlayer(Player:getLocal(), [[|c00EEEEEENeed help?
         Type |r|c007EBFF1-immun|r|c00EEEEEE, |r|c007EBFF1-air |r|c00EEEEEEor |r|c007EBFF1-hero|r]])
     end)
 
@@ -44,14 +44,14 @@ function CommandMgr:init()
     end)
 end
 
-function CommandMgr:next(p)
+function CommandMgr:next(player)
     local lvl = WaveMgr:getCurrentLevel()
-    Message:toPlayer(p,
+    Message:toPlayer(player,
                      string.format(L['The current wave is %s %s.'], WaveMgr:getInfo(lvl).count, self:getWaveInfo(lvl)))
-    Message:toPlayer(p, string.format(L['The wave after this is %s %s.'], WaveMgr:getInfo(lvl + 1).count,
-                                      self:getWaveInfo(lvl + 1)))
-    Message:toPlayer(p, string.format(L['The wave after that is %s %s.'], WaveMgr:getInfo(lvl + 2).count,
-                                      self:getWaveInfo(lvl + 2)))
+    Message:toPlayer(player, string.format(L['The wave after this is %s %s.'], WaveMgr:getInfo(lvl + 1).count,
+                                           self:getWaveInfo(lvl + 1)))
+    Message:toPlayer(player, string.format(L['The wave after that is %s %s.'], WaveMgr:getInfo(lvl + 2).count,
+                                           self:getWaveInfo(lvl + 2)))
 end
 
 function CommandMgr:getWaveInfo(lvl)

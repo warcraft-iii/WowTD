@@ -151,7 +151,7 @@ WaveUnits = {
     [36] = {id = FourCC("nsgh"), count = 120},
 }
 
----@type table<integer, Unint[]>
+---@type table<integer, Unit[]>
 DarkSummoner = {}
 local summonerIndex = 1
 for i = 0, GameConfig.MaxPlayers - 1 do
