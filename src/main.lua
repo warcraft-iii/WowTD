@@ -38,6 +38,12 @@ local function main()
     -- init finished
     Timer:after(5, function()
         Message:toAll(L['Welcome to World of Warcraft TD v1.0.0'])
+
+-- @debug@
+        Unit:create(Player:get(0), FourCC('H101'), Player:get(0):getStartPos(), bj_UNIT_FACING)
+        Message:toAll(L['DEBUG: Object generator unit created.'])
+-- @end-debug@
+
     end)
 
 end
